@@ -53,7 +53,7 @@
 				</div>
 			</div>
 			<div class="form-group">
-				<button type="submit" class="btn btn-lg" href="signon.jsp?id=<%=user.getId()%>">Submit</button>
+				<button type="submit" class="btn btn-lg" href="signon.jsp?id=<%=%>">Submit</button>
 			</div>
 		</form>
     </div>
