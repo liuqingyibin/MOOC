@@ -1,9 +1,9 @@
 # MOOCStatistic
 Statistic the user actions of MOOC.
 
-登录网址：[MOOCStatistic](http://123.206.205.246/sign/signon.html)
-注册网址：[MOOCStatistic](http://123.206.205.246/sign/signup.html)
-展示网址：[MOOCStatistic](http://123.206.205.246/datadisplay)
+* 登录网址：[MOOCStatistic signon](http://123.206.205.246/sign/signon.html)
+* 注册网址：[MOOCStatistic signup](http://123.206.205.246/sign/signup.html)
+* 展示网址：[MOOCStatistic datadisplay](http://123.206.205.246/datadisplay)
 
 ## 架构设计
 ### 蓝图
