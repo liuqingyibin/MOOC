@@ -53,7 +53,7 @@
 				</div>
 			</div>
 			<div class="form-group">
-				<button type="submit" class="btn btn-lg">Submit</button>
+				<button type="submit" class="btn btn-lg" href="singon.jsp">Submit</button>
 			</div>
 		</form>
     </div>
