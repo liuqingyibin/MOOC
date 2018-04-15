@@ -16,9 +16,11 @@
 <!-- /css -->
 </head>
 <body>
+<jsp:useBean id="user" class="src/UserTable"></jsp:useBean>
+<jsp:setProperty property="*" name="user"/>
 <h1 class="w3ls">Authentication Signon</h1>
 	<div class="content-agileits">
-		<form action="#" method="post" data-toggle="validator" role="form">
+		<form action="signon.jsp" method="post" data-toggle="validator" role="form">
 			<div class="form-group w3l agileinfo wthree w3-agileits">
 				<label for="inputEmail" class="control-label">Username</label>
 				<input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="This email address is invalid" required>
@@ -39,6 +41,13 @@
 			</div>
 		</form>
     </div>
+<%
+	user.setUsername("name");
+	user.setPassword("word");
+	out.print("&&&&&&&&&");
+	out.print(user.username);
+	out.print(user.password);
+%>
 <p class="copyright-w3ls">© 2018 Authentication Signon. All Rights Reserved<!--  | Design by <a href="http://0lddriv3r.github.io" target="_blank">教授</a> --></p>
 <!-- js files -->
 <script src="js/jquery-1.10.2.min.js"></script>
