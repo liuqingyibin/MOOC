@@ -1,0 +1,1128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.edx.dao.CfCsMapper">
+  <resultMap id="BaseResultMap" type="com.edx.pojo.CfCs">
+    <constructor>
+      <idArg column="edx_id" javaType="java.lang.Integer" jdbcType="INTEGER" />
+      <arg column="Hcourse_id" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="userid_DI" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="registered" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="viewed" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="explored" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="certified" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="final_cc_cname_DI" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="LoE_DI" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="YoB" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="gender" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="grade" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="start_time_DI" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="last_event_DI" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="nevents" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="ndays_act" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="nplay_video" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="nchapters" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="nforum_posts" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="roles" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="incomplete_flag" javaType="java.lang.String" jdbcType="VARCHAR" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List">
+    edx_id, Hcourse_id, userid_DI, registered, viewed, explored, certified, final_cc_cname_DI, 
+    LoE_DI, YoB, gender, grade, start_time_DI, last_event_DI, nevents, ndays_act, nplay_video, 
+    nchapters, nforum_posts, roles, incomplete_flag
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from cf_cs
+    where edx_id = #{edxId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from cf_cs
+    where edx_id = #{edxId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.edx.pojo.CfCs">
+    insert into cf_cs (edx_id, Hcourse_id, userid_DI, 
+      registered, viewed, explored, 
+      certified, final_cc_cname_DI, LoE_DI, 
+      YoB, gender, grade, 
+      start_time_DI, last_event_DI, nevents, 
+      ndays_act, nplay_video, nchapters, 
+      nforum_posts, roles, incomplete_flag
+      )
+    values (#{edxId,jdbcType=INTEGER}, #{hcourseId,jdbcType=VARCHAR}, #{useridDi,jdbcType=VARCHAR}, 
+      #{registered,jdbcType=VARCHAR}, #{viewed,jdbcType=VARCHAR}, #{explored,jdbcType=VARCHAR}, 
+      #{certified,jdbcType=VARCHAR}, #{finalCcCnameDi,jdbcType=VARCHAR}, #{loeDi,jdbcType=VARCHAR}, 
+      #{yob,jdbcType=VARCHAR}, #{gender,jdbcType=VARCHAR}, #{grade,jdbcType=VARCHAR}, 
+      #{startTimeDi,jdbcType=VARCHAR}, #{lastEventDi,jdbcType=VARCHAR}, #{nevents,jdbcType=VARCHAR}, 
+      #{ndaysAct,jdbcType=VARCHAR}, #{nplayVideo,jdbcType=VARCHAR}, #{nchapters,jdbcType=VARCHAR}, 
+      #{nforumPosts,jdbcType=VARCHAR}, #{roles,jdbcType=VARCHAR}, #{incompleteFlag,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.edx.pojo.CfCs">
+    insert into cf_cs
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="edxId != null">
+        edx_id,
+      </if>
+      <if test="hcourseId != null">
+        Hcourse_id,
+      </if>
+      <if test="useridDi != null">
+        userid_DI,
+      </if>
+      <if test="registered != null">
+        registered,
+      </if>
+      <if test="viewed != null">
+        viewed,
+      </if>
+      <if test="explored != null">
+        explored,
+      </if>
+      <if test="certified != null">
+        certified,
+      </if>
+      <if test="finalCcCnameDi != null">
+        final_cc_cname_DI,
+      </if>
+      <if test="loeDi != null">
+        LoE_DI,
+      </if>
+      <if test="yob != null">
+        YoB,
+      </if>
+      <if test="gender != null">
+        gender,
+      </if>
+      <if test="grade != null">
+        grade,
+      </if>
+      <if test="startTimeDi != null">
+        start_time_DI,
+      </if>
+      <if test="lastEventDi != null">
+        last_event_DI,
+      </if>
+      <if test="nevents != null">
+        nevents,
+      </if>
+      <if test="ndaysAct != null">
+        ndays_act,
+      </if>
+      <if test="nplayVideo != null">
+        nplay_video,
+      </if>
+      <if test="nchapters != null">
+        nchapters,
+      </if>
+      <if test="nforumPosts != null">
+        nforum_posts,
+      </if>
+      <if test="roles != null">
+        roles,
+      </if>
+      <if test="incompleteFlag != null">
+        incomplete_flag,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="edxId != null">
+        #{edxId,jdbcType=INTEGER},
+      </if>
+      <if test="hcourseId != null">
+        #{hcourseId,jdbcType=VARCHAR},
+      </if>
+      <if test="useridDi != null">
+        #{useridDi,jdbcType=VARCHAR},
+      </if>
+      <if test="registered != null">
+        #{registered,jdbcType=VARCHAR},
+      </if>
+      <if test="viewed != null">
+        #{viewed,jdbcType=VARCHAR},
+      </if>
+      <if test="explored != null">
+        #{explored,jdbcType=VARCHAR},
+      </if>
+      <if test="certified != null">
+        #{certified,jdbcType=VARCHAR},
+      </if>
+      <if test="finalCcCnameDi != null">
+        #{finalCcCnameDi,jdbcType=VARCHAR},
+      </if>
+      <if test="loeDi != null">
+        #{loeDi,jdbcType=VARCHAR},
+      </if>
+      <if test="yob != null">
+        #{yob,jdbcType=VARCHAR},
+      </if>
+      <if test="gender != null">
+        #{gender,jdbcType=VARCHAR},
+      </if>
+      <if test="grade != null">
+        #{grade,jdbcType=VARCHAR},
+      </if>
+      <if test="startTimeDi != null">
+        #{startTimeDi,jdbcType=VARCHAR},
+      </if>
+      <if test="lastEventDi != null">
+        #{lastEventDi,jdbcType=VARCHAR},
+      </if>
+      <if test="nevents != null">
+        #{nevents,jdbcType=VARCHAR},
+      </if>
+      <if test="ndaysAct != null">
+        #{ndaysAct,jdbcType=VARCHAR},
+      </if>
+      <if test="nplayVideo != null">
+        #{nplayVideo,jdbcType=VARCHAR},
+      </if>
+      <if test="nchapters != null">
+        #{nchapters,jdbcType=VARCHAR},
+      </if>
+      <if test="nforumPosts != null">
+        #{nforumPosts,jdbcType=VARCHAR},
+      </if>
+      <if test="roles != null">
+        #{roles,jdbcType=VARCHAR},
+      </if>
+      <if test="incompleteFlag != null">
+        #{incompleteFlag,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.edx.pojo.CfCs">
+    update cf_cs
+    <set>
+      <if test="hcourseId != null">
+        Hcourse_id = #{hcourseId,jdbcType=VARCHAR},
+      </if>
+      <if test="useridDi != null">
+        userid_DI = #{useridDi,jdbcType=VARCHAR},
+      </if>
+      <if test="registered != null">
+        registered = #{registered,jdbcType=VARCHAR},
+      </if>
+      <if test="viewed != null">
+        viewed = #{viewed,jdbcType=VARCHAR},
+      </if>
+      <if test="explored != null">
+        explored = #{explored,jdbcType=VARCHAR},
+      </if>
+      <if test="certified != null">
+        certified = #{certified,jdbcType=VARCHAR},
+      </if>
+      <if test="finalCcCnameDi != null">
+        final_cc_cname_DI = #{finalCcCnameDi,jdbcType=VARCHAR},
+      </if>
+      <if test="loeDi != null">
+        LoE_DI = #{loeDi,jdbcType=VARCHAR},
+      </if>
+      <if test="yob != null">
+        YoB = #{yob,jdbcType=VARCHAR},
+      </if>
+      <if test="gender != null">
+        gender = #{gender,jdbcType=VARCHAR},
+      </if>
+      <if test="grade != null">
+        grade = #{grade,jdbcType=VARCHAR},
+      </if>
+      <if test="startTimeDi != null">
+        start_time_DI = #{startTimeDi,jdbcType=VARCHAR},
+      </if>
+      <if test="lastEventDi != null">
+        last_event_DI = #{lastEventDi,jdbcType=VARCHAR},
+      </if>
+      <if test="nevents != null">
+        nevents = #{nevents,jdbcType=VARCHAR},
+      </if>
+      <if test="ndaysAct != null">
+        ndays_act = #{ndaysAct,jdbcType=VARCHAR},
+      </if>
+      <if test="nplayVideo != null">
+        nplay_video = #{nplayVideo,jdbcType=VARCHAR},
+      </if>
+      <if test="nchapters != null">
+        nchapters = #{nchapters,jdbcType=VARCHAR},
+      </if>
+      <if test="nforumPosts != null">
+        nforum_posts = #{nforumPosts,jdbcType=VARCHAR},
+      </if>
+      <if test="roles != null">
+        roles = #{roles,jdbcType=VARCHAR},
+      </if>
+      <if test="incompleteFlag != null">
+        incomplete_flag = #{incompleteFlag,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where edx_id = #{edxId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.edx.pojo.CfCs">
+    update cf_cs
+    set Hcourse_id = #{hcourseId,jdbcType=VARCHAR},
+      userid_DI = #{useridDi,jdbcType=VARCHAR},
+      registered = #{registered,jdbcType=VARCHAR},
+      viewed = #{viewed,jdbcType=VARCHAR},
+      explored = #{explored,jdbcType=VARCHAR},
+      certified = #{certified,jdbcType=VARCHAR},
+      final_cc_cname_DI = #{finalCcCnameDi,jdbcType=VARCHAR},
+      LoE_DI = #{loeDi,jdbcType=VARCHAR},
+      YoB = #{yob,jdbcType=VARCHAR},
+      gender = #{gender,jdbcType=VARCHAR},
+      grade = #{grade,jdbcType=VARCHAR},
+      start_time_DI = #{startTimeDi,jdbcType=VARCHAR},
+      last_event_DI = #{lastEventDi,jdbcType=VARCHAR},
+      nevents = #{nevents,jdbcType=VARCHAR},
+      ndays_act = #{ndaysAct,jdbcType=VARCHAR},
+      nplay_video = #{nplayVideo,jdbcType=VARCHAR},
+      nchapters = #{nchapters,jdbcType=VARCHAR},
+      nforum_posts = #{nforumPosts,jdbcType=VARCHAR},
+      roles = #{roles,jdbcType=VARCHAR},
+      incomplete_flag = #{incompleteFlag,jdbcType=VARCHAR}
+    where edx_id = #{edxId,jdbcType=INTEGER}
+  </update>
+  <resultMap id="BaseResultMap" type="com.edx.pojo.CfCs">
+    <constructor>
+      <idArg column="edx_id" javaType="java.lang.Integer" jdbcType="INTEGER" />
+      <arg column="Hcourse_id" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="userid_DI" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="registered" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="viewed" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="explored" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="certified" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="final_cc_cname_DI" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="LoE_DI" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="YoB" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="gender" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="grade" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="start_time_DI" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="last_event_DI" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="nevents" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="ndays_act" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="nplay_video" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="nchapters" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="nforum_posts" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="roles" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="incomplete_flag" javaType="java.lang.String" jdbcType="VARCHAR" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List">
+    edx_id, Hcourse_id, userid_DI, registered, viewed, explored, certified, final_cc_cname_DI, 
+    LoE_DI, YoB, gender, grade, start_time_DI, last_event_DI, nevents, ndays_act, nplay_video, 
+    nchapters, nforum_posts, roles, incomplete_flag
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from cf_cs
+    where edx_id = #{edxId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from cf_cs
+    where edx_id = #{edxId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.edx.pojo.CfCs">
+    insert into cf_cs (edx_id, Hcourse_id, userid_DI, 
+      registered, viewed, explored, 
+      certified, final_cc_cname_DI, LoE_DI, 
+      YoB, gender, grade, 
+      start_time_DI, last_event_DI, nevents, 
+      ndays_act, nplay_video, nchapters, 
+      nforum_posts, roles, incomplete_flag
+      )
+    values (#{edxId,jdbcType=INTEGER}, #{hcourseId,jdbcType=VARCHAR}, #{useridDi,jdbcType=VARCHAR}, 
+      #{registered,jdbcType=VARCHAR}, #{viewed,jdbcType=VARCHAR}, #{explored,jdbcType=VARCHAR}, 
+      #{certified,jdbcType=VARCHAR}, #{finalCcCnameDi,jdbcType=VARCHAR}, #{loeDi,jdbcType=VARCHAR}, 
+      #{yob,jdbcType=VARCHAR}, #{gender,jdbcType=VARCHAR}, #{grade,jdbcType=VARCHAR}, 
+      #{startTimeDi,jdbcType=VARCHAR}, #{lastEventDi,jdbcType=VARCHAR}, #{nevents,jdbcType=VARCHAR}, 
+      #{ndaysAct,jdbcType=VARCHAR}, #{nplayVideo,jdbcType=VARCHAR}, #{nchapters,jdbcType=VARCHAR}, 
+      #{nforumPosts,jdbcType=VARCHAR}, #{roles,jdbcType=VARCHAR}, #{incompleteFlag,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.edx.pojo.CfCs">
+    insert into cf_cs
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="edxId != null">
+        edx_id,
+      </if>
+      <if test="hcourseId != null">
+        Hcourse_id,
+      </if>
+      <if test="useridDi != null">
+        userid_DI,
+      </if>
+      <if test="registered != null">
+        registered,
+      </if>
+      <if test="viewed != null">
+        viewed,
+      </if>
+      <if test="explored != null">
+        explored,
+      </if>
+      <if test="certified != null">
+        certified,
+      </if>
+      <if test="finalCcCnameDi != null">
+        final_cc_cname_DI,
+      </if>
+      <if test="loeDi != null">
+        LoE_DI,
+      </if>
+      <if test="yob != null">
+        YoB,
+      </if>
+      <if test="gender != null">
+        gender,
+      </if>
+      <if test="grade != null">
+        grade,
+      </if>
+      <if test="startTimeDi != null">
+        start_time_DI,
+      </if>
+      <if test="lastEventDi != null">
+        last_event_DI,
+      </if>
+      <if test="nevents != null">
+        nevents,
+      </if>
+      <if test="ndaysAct != null">
+        ndays_act,
+      </if>
+      <if test="nplayVideo != null">
+        nplay_video,
+      </if>
+      <if test="nchapters != null">
+        nchapters,
+      </if>
+      <if test="nforumPosts != null">
+        nforum_posts,
+      </if>
+      <if test="roles != null">
+        roles,
+      </if>
+      <if test="incompleteFlag != null">
+        incomplete_flag,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="edxId != null">
+        #{edxId,jdbcType=INTEGER},
+      </if>
+      <if test="hcourseId != null">
+        #{hcourseId,jdbcType=VARCHAR},
+      </if>
+      <if test="useridDi != null">
+        #{useridDi,jdbcType=VARCHAR},
+      </if>
+      <if test="registered != null">
+        #{registered,jdbcType=VARCHAR},
+      </if>
+      <if test="viewed != null">
+        #{viewed,jdbcType=VARCHAR},
+      </if>
+      <if test="explored != null">
+        #{explored,jdbcType=VARCHAR},
+      </if>
+      <if test="certified != null">
+        #{certified,jdbcType=VARCHAR},
+      </if>
+      <if test="finalCcCnameDi != null">
+        #{finalCcCnameDi,jdbcType=VARCHAR},
+      </if>
+      <if test="loeDi != null">
+        #{loeDi,jdbcType=VARCHAR},
+      </if>
+      <if test="yob != null">
+        #{yob,jdbcType=VARCHAR},
+      </if>
+      <if test="gender != null">
+        #{gender,jdbcType=VARCHAR},
+      </if>
+      <if test="grade != null">
+        #{grade,jdbcType=VARCHAR},
+      </if>
+      <if test="startTimeDi != null">
+        #{startTimeDi,jdbcType=VARCHAR},
+      </if>
+      <if test="lastEventDi != null">
+        #{lastEventDi,jdbcType=VARCHAR},
+      </if>
+      <if test="nevents != null">
+        #{nevents,jdbcType=VARCHAR},
+      </if>
+      <if test="ndaysAct != null">
+        #{ndaysAct,jdbcType=VARCHAR},
+      </if>
+      <if test="nplayVideo != null">
+        #{nplayVideo,jdbcType=VARCHAR},
+      </if>
+      <if test="nchapters != null">
+        #{nchapters,jdbcType=VARCHAR},
+      </if>
+      <if test="nforumPosts != null">
+        #{nforumPosts,jdbcType=VARCHAR},
+      </if>
+      <if test="roles != null">
+        #{roles,jdbcType=VARCHAR},
+      </if>
+      <if test="incompleteFlag != null">
+        #{incompleteFlag,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.edx.pojo.CfCs">
+    update cf_cs
+    <set>
+      <if test="hcourseId != null">
+        Hcourse_id = #{hcourseId,jdbcType=VARCHAR},
+      </if>
+      <if test="useridDi != null">
+        userid_DI = #{useridDi,jdbcType=VARCHAR},
+      </if>
+      <if test="registered != null">
+        registered = #{registered,jdbcType=VARCHAR},
+      </if>
+      <if test="viewed != null">
+        viewed = #{viewed,jdbcType=VARCHAR},
+      </if>
+      <if test="explored != null">
+        explored = #{explored,jdbcType=VARCHAR},
+      </if>
+      <if test="certified != null">
+        certified = #{certified,jdbcType=VARCHAR},
+      </if>
+      <if test="finalCcCnameDi != null">
+        final_cc_cname_DI = #{finalCcCnameDi,jdbcType=VARCHAR},
+      </if>
+      <if test="loeDi != null">
+        LoE_DI = #{loeDi,jdbcType=VARCHAR},
+      </if>
+      <if test="yob != null">
+        YoB = #{yob,jdbcType=VARCHAR},
+      </if>
+      <if test="gender != null">
+        gender = #{gender,jdbcType=VARCHAR},
+      </if>
+      <if test="grade != null">
+        grade = #{grade,jdbcType=VARCHAR},
+      </if>
+      <if test="startTimeDi != null">
+        start_time_DI = #{startTimeDi,jdbcType=VARCHAR},
+      </if>
+      <if test="lastEventDi != null">
+        last_event_DI = #{lastEventDi,jdbcType=VARCHAR},
+      </if>
+      <if test="nevents != null">
+        nevents = #{nevents,jdbcType=VARCHAR},
+      </if>
+      <if test="ndaysAct != null">
+        ndays_act = #{ndaysAct,jdbcType=VARCHAR},
+      </if>
+      <if test="nplayVideo != null">
+        nplay_video = #{nplayVideo,jdbcType=VARCHAR},
+      </if>
+      <if test="nchapters != null">
+        nchapters = #{nchapters,jdbcType=VARCHAR},
+      </if>
+      <if test="nforumPosts != null">
+        nforum_posts = #{nforumPosts,jdbcType=VARCHAR},
+      </if>
+      <if test="roles != null">
+        roles = #{roles,jdbcType=VARCHAR},
+      </if>
+      <if test="incompleteFlag != null">
+        incomplete_flag = #{incompleteFlag,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where edx_id = #{edxId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.edx.pojo.CfCs">
+    update cf_cs
+    set Hcourse_id = #{hcourseId,jdbcType=VARCHAR},
+      userid_DI = #{useridDi,jdbcType=VARCHAR},
+      registered = #{registered,jdbcType=VARCHAR},
+      viewed = #{viewed,jdbcType=VARCHAR},
+      explored = #{explored,jdbcType=VARCHAR},
+      certified = #{certified,jdbcType=VARCHAR},
+      final_cc_cname_DI = #{finalCcCnameDi,jdbcType=VARCHAR},
+      LoE_DI = #{loeDi,jdbcType=VARCHAR},
+      YoB = #{yob,jdbcType=VARCHAR},
+      gender = #{gender,jdbcType=VARCHAR},
+      grade = #{grade,jdbcType=VARCHAR},
+      start_time_DI = #{startTimeDi,jdbcType=VARCHAR},
+      last_event_DI = #{lastEventDi,jdbcType=VARCHAR},
+      nevents = #{nevents,jdbcType=VARCHAR},
+      ndays_act = #{ndaysAct,jdbcType=VARCHAR},
+      nplay_video = #{nplayVideo,jdbcType=VARCHAR},
+      nchapters = #{nchapters,jdbcType=VARCHAR},
+      nforum_posts = #{nforumPosts,jdbcType=VARCHAR},
+      roles = #{roles,jdbcType=VARCHAR},
+      incomplete_flag = #{incompleteFlag,jdbcType=VARCHAR}
+    where edx_id = #{edxId,jdbcType=INTEGER}
+  </update>
+  <resultMap id="BaseResultMap" type="com.edx.pojo.CfCs">
+    <constructor>
+      <idArg column="edx_id" javaType="java.lang.Integer" jdbcType="INTEGER" />
+      <arg column="Hcourse_id" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="userid_DI" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="registered" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="viewed" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="explored" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="certified" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="final_cc_cname_DI" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="LoE_DI" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="YoB" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="gender" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="grade" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="start_time_DI" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="last_event_DI" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="nevents" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="ndays_act" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="nplay_video" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="nchapters" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="nforum_posts" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="roles" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="incomplete_flag" javaType="java.lang.String" jdbcType="VARCHAR" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List">
+    edx_id, Hcourse_id, userid_DI, registered, viewed, explored, certified, final_cc_cname_DI, 
+    LoE_DI, YoB, gender, grade, start_time_DI, last_event_DI, nevents, ndays_act, nplay_video, 
+    nchapters, nforum_posts, roles, incomplete_flag
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from cf_cs
+    where edx_id = #{edxId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from cf_cs
+    where edx_id = #{edxId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.edx.pojo.CfCs">
+    insert into cf_cs (edx_id, Hcourse_id, userid_DI, 
+      registered, viewed, explored, 
+      certified, final_cc_cname_DI, LoE_DI, 
+      YoB, gender, grade, 
+      start_time_DI, last_event_DI, nevents, 
+      ndays_act, nplay_video, nchapters, 
+      nforum_posts, roles, incomplete_flag
+      )
+    values (#{edxId,jdbcType=INTEGER}, #{hcourseId,jdbcType=VARCHAR}, #{useridDi,jdbcType=VARCHAR}, 
+      #{registered,jdbcType=VARCHAR}, #{viewed,jdbcType=VARCHAR}, #{explored,jdbcType=VARCHAR}, 
+      #{certified,jdbcType=VARCHAR}, #{finalCcCnameDi,jdbcType=VARCHAR}, #{loeDi,jdbcType=VARCHAR}, 
+      #{yob,jdbcType=VARCHAR}, #{gender,jdbcType=VARCHAR}, #{grade,jdbcType=VARCHAR}, 
+      #{startTimeDi,jdbcType=VARCHAR}, #{lastEventDi,jdbcType=VARCHAR}, #{nevents,jdbcType=VARCHAR}, 
+      #{ndaysAct,jdbcType=VARCHAR}, #{nplayVideo,jdbcType=VARCHAR}, #{nchapters,jdbcType=VARCHAR}, 
+      #{nforumPosts,jdbcType=VARCHAR}, #{roles,jdbcType=VARCHAR}, #{incompleteFlag,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.edx.pojo.CfCs">
+    insert into cf_cs
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="edxId != null">
+        edx_id,
+      </if>
+      <if test="hcourseId != null">
+        Hcourse_id,
+      </if>
+      <if test="useridDi != null">
+        userid_DI,
+      </if>
+      <if test="registered != null">
+        registered,
+      </if>
+      <if test="viewed != null">
+        viewed,
+      </if>
+      <if test="explored != null">
+        explored,
+      </if>
+      <if test="certified != null">
+        certified,
+      </if>
+      <if test="finalCcCnameDi != null">
+        final_cc_cname_DI,
+      </if>
+      <if test="loeDi != null">
+        LoE_DI,
+      </if>
+      <if test="yob != null">
+        YoB,
+      </if>
+      <if test="gender != null">
+        gender,
+      </if>
+      <if test="grade != null">
+        grade,
+      </if>
+      <if test="startTimeDi != null">
+        start_time_DI,
+      </if>
+      <if test="lastEventDi != null">
+        last_event_DI,
+      </if>
+      <if test="nevents != null">
+        nevents,
+      </if>
+      <if test="ndaysAct != null">
+        ndays_act,
+      </if>
+      <if test="nplayVideo != null">
+        nplay_video,
+      </if>
+      <if test="nchapters != null">
+        nchapters,
+      </if>
+      <if test="nforumPosts != null">
+        nforum_posts,
+      </if>
+      <if test="roles != null">
+        roles,
+      </if>
+      <if test="incompleteFlag != null">
+        incomplete_flag,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="edxId != null">
+        #{edxId,jdbcType=INTEGER},
+      </if>
+      <if test="hcourseId != null">
+        #{hcourseId,jdbcType=VARCHAR},
+      </if>
+      <if test="useridDi != null">
+        #{useridDi,jdbcType=VARCHAR},
+      </if>
+      <if test="registered != null">
+        #{registered,jdbcType=VARCHAR},
+      </if>
+      <if test="viewed != null">
+        #{viewed,jdbcType=VARCHAR},
+      </if>
+      <if test="explored != null">
+        #{explored,jdbcType=VARCHAR},
+      </if>
+      <if test="certified != null">
+        #{certified,jdbcType=VARCHAR},
+      </if>
+      <if test="finalCcCnameDi != null">
+        #{finalCcCnameDi,jdbcType=VARCHAR},
+      </if>
+      <if test="loeDi != null">
+        #{loeDi,jdbcType=VARCHAR},
+      </if>
+      <if test="yob != null">
+        #{yob,jdbcType=VARCHAR},
+      </if>
+      <if test="gender != null">
+        #{gender,jdbcType=VARCHAR},
+      </if>
+      <if test="grade != null">
+        #{grade,jdbcType=VARCHAR},
+      </if>
+      <if test="startTimeDi != null">
+        #{startTimeDi,jdbcType=VARCHAR},
+      </if>
+      <if test="lastEventDi != null">
+        #{lastEventDi,jdbcType=VARCHAR},
+      </if>
+      <if test="nevents != null">
+        #{nevents,jdbcType=VARCHAR},
+      </if>
+      <if test="ndaysAct != null">
+        #{ndaysAct,jdbcType=VARCHAR},
+      </if>
+      <if test="nplayVideo != null">
+        #{nplayVideo,jdbcType=VARCHAR},
+      </if>
+      <if test="nchapters != null">
+        #{nchapters,jdbcType=VARCHAR},
+      </if>
+      <if test="nforumPosts != null">
+        #{nforumPosts,jdbcType=VARCHAR},
+      </if>
+      <if test="roles != null">
+        #{roles,jdbcType=VARCHAR},
+      </if>
+      <if test="incompleteFlag != null">
+        #{incompleteFlag,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.edx.pojo.CfCs">
+    update cf_cs
+    <set>
+      <if test="hcourseId != null">
+        Hcourse_id = #{hcourseId,jdbcType=VARCHAR},
+      </if>
+      <if test="useridDi != null">
+        userid_DI = #{useridDi,jdbcType=VARCHAR},
+      </if>
+      <if test="registered != null">
+        registered = #{registered,jdbcType=VARCHAR},
+      </if>
+      <if test="viewed != null">
+        viewed = #{viewed,jdbcType=VARCHAR},
+      </if>
+      <if test="explored != null">
+        explored = #{explored,jdbcType=VARCHAR},
+      </if>
+      <if test="certified != null">
+        certified = #{certified,jdbcType=VARCHAR},
+      </if>
+      <if test="finalCcCnameDi != null">
+        final_cc_cname_DI = #{finalCcCnameDi,jdbcType=VARCHAR},
+      </if>
+      <if test="loeDi != null">
+        LoE_DI = #{loeDi,jdbcType=VARCHAR},
+      </if>
+      <if test="yob != null">
+        YoB = #{yob,jdbcType=VARCHAR},
+      </if>
+      <if test="gender != null">
+        gender = #{gender,jdbcType=VARCHAR},
+      </if>
+      <if test="grade != null">
+        grade = #{grade,jdbcType=VARCHAR},
+      </if>
+      <if test="startTimeDi != null">
+        start_time_DI = #{startTimeDi,jdbcType=VARCHAR},
+      </if>
+      <if test="lastEventDi != null">
+        last_event_DI = #{lastEventDi,jdbcType=VARCHAR},
+      </if>
+      <if test="nevents != null">
+        nevents = #{nevents,jdbcType=VARCHAR},
+      </if>
+      <if test="ndaysAct != null">
+        ndays_act = #{ndaysAct,jdbcType=VARCHAR},
+      </if>
+      <if test="nplayVideo != null">
+        nplay_video = #{nplayVideo,jdbcType=VARCHAR},
+      </if>
+      <if test="nchapters != null">
+        nchapters = #{nchapters,jdbcType=VARCHAR},
+      </if>
+      <if test="nforumPosts != null">
+        nforum_posts = #{nforumPosts,jdbcType=VARCHAR},
+      </if>
+      <if test="roles != null">
+        roles = #{roles,jdbcType=VARCHAR},
+      </if>
+      <if test="incompleteFlag != null">
+        incomplete_flag = #{incompleteFlag,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where edx_id = #{edxId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.edx.pojo.CfCs">
+    update cf_cs
+    set Hcourse_id = #{hcourseId,jdbcType=VARCHAR},
+      userid_DI = #{useridDi,jdbcType=VARCHAR},
+      registered = #{registered,jdbcType=VARCHAR},
+      viewed = #{viewed,jdbcType=VARCHAR},
+      explored = #{explored,jdbcType=VARCHAR},
+      certified = #{certified,jdbcType=VARCHAR},
+      final_cc_cname_DI = #{finalCcCnameDi,jdbcType=VARCHAR},
+      LoE_DI = #{loeDi,jdbcType=VARCHAR},
+      YoB = #{yob,jdbcType=VARCHAR},
+      gender = #{gender,jdbcType=VARCHAR},
+      grade = #{grade,jdbcType=VARCHAR},
+      start_time_DI = #{startTimeDi,jdbcType=VARCHAR},
+      last_event_DI = #{lastEventDi,jdbcType=VARCHAR},
+      nevents = #{nevents,jdbcType=VARCHAR},
+      ndays_act = #{ndaysAct,jdbcType=VARCHAR},
+      nplay_video = #{nplayVideo,jdbcType=VARCHAR},
+      nchapters = #{nchapters,jdbcType=VARCHAR},
+      nforum_posts = #{nforumPosts,jdbcType=VARCHAR},
+      roles = #{roles,jdbcType=VARCHAR},
+      incomplete_flag = #{incompleteFlag,jdbcType=VARCHAR}
+    where edx_id = #{edxId,jdbcType=INTEGER}
+  </update>
+  <resultMap id="BaseResultMap" type="com.edx.pojo.CfCs">
+    <constructor>
+      <idArg column="edx_id" javaType="java.lang.Integer" jdbcType="INTEGER" />
+      <arg column="Hcourse_id" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="userid_DI" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="registered" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="viewed" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="explored" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="certified" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="final_cc_cname_DI" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="LoE_DI" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="YoB" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="gender" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="grade" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="start_time_DI" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="last_event_DI" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="nevents" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="ndays_act" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="nplay_video" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="nchapters" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="nforum_posts" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="roles" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="incomplete_flag" javaType="java.lang.String" jdbcType="VARCHAR" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List">
+    edx_id, Hcourse_id, userid_DI, registered, viewed, explored, certified, final_cc_cname_DI, 
+    LoE_DI, YoB, gender, grade, start_time_DI, last_event_DI, nevents, ndays_act, nplay_video, 
+    nchapters, nforum_posts, roles, incomplete_flag
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from cf_cs
+    where edx_id = #{edxId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from cf_cs
+    where edx_id = #{edxId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.edx.pojo.CfCs">
+    insert into cf_cs (edx_id, Hcourse_id, userid_DI, 
+      registered, viewed, explored, 
+      certified, final_cc_cname_DI, LoE_DI, 
+      YoB, gender, grade, 
+      start_time_DI, last_event_DI, nevents, 
+      ndays_act, nplay_video, nchapters, 
+      nforum_posts, roles, incomplete_flag
+      )
+    values (#{edxId,jdbcType=INTEGER}, #{hcourseId,jdbcType=VARCHAR}, #{useridDi,jdbcType=VARCHAR}, 
+      #{registered,jdbcType=VARCHAR}, #{viewed,jdbcType=VARCHAR}, #{explored,jdbcType=VARCHAR}, 
+      #{certified,jdbcType=VARCHAR}, #{finalCcCnameDi,jdbcType=VARCHAR}, #{loeDi,jdbcType=VARCHAR}, 
+      #{yob,jdbcType=VARCHAR}, #{gender,jdbcType=VARCHAR}, #{grade,jdbcType=VARCHAR}, 
+      #{startTimeDi,jdbcType=VARCHAR}, #{lastEventDi,jdbcType=VARCHAR}, #{nevents,jdbcType=VARCHAR}, 
+      #{ndaysAct,jdbcType=VARCHAR}, #{nplayVideo,jdbcType=VARCHAR}, #{nchapters,jdbcType=VARCHAR}, 
+      #{nforumPosts,jdbcType=VARCHAR}, #{roles,jdbcType=VARCHAR}, #{incompleteFlag,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.edx.pojo.CfCs">
+    insert into cf_cs
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="edxId != null">
+        edx_id,
+      </if>
+      <if test="hcourseId != null">
+        Hcourse_id,
+      </if>
+      <if test="useridDi != null">
+        userid_DI,
+      </if>
+      <if test="registered != null">
+        registered,
+      </if>
+      <if test="viewed != null">
+        viewed,
+      </if>
+      <if test="explored != null">
+        explored,
+      </if>
+      <if test="certified != null">
+        certified,
+      </if>
+      <if test="finalCcCnameDi != null">
+        final_cc_cname_DI,
+      </if>
+      <if test="loeDi != null">
+        LoE_DI,
+      </if>
+      <if test="yob != null">
+        YoB,
+      </if>
+      <if test="gender != null">
+        gender,
+      </if>
+      <if test="grade != null">
+        grade,
+      </if>
+      <if test="startTimeDi != null">
+        start_time_DI,
+      </if>
+      <if test="lastEventDi != null">
+        last_event_DI,
+      </if>
+      <if test="nevents != null">
+        nevents,
+      </if>
+      <if test="ndaysAct != null">
+        ndays_act,
+      </if>
+      <if test="nplayVideo != null">
+        nplay_video,
+      </if>
+      <if test="nchapters != null">
+        nchapters,
+      </if>
+      <if test="nforumPosts != null">
+        nforum_posts,
+      </if>
+      <if test="roles != null">
+        roles,
+      </if>
+      <if test="incompleteFlag != null">
+        incomplete_flag,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="edxId != null">
+        #{edxId,jdbcType=INTEGER},
+      </if>
+      <if test="hcourseId != null">
+        #{hcourseId,jdbcType=VARCHAR},
+      </if>
+      <if test="useridDi != null">
+        #{useridDi,jdbcType=VARCHAR},
+      </if>
+      <if test="registered != null">
+        #{registered,jdbcType=VARCHAR},
+      </if>
+      <if test="viewed != null">
+        #{viewed,jdbcType=VARCHAR},
+      </if>
+      <if test="explored != null">
+        #{explored,jdbcType=VARCHAR},
+      </if>
+      <if test="certified != null">
+        #{certified,jdbcType=VARCHAR},
+      </if>
+      <if test="finalCcCnameDi != null">
+        #{finalCcCnameDi,jdbcType=VARCHAR},
+      </if>
+      <if test="loeDi != null">
+        #{loeDi,jdbcType=VARCHAR},
+      </if>
+      <if test="yob != null">
+        #{yob,jdbcType=VARCHAR},
+      </if>
+      <if test="gender != null">
+        #{gender,jdbcType=VARCHAR},
+      </if>
+      <if test="grade != null">
+        #{grade,jdbcType=VARCHAR},
+      </if>
+      <if test="startTimeDi != null">
+        #{startTimeDi,jdbcType=VARCHAR},
+      </if>
+      <if test="lastEventDi != null">
+        #{lastEventDi,jdbcType=VARCHAR},
+      </if>
+      <if test="nevents != null">
+        #{nevents,jdbcType=VARCHAR},
+      </if>
+      <if test="ndaysAct != null">
+        #{ndaysAct,jdbcType=VARCHAR},
+      </if>
+      <if test="nplayVideo != null">
+        #{nplayVideo,jdbcType=VARCHAR},
+      </if>
+      <if test="nchapters != null">
+        #{nchapters,jdbcType=VARCHAR},
+      </if>
+      <if test="nforumPosts != null">
+        #{nforumPosts,jdbcType=VARCHAR},
+      </if>
+      <if test="roles != null">
+        #{roles,jdbcType=VARCHAR},
+      </if>
+      <if test="incompleteFlag != null">
+        #{incompleteFlag,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.edx.pojo.CfCs">
+    update cf_cs
+    <set>
+      <if test="hcourseId != null">
+        Hcourse_id = #{hcourseId,jdbcType=VARCHAR},
+      </if>
+      <if test="useridDi != null">
+        userid_DI = #{useridDi,jdbcType=VARCHAR},
+      </if>
+      <if test="registered != null">
+        registered = #{registered,jdbcType=VARCHAR},
+      </if>
+      <if test="viewed != null">
+        viewed = #{viewed,jdbcType=VARCHAR},
+      </if>
+      <if test="explored != null">
+        explored = #{explored,jdbcType=VARCHAR},
+      </if>
+      <if test="certified != null">
+        certified = #{certified,jdbcType=VARCHAR},
+      </if>
+      <if test="finalCcCnameDi != null">
+        final_cc_cname_DI = #{finalCcCnameDi,jdbcType=VARCHAR},
+      </if>
+      <if test="loeDi != null">
+        LoE_DI = #{loeDi,jdbcType=VARCHAR},
+      </if>
+      <if test="yob != null">
+        YoB = #{yob,jdbcType=VARCHAR},
+      </if>
+      <if test="gender != null">
+        gender = #{gender,jdbcType=VARCHAR},
+      </if>
+      <if test="grade != null">
+        grade = #{grade,jdbcType=VARCHAR},
+      </if>
+      <if test="startTimeDi != null">
+        start_time_DI = #{startTimeDi,jdbcType=VARCHAR},
+      </if>
+      <if test="lastEventDi != null">
+        last_event_DI = #{lastEventDi,jdbcType=VARCHAR},
+      </if>
+      <if test="nevents != null">
+        nevents = #{nevents,jdbcType=VARCHAR},
+      </if>
+      <if test="ndaysAct != null">
+        ndays_act = #{ndaysAct,jdbcType=VARCHAR},
+      </if>
+      <if test="nplayVideo != null">
+        nplay_video = #{nplayVideo,jdbcType=VARCHAR},
+      </if>
+      <if test="nchapters != null">
+        nchapters = #{nchapters,jdbcType=VARCHAR},
+      </if>
+      <if test="nforumPosts != null">
+        nforum_posts = #{nforumPosts,jdbcType=VARCHAR},
+      </if>
+      <if test="roles != null">
+        roles = #{roles,jdbcType=VARCHAR},
+      </if>
+      <if test="incompleteFlag != null">
+        incomplete_flag = #{incompleteFlag,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where edx_id = #{edxId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.edx.pojo.CfCs">
+    update cf_cs
+    set Hcourse_id = #{hcourseId,jdbcType=VARCHAR},
+      userid_DI = #{useridDi,jdbcType=VARCHAR},
+      registered = #{registered,jdbcType=VARCHAR},
+      viewed = #{viewed,jdbcType=VARCHAR},
+      explored = #{explored,jdbcType=VARCHAR},
+      certified = #{certified,jdbcType=VARCHAR},
+      final_cc_cname_DI = #{finalCcCnameDi,jdbcType=VARCHAR},
+      LoE_DI = #{loeDi,jdbcType=VARCHAR},
+      YoB = #{yob,jdbcType=VARCHAR},
+      gender = #{gender,jdbcType=VARCHAR},
+      grade = #{grade,jdbcType=VARCHAR},
+      start_time_DI = #{startTimeDi,jdbcType=VARCHAR},
+      last_event_DI = #{lastEventDi,jdbcType=VARCHAR},
+      nevents = #{nevents,jdbcType=VARCHAR},
+      ndays_act = #{ndaysAct,jdbcType=VARCHAR},
+      nplay_video = #{nplayVideo,jdbcType=VARCHAR},
+      nchapters = #{nchapters,jdbcType=VARCHAR},
+      nforum_posts = #{nforumPosts,jdbcType=VARCHAR},
+      roles = #{roles,jdbcType=VARCHAR},
+      incomplete_flag = #{incompleteFlag,jdbcType=VARCHAR}
+    where edx_id = #{edxId,jdbcType=INTEGER}
+  </update>
+</mapper>

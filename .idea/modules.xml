@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/MOOC.iml" filepath="$PROJECT_DIR$/.idea/MOOC.iml" />
       <module fileurl="file://$PROJECT_DIR$/apache-tomcat-8.5.29/webapps/examples/WEB-INF/WEB-INF.iml" filepath="$PROJECT_DIR$/apache-tomcat-8.5.29/webapps/examples/WEB-INF/WEB-INF.iml" />
       <module fileurl="file://$PROJECT_DIR$/apache-tomcat-8.5.29/webapps/examples/WEB-INF/jsp/jsp.iml" filepath="$PROJECT_DIR$/apache-tomcat-8.5.29/webapps/examples/WEB-INF/jsp/jsp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mooc_edx/mooc_edx.iml" filepath="$PROJECT_DIR$/mooc_edx/mooc_edx.iml" />
       <module fileurl="file://$PROJECT_DIR$/apache-tomcat-8.5.29/webapps/examples/jsp/plugin/plugin.iml" filepath="$PROJECT_DIR$/apache-tomcat-8.5.29/webapps/examples/jsp/plugin/plugin.iml" />
       <module fileurl="file://$PROJECT_DIR$/apache-tomcat-8.5.29/webapps/docs/appdev/sample/sample.iml" filepath="$PROJECT_DIR$/apache-tomcat-8.5.29/webapps/docs/appdev/sample/sample.iml" />
     </modules>

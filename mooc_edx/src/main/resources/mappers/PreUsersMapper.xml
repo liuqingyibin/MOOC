@@ -1,0 +1,932 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.edx.dao.PreUsersMapper">
+  <resultMap id="BaseResultMap" type="com.edx.pojo.PreUsers">
+    <constructor>
+      <idArg column="uid" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <idArg column="cid" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="registered" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="viewed" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="explored" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="certified" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="location" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="learner_level" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="age" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="gender" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="grade" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="time_span" javaType="java.lang.Double" jdbcType="DOUBLE" />
+      <arg column="nevents" javaType="java.lang.Double" jdbcType="DOUBLE" />
+      <arg column="ndays" javaType="java.lang.Double" jdbcType="DOUBLE" />
+      <arg column="nplay_videos" javaType="java.lang.Double" jdbcType="DOUBLE" />
+      <arg column="nchapters" javaType="java.lang.Double" jdbcType="DOUBLE" />
+      <arg column="nforum_posts" javaType="java.lang.Double" jdbcType="DOUBLE" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List">
+    uid, cid, registered, viewed, explored, certified, location, learner_level, age, 
+    gender, grade, time_span, nevents, ndays, nplay_videos, nchapters, nforum_posts
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="com.edx.pojo.PreUsersKey" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from pre_users
+    where uid = #{uid,jdbcType=VARCHAR}
+      and cid = #{cid,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="com.edx.pojo.PreUsersKey">
+    delete from pre_users
+    where uid = #{uid,jdbcType=VARCHAR}
+      and cid = #{cid,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.edx.pojo.PreUsers">
+    insert into pre_users (uid, cid, registered, 
+      viewed, explored, certified, 
+      location, learner_level, age, 
+      gender, grade, time_span, 
+      nevents, ndays, nplay_videos, 
+      nchapters, nforum_posts)
+    values (#{uid,jdbcType=VARCHAR}, #{cid,jdbcType=VARCHAR}, #{registered,jdbcType=VARCHAR}, 
+      #{viewed,jdbcType=VARCHAR}, #{explored,jdbcType=VARCHAR}, #{certified,jdbcType=VARCHAR}, 
+      #{location,jdbcType=VARCHAR}, #{learnerLevel,jdbcType=VARCHAR}, #{age,jdbcType=VARCHAR}, 
+      #{gender,jdbcType=VARCHAR}, #{grade,jdbcType=VARCHAR}, #{timeSpan,jdbcType=DOUBLE}, 
+      #{nevents,jdbcType=DOUBLE}, #{ndays,jdbcType=DOUBLE}, #{nplayVideos,jdbcType=DOUBLE}, 
+      #{nchapters,jdbcType=DOUBLE}, #{nforumPosts,jdbcType=DOUBLE})
+  </insert>
+  <insert id="insertSelective" parameterType="com.edx.pojo.PreUsers">
+    insert into pre_users
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="uid != null">
+        uid,
+      </if>
+      <if test="cid != null">
+        cid,
+      </if>
+      <if test="registered != null">
+        registered,
+      </if>
+      <if test="viewed != null">
+        viewed,
+      </if>
+      <if test="explored != null">
+        explored,
+      </if>
+      <if test="certified != null">
+        certified,
+      </if>
+      <if test="location != null">
+        location,
+      </if>
+      <if test="learnerLevel != null">
+        learner_level,
+      </if>
+      <if test="age != null">
+        age,
+      </if>
+      <if test="gender != null">
+        gender,
+      </if>
+      <if test="grade != null">
+        grade,
+      </if>
+      <if test="timeSpan != null">
+        time_span,
+      </if>
+      <if test="nevents != null">
+        nevents,
+      </if>
+      <if test="ndays != null">
+        ndays,
+      </if>
+      <if test="nplayVideos != null">
+        nplay_videos,
+      </if>
+      <if test="nchapters != null">
+        nchapters,
+      </if>
+      <if test="nforumPosts != null">
+        nforum_posts,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="uid != null">
+        #{uid,jdbcType=VARCHAR},
+      </if>
+      <if test="cid != null">
+        #{cid,jdbcType=VARCHAR},
+      </if>
+      <if test="registered != null">
+        #{registered,jdbcType=VARCHAR},
+      </if>
+      <if test="viewed != null">
+        #{viewed,jdbcType=VARCHAR},
+      </if>
+      <if test="explored != null">
+        #{explored,jdbcType=VARCHAR},
+      </if>
+      <if test="certified != null">
+        #{certified,jdbcType=VARCHAR},
+      </if>
+      <if test="location != null">
+        #{location,jdbcType=VARCHAR},
+      </if>
+      <if test="learnerLevel != null">
+        #{learnerLevel,jdbcType=VARCHAR},
+      </if>
+      <if test="age != null">
+        #{age,jdbcType=VARCHAR},
+      </if>
+      <if test="gender != null">
+        #{gender,jdbcType=VARCHAR},
+      </if>
+      <if test="grade != null">
+        #{grade,jdbcType=VARCHAR},
+      </if>
+      <if test="timeSpan != null">
+        #{timeSpan,jdbcType=DOUBLE},
+      </if>
+      <if test="nevents != null">
+        #{nevents,jdbcType=DOUBLE},
+      </if>
+      <if test="ndays != null">
+        #{ndays,jdbcType=DOUBLE},
+      </if>
+      <if test="nplayVideos != null">
+        #{nplayVideos,jdbcType=DOUBLE},
+      </if>
+      <if test="nchapters != null">
+        #{nchapters,jdbcType=DOUBLE},
+      </if>
+      <if test="nforumPosts != null">
+        #{nforumPosts,jdbcType=DOUBLE},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.edx.pojo.PreUsers">
+    update pre_users
+    <set>
+      <if test="registered != null">
+        registered = #{registered,jdbcType=VARCHAR},
+      </if>
+      <if test="viewed != null">
+        viewed = #{viewed,jdbcType=VARCHAR},
+      </if>
+      <if test="explored != null">
+        explored = #{explored,jdbcType=VARCHAR},
+      </if>
+      <if test="certified != null">
+        certified = #{certified,jdbcType=VARCHAR},
+      </if>
+      <if test="location != null">
+        location = #{location,jdbcType=VARCHAR},
+      </if>
+      <if test="learnerLevel != null">
+        learner_level = #{learnerLevel,jdbcType=VARCHAR},
+      </if>
+      <if test="age != null">
+        age = #{age,jdbcType=VARCHAR},
+      </if>
+      <if test="gender != null">
+        gender = #{gender,jdbcType=VARCHAR},
+      </if>
+      <if test="grade != null">
+        grade = #{grade,jdbcType=VARCHAR},
+      </if>
+      <if test="timeSpan != null">
+        time_span = #{timeSpan,jdbcType=DOUBLE},
+      </if>
+      <if test="nevents != null">
+        nevents = #{nevents,jdbcType=DOUBLE},
+      </if>
+      <if test="ndays != null">
+        ndays = #{ndays,jdbcType=DOUBLE},
+      </if>
+      <if test="nplayVideos != null">
+        nplay_videos = #{nplayVideos,jdbcType=DOUBLE},
+      </if>
+      <if test="nchapters != null">
+        nchapters = #{nchapters,jdbcType=DOUBLE},
+      </if>
+      <if test="nforumPosts != null">
+        nforum_posts = #{nforumPosts,jdbcType=DOUBLE},
+      </if>
+    </set>
+    where uid = #{uid,jdbcType=VARCHAR}
+      and cid = #{cid,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.edx.pojo.PreUsers">
+    update pre_users
+    set registered = #{registered,jdbcType=VARCHAR},
+      viewed = #{viewed,jdbcType=VARCHAR},
+      explored = #{explored,jdbcType=VARCHAR},
+      certified = #{certified,jdbcType=VARCHAR},
+      location = #{location,jdbcType=VARCHAR},
+      learner_level = #{learnerLevel,jdbcType=VARCHAR},
+      age = #{age,jdbcType=VARCHAR},
+      gender = #{gender,jdbcType=VARCHAR},
+      grade = #{grade,jdbcType=VARCHAR},
+      time_span = #{timeSpan,jdbcType=DOUBLE},
+      nevents = #{nevents,jdbcType=DOUBLE},
+      ndays = #{ndays,jdbcType=DOUBLE},
+      nplay_videos = #{nplayVideos,jdbcType=DOUBLE},
+      nchapters = #{nchapters,jdbcType=DOUBLE},
+      nforum_posts = #{nforumPosts,jdbcType=DOUBLE}
+    where uid = #{uid,jdbcType=VARCHAR}
+      and cid = #{cid,jdbcType=VARCHAR}
+  </update>
+  <resultMap id="BaseResultMap" type="com.edx.pojo.PreUsers">
+    <constructor>
+      <idArg column="uid" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <idArg column="cid" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="registered" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="viewed" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="explored" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="certified" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="location" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="learner_level" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="age" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="gender" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="grade" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="time_span" javaType="java.lang.Double" jdbcType="DOUBLE" />
+      <arg column="nevents" javaType="java.lang.Double" jdbcType="DOUBLE" />
+      <arg column="ndays" javaType="java.lang.Double" jdbcType="DOUBLE" />
+      <arg column="nplay_videos" javaType="java.lang.Double" jdbcType="DOUBLE" />
+      <arg column="nchapters" javaType="java.lang.Double" jdbcType="DOUBLE" />
+      <arg column="nforum_posts" javaType="java.lang.Double" jdbcType="DOUBLE" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List">
+    uid, cid, registered, viewed, explored, certified, location, learner_level, age, 
+    gender, grade, time_span, nevents, ndays, nplay_videos, nchapters, nforum_posts
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="com.edx.pojo.PreUsersKey" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from pre_users
+    where uid = #{uid,jdbcType=VARCHAR}
+      and cid = #{cid,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="com.edx.pojo.PreUsersKey">
+    delete from pre_users
+    where uid = #{uid,jdbcType=VARCHAR}
+      and cid = #{cid,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.edx.pojo.PreUsers">
+    insert into pre_users (uid, cid, registered, 
+      viewed, explored, certified, 
+      location, learner_level, age, 
+      gender, grade, time_span, 
+      nevents, ndays, nplay_videos, 
+      nchapters, nforum_posts)
+    values (#{uid,jdbcType=VARCHAR}, #{cid,jdbcType=VARCHAR}, #{registered,jdbcType=VARCHAR}, 
+      #{viewed,jdbcType=VARCHAR}, #{explored,jdbcType=VARCHAR}, #{certified,jdbcType=VARCHAR}, 
+      #{location,jdbcType=VARCHAR}, #{learnerLevel,jdbcType=VARCHAR}, #{age,jdbcType=VARCHAR}, 
+      #{gender,jdbcType=VARCHAR}, #{grade,jdbcType=VARCHAR}, #{timeSpan,jdbcType=DOUBLE}, 
+      #{nevents,jdbcType=DOUBLE}, #{ndays,jdbcType=DOUBLE}, #{nplayVideos,jdbcType=DOUBLE}, 
+      #{nchapters,jdbcType=DOUBLE}, #{nforumPosts,jdbcType=DOUBLE})
+  </insert>
+  <insert id="insertSelective" parameterType="com.edx.pojo.PreUsers">
+    insert into pre_users
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="uid != null">
+        uid,
+      </if>
+      <if test="cid != null">
+        cid,
+      </if>
+      <if test="registered != null">
+        registered,
+      </if>
+      <if test="viewed != null">
+        viewed,
+      </if>
+      <if test="explored != null">
+        explored,
+      </if>
+      <if test="certified != null">
+        certified,
+      </if>
+      <if test="location != null">
+        location,
+      </if>
+      <if test="learnerLevel != null">
+        learner_level,
+      </if>
+      <if test="age != null">
+        age,
+      </if>
+      <if test="gender != null">
+        gender,
+      </if>
+      <if test="grade != null">
+        grade,
+      </if>
+      <if test="timeSpan != null">
+        time_span,
+      </if>
+      <if test="nevents != null">
+        nevents,
+      </if>
+      <if test="ndays != null">
+        ndays,
+      </if>
+      <if test="nplayVideos != null">
+        nplay_videos,
+      </if>
+      <if test="nchapters != null">
+        nchapters,
+      </if>
+      <if test="nforumPosts != null">
+        nforum_posts,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="uid != null">
+        #{uid,jdbcType=VARCHAR},
+      </if>
+      <if test="cid != null">
+        #{cid,jdbcType=VARCHAR},
+      </if>
+      <if test="registered != null">
+        #{registered,jdbcType=VARCHAR},
+      </if>
+      <if test="viewed != null">
+        #{viewed,jdbcType=VARCHAR},
+      </if>
+      <if test="explored != null">
+        #{explored,jdbcType=VARCHAR},
+      </if>
+      <if test="certified != null">
+        #{certified,jdbcType=VARCHAR},
+      </if>
+      <if test="location != null">
+        #{location,jdbcType=VARCHAR},
+      </if>
+      <if test="learnerLevel != null">
+        #{learnerLevel,jdbcType=VARCHAR},
+      </if>
+      <if test="age != null">
+        #{age,jdbcType=VARCHAR},
+      </if>
+      <if test="gender != null">
+        #{gender,jdbcType=VARCHAR},
+      </if>
+      <if test="grade != null">
+        #{grade,jdbcType=VARCHAR},
+      </if>
+      <if test="timeSpan != null">
+        #{timeSpan,jdbcType=DOUBLE},
+      </if>
+      <if test="nevents != null">
+        #{nevents,jdbcType=DOUBLE},
+      </if>
+      <if test="ndays != null">
+        #{ndays,jdbcType=DOUBLE},
+      </if>
+      <if test="nplayVideos != null">
+        #{nplayVideos,jdbcType=DOUBLE},
+      </if>
+      <if test="nchapters != null">
+        #{nchapters,jdbcType=DOUBLE},
+      </if>
+      <if test="nforumPosts != null">
+        #{nforumPosts,jdbcType=DOUBLE},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.edx.pojo.PreUsers">
+    update pre_users
+    <set>
+      <if test="registered != null">
+        registered = #{registered,jdbcType=VARCHAR},
+      </if>
+      <if test="viewed != null">
+        viewed = #{viewed,jdbcType=VARCHAR},
+      </if>
+      <if test="explored != null">
+        explored = #{explored,jdbcType=VARCHAR},
+      </if>
+      <if test="certified != null">
+        certified = #{certified,jdbcType=VARCHAR},
+      </if>
+      <if test="location != null">
+        location = #{location,jdbcType=VARCHAR},
+      </if>
+      <if test="learnerLevel != null">
+        learner_level = #{learnerLevel,jdbcType=VARCHAR},
+      </if>
+      <if test="age != null">
+        age = #{age,jdbcType=VARCHAR},
+      </if>
+      <if test="gender != null">
+        gender = #{gender,jdbcType=VARCHAR},
+      </if>
+      <if test="grade != null">
+        grade = #{grade,jdbcType=VARCHAR},
+      </if>
+      <if test="timeSpan != null">
+        time_span = #{timeSpan,jdbcType=DOUBLE},
+      </if>
+      <if test="nevents != null">
+        nevents = #{nevents,jdbcType=DOUBLE},
+      </if>
+      <if test="ndays != null">
+        ndays = #{ndays,jdbcType=DOUBLE},
+      </if>
+      <if test="nplayVideos != null">
+        nplay_videos = #{nplayVideos,jdbcType=DOUBLE},
+      </if>
+      <if test="nchapters != null">
+        nchapters = #{nchapters,jdbcType=DOUBLE},
+      </if>
+      <if test="nforumPosts != null">
+        nforum_posts = #{nforumPosts,jdbcType=DOUBLE},
+      </if>
+    </set>
+    where uid = #{uid,jdbcType=VARCHAR}
+      and cid = #{cid,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.edx.pojo.PreUsers">
+    update pre_users
+    set registered = #{registered,jdbcType=VARCHAR},
+      viewed = #{viewed,jdbcType=VARCHAR},
+      explored = #{explored,jdbcType=VARCHAR},
+      certified = #{certified,jdbcType=VARCHAR},
+      location = #{location,jdbcType=VARCHAR},
+      learner_level = #{learnerLevel,jdbcType=VARCHAR},
+      age = #{age,jdbcType=VARCHAR},
+      gender = #{gender,jdbcType=VARCHAR},
+      grade = #{grade,jdbcType=VARCHAR},
+      time_span = #{timeSpan,jdbcType=DOUBLE},
+      nevents = #{nevents,jdbcType=DOUBLE},
+      ndays = #{ndays,jdbcType=DOUBLE},
+      nplay_videos = #{nplayVideos,jdbcType=DOUBLE},
+      nchapters = #{nchapters,jdbcType=DOUBLE},
+      nforum_posts = #{nforumPosts,jdbcType=DOUBLE}
+    where uid = #{uid,jdbcType=VARCHAR}
+      and cid = #{cid,jdbcType=VARCHAR}
+  </update>
+  <resultMap id="BaseResultMap" type="com.edx.pojo.PreUsers">
+    <constructor>
+      <idArg column="uid" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <idArg column="cid" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="registered" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="viewed" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="explored" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="certified" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="location" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="learner_level" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="age" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="gender" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="grade" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="time_span" javaType="java.lang.Double" jdbcType="DOUBLE" />
+      <arg column="nevents" javaType="java.lang.Double" jdbcType="DOUBLE" />
+      <arg column="ndays" javaType="java.lang.Double" jdbcType="DOUBLE" />
+      <arg column="nplay_videos" javaType="java.lang.Double" jdbcType="DOUBLE" />
+      <arg column="nchapters" javaType="java.lang.Double" jdbcType="DOUBLE" />
+      <arg column="nforum_posts" javaType="java.lang.Double" jdbcType="DOUBLE" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List">
+    uid, cid, registered, viewed, explored, certified, location, learner_level, age, 
+    gender, grade, time_span, nevents, ndays, nplay_videos, nchapters, nforum_posts
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="com.edx.pojo.PreUsersKey" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from pre_users
+    where uid = #{uid,jdbcType=VARCHAR}
+      and cid = #{cid,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="com.edx.pojo.PreUsersKey">
+    delete from pre_users
+    where uid = #{uid,jdbcType=VARCHAR}
+      and cid = #{cid,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.edx.pojo.PreUsers">
+    insert into pre_users (uid, cid, registered, 
+      viewed, explored, certified, 
+      location, learner_level, age, 
+      gender, grade, time_span, 
+      nevents, ndays, nplay_videos, 
+      nchapters, nforum_posts)
+    values (#{uid,jdbcType=VARCHAR}, #{cid,jdbcType=VARCHAR}, #{registered,jdbcType=VARCHAR}, 
+      #{viewed,jdbcType=VARCHAR}, #{explored,jdbcType=VARCHAR}, #{certified,jdbcType=VARCHAR}, 
+      #{location,jdbcType=VARCHAR}, #{learnerLevel,jdbcType=VARCHAR}, #{age,jdbcType=VARCHAR}, 
+      #{gender,jdbcType=VARCHAR}, #{grade,jdbcType=VARCHAR}, #{timeSpan,jdbcType=DOUBLE}, 
+      #{nevents,jdbcType=DOUBLE}, #{ndays,jdbcType=DOUBLE}, #{nplayVideos,jdbcType=DOUBLE}, 
+      #{nchapters,jdbcType=DOUBLE}, #{nforumPosts,jdbcType=DOUBLE})
+  </insert>
+  <insert id="insertSelective" parameterType="com.edx.pojo.PreUsers">
+    insert into pre_users
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="uid != null">
+        uid,
+      </if>
+      <if test="cid != null">
+        cid,
+      </if>
+      <if test="registered != null">
+        registered,
+      </if>
+      <if test="viewed != null">
+        viewed,
+      </if>
+      <if test="explored != null">
+        explored,
+      </if>
+      <if test="certified != null">
+        certified,
+      </if>
+      <if test="location != null">
+        location,
+      </if>
+      <if test="learnerLevel != null">
+        learner_level,
+      </if>
+      <if test="age != null">
+        age,
+      </if>
+      <if test="gender != null">
+        gender,
+      </if>
+      <if test="grade != null">
+        grade,
+      </if>
+      <if test="timeSpan != null">
+        time_span,
+      </if>
+      <if test="nevents != null">
+        nevents,
+      </if>
+      <if test="ndays != null">
+        ndays,
+      </if>
+      <if test="nplayVideos != null">
+        nplay_videos,
+      </if>
+      <if test="nchapters != null">
+        nchapters,
+      </if>
+      <if test="nforumPosts != null">
+        nforum_posts,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="uid != null">
+        #{uid,jdbcType=VARCHAR},
+      </if>
+      <if test="cid != null">
+        #{cid,jdbcType=VARCHAR},
+      </if>
+      <if test="registered != null">
+        #{registered,jdbcType=VARCHAR},
+      </if>
+      <if test="viewed != null">
+        #{viewed,jdbcType=VARCHAR},
+      </if>
+      <if test="explored != null">
+        #{explored,jdbcType=VARCHAR},
+      </if>
+      <if test="certified != null">
+        #{certified,jdbcType=VARCHAR},
+      </if>
+      <if test="location != null">
+        #{location,jdbcType=VARCHAR},
+      </if>
+      <if test="learnerLevel != null">
+        #{learnerLevel,jdbcType=VARCHAR},
+      </if>
+      <if test="age != null">
+        #{age,jdbcType=VARCHAR},
+      </if>
+      <if test="gender != null">
+        #{gender,jdbcType=VARCHAR},
+      </if>
+      <if test="grade != null">
+        #{grade,jdbcType=VARCHAR},
+      </if>
+      <if test="timeSpan != null">
+        #{timeSpan,jdbcType=DOUBLE},
+      </if>
+      <if test="nevents != null">
+        #{nevents,jdbcType=DOUBLE},
+      </if>
+      <if test="ndays != null">
+        #{ndays,jdbcType=DOUBLE},
+      </if>
+      <if test="nplayVideos != null">
+        #{nplayVideos,jdbcType=DOUBLE},
+      </if>
+      <if test="nchapters != null">
+        #{nchapters,jdbcType=DOUBLE},
+      </if>
+      <if test="nforumPosts != null">
+        #{nforumPosts,jdbcType=DOUBLE},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.edx.pojo.PreUsers">
+    update pre_users
+    <set>
+      <if test="registered != null">
+        registered = #{registered,jdbcType=VARCHAR},
+      </if>
+      <if test="viewed != null">
+        viewed = #{viewed,jdbcType=VARCHAR},
+      </if>
+      <if test="explored != null">
+        explored = #{explored,jdbcType=VARCHAR},
+      </if>
+      <if test="certified != null">
+        certified = #{certified,jdbcType=VARCHAR},
+      </if>
+      <if test="location != null">
+        location = #{location,jdbcType=VARCHAR},
+      </if>
+      <if test="learnerLevel != null">
+        learner_level = #{learnerLevel,jdbcType=VARCHAR},
+      </if>
+      <if test="age != null">
+        age = #{age,jdbcType=VARCHAR},
+      </if>
+      <if test="gender != null">
+        gender = #{gender,jdbcType=VARCHAR},
+      </if>
+      <if test="grade != null">
+        grade = #{grade,jdbcType=VARCHAR},
+      </if>
+      <if test="timeSpan != null">
+        time_span = #{timeSpan,jdbcType=DOUBLE},
+      </if>
+      <if test="nevents != null">
+        nevents = #{nevents,jdbcType=DOUBLE},
+      </if>
+      <if test="ndays != null">
+        ndays = #{ndays,jdbcType=DOUBLE},
+      </if>
+      <if test="nplayVideos != null">
+        nplay_videos = #{nplayVideos,jdbcType=DOUBLE},
+      </if>
+      <if test="nchapters != null">
+        nchapters = #{nchapters,jdbcType=DOUBLE},
+      </if>
+      <if test="nforumPosts != null">
+        nforum_posts = #{nforumPosts,jdbcType=DOUBLE},
+      </if>
+    </set>
+    where uid = #{uid,jdbcType=VARCHAR}
+      and cid = #{cid,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.edx.pojo.PreUsers">
+    update pre_users
+    set registered = #{registered,jdbcType=VARCHAR},
+      viewed = #{viewed,jdbcType=VARCHAR},
+      explored = #{explored,jdbcType=VARCHAR},
+      certified = #{certified,jdbcType=VARCHAR},
+      location = #{location,jdbcType=VARCHAR},
+      learner_level = #{learnerLevel,jdbcType=VARCHAR},
+      age = #{age,jdbcType=VARCHAR},
+      gender = #{gender,jdbcType=VARCHAR},
+      grade = #{grade,jdbcType=VARCHAR},
+      time_span = #{timeSpan,jdbcType=DOUBLE},
+      nevents = #{nevents,jdbcType=DOUBLE},
+      ndays = #{ndays,jdbcType=DOUBLE},
+      nplay_videos = #{nplayVideos,jdbcType=DOUBLE},
+      nchapters = #{nchapters,jdbcType=DOUBLE},
+      nforum_posts = #{nforumPosts,jdbcType=DOUBLE}
+    where uid = #{uid,jdbcType=VARCHAR}
+      and cid = #{cid,jdbcType=VARCHAR}
+  </update>
+  <resultMap id="BaseResultMap" type="com.edx.pojo.PreUsers">
+    <constructor>
+      <idArg column="uid" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <idArg column="cid" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="registered" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="viewed" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="explored" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="certified" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="location" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="learner_level" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="age" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="gender" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="grade" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="time_span" javaType="java.lang.Double" jdbcType="DOUBLE" />
+      <arg column="nevents" javaType="java.lang.Double" jdbcType="DOUBLE" />
+      <arg column="ndays" javaType="java.lang.Double" jdbcType="DOUBLE" />
+      <arg column="nplay_videos" javaType="java.lang.Double" jdbcType="DOUBLE" />
+      <arg column="nchapters" javaType="java.lang.Double" jdbcType="DOUBLE" />
+      <arg column="nforum_posts" javaType="java.lang.Double" jdbcType="DOUBLE" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List">
+    uid, cid, registered, viewed, explored, certified, location, learner_level, age, 
+    gender, grade, time_span, nevents, ndays, nplay_videos, nchapters, nforum_posts
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="com.edx.pojo.PreUsersKey" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from pre_users
+    where uid = #{uid,jdbcType=VARCHAR}
+      and cid = #{cid,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="com.edx.pojo.PreUsersKey">
+    delete from pre_users
+    where uid = #{uid,jdbcType=VARCHAR}
+      and cid = #{cid,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.edx.pojo.PreUsers">
+    insert into pre_users (uid, cid, registered, 
+      viewed, explored, certified, 
+      location, learner_level, age, 
+      gender, grade, time_span, 
+      nevents, ndays, nplay_videos, 
+      nchapters, nforum_posts)
+    values (#{uid,jdbcType=VARCHAR}, #{cid,jdbcType=VARCHAR}, #{registered,jdbcType=VARCHAR}, 
+      #{viewed,jdbcType=VARCHAR}, #{explored,jdbcType=VARCHAR}, #{certified,jdbcType=VARCHAR}, 
+      #{location,jdbcType=VARCHAR}, #{learnerLevel,jdbcType=VARCHAR}, #{age,jdbcType=VARCHAR}, 
+      #{gender,jdbcType=VARCHAR}, #{grade,jdbcType=VARCHAR}, #{timeSpan,jdbcType=DOUBLE}, 
+      #{nevents,jdbcType=DOUBLE}, #{ndays,jdbcType=DOUBLE}, #{nplayVideos,jdbcType=DOUBLE}, 
+      #{nchapters,jdbcType=DOUBLE}, #{nforumPosts,jdbcType=DOUBLE})
+  </insert>
+  <insert id="insertSelective" parameterType="com.edx.pojo.PreUsers">
+    insert into pre_users
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="uid != null">
+        uid,
+      </if>
+      <if test="cid != null">
+        cid,
+      </if>
+      <if test="registered != null">
+        registered,
+      </if>
+      <if test="viewed != null">
+        viewed,
+      </if>
+      <if test="explored != null">
+        explored,
+      </if>
+      <if test="certified != null">
+        certified,
+      </if>
+      <if test="location != null">
+        location,
+      </if>
+      <if test="learnerLevel != null">
+        learner_level,
+      </if>
+      <if test="age != null">
+        age,
+      </if>
+      <if test="gender != null">
+        gender,
+      </if>
+      <if test="grade != null">
+        grade,
+      </if>
+      <if test="timeSpan != null">
+        time_span,
+      </if>
+      <if test="nevents != null">
+        nevents,
+      </if>
+      <if test="ndays != null">
+        ndays,
+      </if>
+      <if test="nplayVideos != null">
+        nplay_videos,
+      </if>
+      <if test="nchapters != null">
+        nchapters,
+      </if>
+      <if test="nforumPosts != null">
+        nforum_posts,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="uid != null">
+        #{uid,jdbcType=VARCHAR},
+      </if>
+      <if test="cid != null">
+        #{cid,jdbcType=VARCHAR},
+      </if>
+      <if test="registered != null">
+        #{registered,jdbcType=VARCHAR},
+      </if>
+      <if test="viewed != null">
+        #{viewed,jdbcType=VARCHAR},
+      </if>
+      <if test="explored != null">
+        #{explored,jdbcType=VARCHAR},
+      </if>
+      <if test="certified != null">
+        #{certified,jdbcType=VARCHAR},
+      </if>
+      <if test="location != null">
+        #{location,jdbcType=VARCHAR},
+      </if>
+      <if test="learnerLevel != null">
+        #{learnerLevel,jdbcType=VARCHAR},
+      </if>
+      <if test="age != null">
+        #{age,jdbcType=VARCHAR},
+      </if>
+      <if test="gender != null">
+        #{gender,jdbcType=VARCHAR},
+      </if>
+      <if test="grade != null">
+        #{grade,jdbcType=VARCHAR},
+      </if>
+      <if test="timeSpan != null">
+        #{timeSpan,jdbcType=DOUBLE},
+      </if>
+      <if test="nevents != null">
+        #{nevents,jdbcType=DOUBLE},
+      </if>
+      <if test="ndays != null">
+        #{ndays,jdbcType=DOUBLE},
+      </if>
+      <if test="nplayVideos != null">
+        #{nplayVideos,jdbcType=DOUBLE},
+      </if>
+      <if test="nchapters != null">
+        #{nchapters,jdbcType=DOUBLE},
+      </if>
+      <if test="nforumPosts != null">
+        #{nforumPosts,jdbcType=DOUBLE},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.edx.pojo.PreUsers">
+    update pre_users
+    <set>
+      <if test="registered != null">
+        registered = #{registered,jdbcType=VARCHAR},
+      </if>
+      <if test="viewed != null">
+        viewed = #{viewed,jdbcType=VARCHAR},
+      </if>
+      <if test="explored != null">
+        explored = #{explored,jdbcType=VARCHAR},
+      </if>
+      <if test="certified != null">
+        certified = #{certified,jdbcType=VARCHAR},
+      </if>
+      <if test="location != null">
+        location = #{location,jdbcType=VARCHAR},
+      </if>
+      <if test="learnerLevel != null">
+        learner_level = #{learnerLevel,jdbcType=VARCHAR},
+      </if>
+      <if test="age != null">
+        age = #{age,jdbcType=VARCHAR},
+      </if>
+      <if test="gender != null">
+        gender = #{gender,jdbcType=VARCHAR},
+      </if>
+      <if test="grade != null">
+        grade = #{grade,jdbcType=VARCHAR},
+      </if>
+      <if test="timeSpan != null">
+        time_span = #{timeSpan,jdbcType=DOUBLE},
+      </if>
+      <if test="nevents != null">
+        nevents = #{nevents,jdbcType=DOUBLE},
+      </if>
+      <if test="ndays != null">
+        ndays = #{ndays,jdbcType=DOUBLE},
+      </if>
+      <if test="nplayVideos != null">
+        nplay_videos = #{nplayVideos,jdbcType=DOUBLE},
+      </if>
+      <if test="nchapters != null">
+        nchapters = #{nchapters,jdbcType=DOUBLE},
+      </if>
+      <if test="nforumPosts != null">
+        nforum_posts = #{nforumPosts,jdbcType=DOUBLE},
+      </if>
+    </set>
+    where uid = #{uid,jdbcType=VARCHAR}
+      and cid = #{cid,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.edx.pojo.PreUsers">
+    update pre_users
+    set registered = #{registered,jdbcType=VARCHAR},
+      viewed = #{viewed,jdbcType=VARCHAR},
+      explored = #{explored,jdbcType=VARCHAR},
+      certified = #{certified,jdbcType=VARCHAR},
+      location = #{location,jdbcType=VARCHAR},
+      learner_level = #{learnerLevel,jdbcType=VARCHAR},
+      age = #{age,jdbcType=VARCHAR},
+      gender = #{gender,jdbcType=VARCHAR},
+      grade = #{grade,jdbcType=VARCHAR},
+      time_span = #{timeSpan,jdbcType=DOUBLE},
+      nevents = #{nevents,jdbcType=DOUBLE},
+      ndays = #{ndays,jdbcType=DOUBLE},
+      nplay_videos = #{nplayVideos,jdbcType=DOUBLE},
+      nchapters = #{nchapters,jdbcType=DOUBLE},
+      nforum_posts = #{nforumPosts,jdbcType=DOUBLE}
+    where uid = #{uid,jdbcType=VARCHAR}
+      and cid = #{cid,jdbcType=VARCHAR}
+  </update>
+</mapper>
