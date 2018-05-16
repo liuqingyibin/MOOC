@@ -2,179 +2,111 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ccd3032c-da4b-4860-a99a-f6542a2e081a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/CfCsMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/CfMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/ClassfierMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/EdxMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/GradeMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/LoginUsersMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/OriginMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/PreUsersMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/PredictionMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/StudentMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/TeacherMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/TestMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/XuankeOverNiceCsMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/XuankeOverNiceMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/XuankeOverNiceXlMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/Cf.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/CfCs.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/Classfier.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/ClassfierKey.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/Edx.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/Grade.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/LoginUsers.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/Origin.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/OriginKey.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/PreUsers.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/PreUsersKey.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/Prediction.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/PredictionKey.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/Student.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/Teacher.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/Test.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/XuankeOverNice.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/XuankeOverNiceCs.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/XuankeOverNiceXl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/MOOC.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/ant.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/mooc_edx_war.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/mooc_edx_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_0_9_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_miemiedev_mybatis_paginator_1_2_17.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_4_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_20_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_zxing_core_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_configuration_commons_configuration_1_10.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_dbcp_commons_dbcp_1_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_2_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_net_commons_net_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_pool_commons_pool_1_5_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_4_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_servlet_api_7_0_64.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjrt_1_6_11.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_7_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hashids_hashids_1_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_0_0_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_0_0_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_0_0_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_0_0_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_0_0_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_0_0_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_4_0_0_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_0_0_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_0_0_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_0_0_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_0_0_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/mooc_edx.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/CfCsMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/CfMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/ClassfierMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/EdxMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/GradeMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/LoginUsersMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/OriginMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/PreUsersMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/PredictionMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/StudentMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/TeacherMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/TestMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/XuankeOverNiceCsMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/XuankeOverNiceMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/XuankeOverNiceXlMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/Cf.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/CfCs.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/Classfier.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/ClassfierKey.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/Edx.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/Grade.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/LoginUsers.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/Origin.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/OriginKey.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/PreUsers.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/PreUsersKey.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/Prediction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/PredictionKey.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/Student.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/Teacher.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/Test.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/XuankeOverNice.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/XuankeOverNiceCs.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/XuankeOverNiceXl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/resources/applicationContext-datasource.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/resources/applicationContext.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/resources/datasource.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/resources/generatorConfig.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/resources/mappers/CfCsMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/resources/mappers/CfMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/resources/mappers/ClassfierMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/resources/mappers/EdxMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/resources/mappers/GradeMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/resources/mappers/LoginUsersMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/resources/mappers/OriginMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/resources/mappers/PreUsersMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/resources/mappers/PredictionMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/resources/mappers/StudentMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/resources/mappers/TeacherMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/resources/mappers/TestMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/resources/mappers/XuankeOverNiceCsMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/resources/mappers/XuankeOverNiceMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/resources/mappers/XuankeOverNiceXlMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/resources/mmall.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/webapp/WEB-INF/dispatcher-servlet.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/webapp/WEB-INF/web.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/webapp/index.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/applicationContext-datasource.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/applicationContext.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/datasource.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/generatorConfig.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/mappers/CfCsMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/mappers/CfMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/mappers/ClassfierMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/mappers/EdxMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/mappers/GradeMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/mappers/LoginUsersMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/mappers/OriginMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/mappers/PreUsersMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/mappers/PredictionMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/mappers/StudentMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/mappers/TeacherMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/mappers/TestMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/mappers/XuankeOverNiceCsMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/mappers/XuankeOverNiceMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/mappers/XuankeOverNiceXlMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/mmall.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/controller/portal/UserController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/controller/work/WorkController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/service/IUserService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/service/impl/UserServiceImpl.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/CfCsMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/CfMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/ClassfierMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/EdxMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/GradeMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/LoginUsersMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/OriginMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/PreUsersMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/PredictionMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/StudentMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/TeacherMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/TestMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/XuankeOverNiceCsMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/XuankeOverNiceMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/XuankeOverNiceXlMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/Cf.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/CfCs.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/Classfier.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/ClassfierKey.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/Edx.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/Grade.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/LoginUsers.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/Origin.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/OriginKey.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/PreUsers.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/PreUsersKey.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/Prediction.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/PredictionKey.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/Student.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/Teacher.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/Test.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/XuankeOverNice.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/XuankeOverNiceCs.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/XuankeOverNiceXl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/resources/mappers/CfCsMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/resources/mappers/CfMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/resources/mappers/ClassfierMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/resources/mappers/EdxMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/resources/mappers/GradeMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/resources/mappers/LoginUsersMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/resources/mappers/OriginMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/resources/mappers/PreUsersMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/resources/mappers/PredictionMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/resources/mappers/StudentMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/resources/mappers/TeacherMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/resources/mappers/TestMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/resources/mappers/XuankeOverNiceCsMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/resources/mappers/XuankeOverNiceMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/src/main/resources/mappers/XuankeOverNiceXlMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/CfCsMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/CfMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/ClassfierMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/EdxMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/GradeMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/LoginUsersMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/OriginMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/PreUsersMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/PredictionMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/StudentMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/TeacherMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/TestMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/XuankeOverNiceCsMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/XuankeOverNiceMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/XuankeOverNiceXlMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/Cf.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/CfCs.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/Classfier.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/ClassfierKey.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/Edx.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/Grade.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/LoginUsers.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/Origin.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/OriginKey.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/PreUsers.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/PreUsersKey.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/Prediction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/PredictionKey.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/Student.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/Teacher.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/Test.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/XuankeOverNice.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/XuankeOverNiceCs.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/XuankeOverNiceXl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/mappers/CfCsMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/mappers/CfMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/mappers/ClassfierMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/mappers/EdxMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/mappers/GradeMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/mappers/LoginUsersMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/mappers/OriginMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/mappers/PreUsersMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/mappers/PredictionMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/mappers/StudentMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/mappers/TeacherMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/mappers/TestMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/mappers/XuankeOverNiceCsMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/mappers/XuankeOverNiceMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/mappers/XuankeOverNiceXlMapper.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mooc_edx/src/main/resources/generatorConfig.xml" afterPath="$PROJECT_DIR$/mooc_edx/src/main/resources/generatorConfig.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/generatorConfig.xml" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/generatorConfig.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/mooc_edx/target/" />
@@ -199,62 +131,90 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="generatorConfig.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/resources/generatorConfig.xml">
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/controller/portal/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.06110283">
+              <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WorkController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/controller/work/WorkController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#999#1014#0" expanded="true" />
+                <element signature="e#1311#1326#0" expanded="true" />
+                <element signature="e#1633#1648#0" expanded="true" />
+                <element signature="e#2071#2086#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Edx.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/Edx.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Cf.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/Cf.java">
+      <file leaf-file-name="EdxMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/resources/mappers/EdxMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.0769231">
+              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+              <folding>
+                <marker date="1526403074522" expanded="true" signature="2371:2477" placeholder="select from edx" />
+                <marker date="1526403074522" expanded="true" signature="2564:2624" placeholder="delete from " />
+                <marker date="1526403074522" expanded="true" signature="2698:3691" placeholder="insert into edx... " />
+                <marker date="1526403074522" expanded="true" signature="7254:9312" placeholder="update edx H... " />
+                <marker date="1526403074522" expanded="true" signature="9398:10426" placeholder="update edx s... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EdxMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/EdxMapper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="240" column="0" selection-start-line="64" selection-start-column="39" selection-end-line="240" selection-end-column="0" />
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mmall.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/resources/mmall.properties">
+      <file leaf-file-name="dispatcher-servlet.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/webapp/WEB-INF/dispatcher-servlet.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.416667">
+              <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/service/impl/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CfCsMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/CfCsMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dispatcher-servlet.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/webapp/WEB-INF/dispatcher-servlet.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.76077586">
-              <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#371#372#0" expanded="true" />
+                <element signature="e#398#399#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -262,7 +222,7 @@
       <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/resources/applicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-5.8333335">
               <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
               <folding />
             </state>
@@ -272,37 +232,30 @@
       <file leaf-file-name="applicationContext-datasource.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/resources/applicationContext-datasource.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="58" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginUsersMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/LoginUsersMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Origin.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/Origin.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="185" column="5" selection-start-line="185" selection-start-column="5" selection-end-line="185" selection-end-column="5" />
-              <folding />
+            <state vertical-scroll-proportion="0.8333333">
+              <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
+              <folding>
+                <element signature="e#1662#1678#0" expanded="true" />
+                <element signature="e#1721#1737#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -315,10 +268,18 @@
         <option value="$PROJECT_DIR$/mooc_edx/pom.xml" />
         <option value="$PROJECT_DIR$/mooc_edx/src/resources/datasource.properties" />
         <option value="$PROJECT_DIR$/mooc_edx/src/resources/generatorConfig.xml" />
-        <option value="$PROJECT_DIR$/mooc_edx/src/main/resources/generatorConfig.xml" />
         <option value="$PROJECT_DIR$/mooc_edx/src/main/resources/applicationContext.xml" />
         <option value="$PROJECT_DIR$/mooc_edx/src/main/resources/applicationContext-datasource.xml" />
         <option value="$PROJECT_DIR$/mooc_edx/src/main/webapp/WEB-INF/dispatcher-servlet.xml" />
+        <option value="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/common/ServerResponse.java" />
+        <option value="$PROJECT_DIR$/mooc_edx/src/main/resources/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/User.java" />
+        <option value="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/controller/work/WorkController.java" />
+        <option value="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/service/IUserService.java" />
+        <option value="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/controller/portal/UserController.java" />
+        <option value="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/CfCsMapper.java" />
+        <option value="$PROJECT_DIR$/mooc_edx/src/main/resources/mappers/CfCsMapper.xml" />
       </list>
     </option>
   </component>
@@ -330,6 +291,13 @@
   <component name="JsBuildToolPackageJson" detection-done="true" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -385,34 +353,14 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="612" />
-    <option name="y" value="3" />
-    <option name="width" value="1508" />
-    <option name="height" value="1038" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State>
-            <id />
-          </State>
-          <State>
-            <id>CodeSpring CoreSpring</id>
-          </State>
-          <State>
-            <id>Spring</id>
-          </State>
-          <State>
-            <id>Spring CoreSpring</id>
-          </State>
-        </expanded-state>
-        <selected-state>
-          <State>
-            <id>SpringJavaAutowiringInspection</id>
-          </State>
-        </selected-state>
-      </profile-state>
+      <profile-state />
     </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -440,19 +388,109 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MOOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mooc_edx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MOOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mooc_edx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.edx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="mooc_edx">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="mooc_edx">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="mooc_edx">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="mooc_edx">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src/main">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="mooc_edx">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="mooc_edx">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src/main">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="java">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="com/edx">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="MOOC" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -479,12 +517,340 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MOOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MOOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mooc_edx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MOOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MOOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mooc_edx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MOOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MOOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mooc_edx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MOOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MOOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mooc_edx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mappers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MOOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MOOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mooc_edx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="edx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MOOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MOOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mooc_edx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="edx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="impl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MOOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MOOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mooc_edx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="edx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pojo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MOOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MOOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mooc_edx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="edx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MOOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MOOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mooc_edx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="edx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="work" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MOOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MOOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mooc_edx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="edx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -492,16 +858,104 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\IDEA\mooc_edx\MOOC\mooc_edx\src\main" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IDEA\mooc_edx\MOOC\mooc_edx\src\main\java\com\edx\common" />
       <recent name="E:\IDEA\mooc_edx\MOOC\mooc_edx\src\main\webapp\WEB-INF" />
       <recent name="E:\IDEA\mooc_edx\MOOC\mooc_edx\src\main\resources" />
       <recent name="E:\IDEA\mooc_edx\MOOC\mooc_edx\src\resources" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\IDEA\mooc_edx\MOOC\mooc_edx\src\main" />
-    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Tomcat Server.index.jsp (1)">
+    <configuration default="false" name="index.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 7.0.82" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/index.jsp" />
+      <deployment>
+        <artifact name="mooc_edx:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings />
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="mooc_edx:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="false" name="index.jsp (1)" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 7.0.82" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/index.jsp" />
+      <deployment>
+        <artifact name="mooc_edx:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="index_jsp_(1)_MOOC" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="mooc_edx:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings />
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -947,6 +1401,16 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.index.jsp" />
+      <item index="1" class="java.lang.String" itemvalue="Tomcat Server.index.jsp (1)" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Tomcat Server.index.jsp (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Tomcat Server.index.jsp" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
@@ -963,12 +1427,12 @@
       <workItem from="1522501744291" duration="146000" />
       <workItem from="1526310632678" duration="4197000" />
       <workItem from="1526315507215" duration="1571000" />
-      <workItem from="1526395112625" duration="798000" />
+      <workItem from="1526395112625" duration="8819000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7660000" />
+    <option name="totallyTimeSpent" value="15681000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -980,25 +1444,26 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="612" y="3" width="1508" height="1038" extended-state="0" />
-    <editor active="false" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23966943" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21251476" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21236873" sideWeight="0.49785867" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21038544" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21236873" sideWeight="0.50214136" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905483" sideWeight="0.49785867" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16167024" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2892562" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3293979" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17969662" sideWeight="0.4962527" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3305785" sideWeight="0.49721837" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18776079" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40731996" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20824412" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40723455" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905483" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1295216" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2496523" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1024,7 +1489,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1043,26 +1510,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/Cf.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="240" column="0" selection-start-line="64" selection-start-column="39" selection-end-line="240" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/resources/mmall.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/CfCsMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1099,22 +1550,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/LoginUsersMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/Origin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="185" column="5" selection-start-line="185" selection-start-column="5" selection-end-line="185" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mooc_edx/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1138,37 +1573,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/CfCsMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/CfMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/LoginUsersMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/Origin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="185" column="5" selection-start-line="185" selection-start-column="5" selection-end-line="185" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mooc_edx/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1181,37 +1585,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/CfMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/LoginUsersMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/Origin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="185" column="5" selection-start-line="185" selection-start-column="5" selection-end-line="185" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/resources/generatorConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1231,9 +1604,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/resources/applicationContext.xml">
+    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/resources/generatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.923077">
+          <caret line="86" column="72" selection-start-line="86" selection-start-column="72" selection-end-line="86" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/service/IUserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/webapp/WEB-INF/dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.416667">
+          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#371#372#0" expanded="true" />
+            <element signature="e#398#399#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.8333335">
           <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
           <folding />
         </state>
@@ -1241,33 +1650,66 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/resources/applicationContext-datasource.xml">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8333333">
+          <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
+          <folding>
+            <element signature="e#1662#1678#0" expanded="true" />
+            <element signature="e#1721#1737#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/Edx.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="58" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="58" />
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/CfCsMapper.java">
+    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/resources/mappers/EdxMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.0769231">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          <folding>
+            <marker date="1526403074522" expanded="true" signature="2371:2477" placeholder="select from edx" />
+            <marker date="1526403074522" expanded="true" signature="2564:2624" placeholder="delete from " />
+            <marker date="1526403074522" expanded="true" signature="2698:3691" placeholder="insert into edx... " />
+            <marker date="1526403074522" expanded="true" signature="7254:9312" placeholder="update edx H... " />
+            <marker date="1526403074522" expanded="true" signature="9398:10426" placeholder="update edx s... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/EdxMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/Cf.java">
+    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/controller/work/WorkController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="240" column="0" selection-start-line="64" selection-start-column="39" selection-end-line="240" selection-end-column="0" />
-          <folding />
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#999#1014#0" expanded="true" />
+            <element signature="e#1311#1326#0" expanded="true" />
+            <element signature="e#1633#1648#0" expanded="true" />
+            <element signature="e#2071#2086#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/webapp/WEB-INF/dispatcher-servlet.xml">
+    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/controller/portal/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.76077586">
-          <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
-          <folding />
+        <state vertical-scroll-proportion="0.06110283">
+          <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,154 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.edx.dao.LoginUsersMapper">
-  <resultMap id="BaseResultMap" type="com.edx.pojo.LoginUsers">
-    <constructor>
-      <arg column="uid" javaType="java.lang.String" jdbcType="VARCHAR" />
-      <arg column="pwd" javaType="java.lang.String" jdbcType="VARCHAR" />
-      <arg column="identify" javaType="java.lang.Integer" jdbcType="INTEGER" />
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.edx.dao.LoginUsersMapper" >
+  <resultMap id="BaseResultMap" type="com.edx.pojo.LoginUsers" >
+    <constructor >
+      <arg column="uid" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="pwd" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="identify" jdbcType="INTEGER" javaType="java.lang.Integer" />
     </constructor>
   </resultMap>
-  <insert id="insert" parameterType="com.edx.pojo.LoginUsers">
+  <insert id="insert" parameterType="com.edx.pojo.LoginUsers" >
     insert into login_users (uid, pwd, identify
       )
     values (#{uid,jdbcType=VARCHAR}, #{pwd,jdbcType=VARCHAR}, #{identify,jdbcType=INTEGER}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.edx.pojo.LoginUsers">
+  <insert id="insertSelective" parameterType="com.edx.pojo.LoginUsers" >
     insert into login_users
-    <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="uid != null">
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="uid != null" >
         uid,
       </if>
-      <if test="pwd != null">
+      <if test="pwd != null" >
         pwd,
       </if>
-      <if test="identify != null">
+      <if test="identify != null" >
         identify,
       </if>
     </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="uid != null">
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="uid != null" >
         #{uid,jdbcType=VARCHAR},
       </if>
-      <if test="pwd != null">
+      <if test="pwd != null" >
         #{pwd,jdbcType=VARCHAR},
       </if>
-      <if test="identify != null">
-        #{identify,jdbcType=INTEGER},
-      </if>
-    </trim>
-  </insert>
-  <resultMap id="BaseResultMap" type="com.edx.pojo.LoginUsers">
-    <constructor>
-      <arg column="uid" javaType="java.lang.String" jdbcType="VARCHAR" />
-      <arg column="pwd" javaType="java.lang.String" jdbcType="VARCHAR" />
-      <arg column="identify" javaType="java.lang.Integer" jdbcType="INTEGER" />
-    </constructor>
-  </resultMap>
-  <insert id="insert" parameterType="com.edx.pojo.LoginUsers">
-    insert into login_users (uid, pwd, identify
-      )
-    values (#{uid,jdbcType=VARCHAR}, #{pwd,jdbcType=VARCHAR}, #{identify,jdbcType=INTEGER}
-      )
-  </insert>
-  <insert id="insertSelective" parameterType="com.edx.pojo.LoginUsers">
-    insert into login_users
-    <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="uid != null">
-        uid,
-      </if>
-      <if test="pwd != null">
-        pwd,
-      </if>
-      <if test="identify != null">
-        identify,
-      </if>
-    </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="uid != null">
-        #{uid,jdbcType=VARCHAR},
-      </if>
-      <if test="pwd != null">
-        #{pwd,jdbcType=VARCHAR},
-      </if>
-      <if test="identify != null">
-        #{identify,jdbcType=INTEGER},
-      </if>
-    </trim>
-  </insert>
-  <resultMap id="BaseResultMap" type="com.edx.pojo.LoginUsers">
-    <constructor>
-      <arg column="uid" javaType="java.lang.String" jdbcType="VARCHAR" />
-      <arg column="pwd" javaType="java.lang.String" jdbcType="VARCHAR" />
-      <arg column="identify" javaType="java.lang.Integer" jdbcType="INTEGER" />
-    </constructor>
-  </resultMap>
-  <insert id="insert" parameterType="com.edx.pojo.LoginUsers">
-    insert into login_users (uid, pwd, identify
-      )
-    values (#{uid,jdbcType=VARCHAR}, #{pwd,jdbcType=VARCHAR}, #{identify,jdbcType=INTEGER}
-      )
-  </insert>
-  <insert id="insertSelective" parameterType="com.edx.pojo.LoginUsers">
-    insert into login_users
-    <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="uid != null">
-        uid,
-      </if>
-      <if test="pwd != null">
-        pwd,
-      </if>
-      <if test="identify != null">
-        identify,
-      </if>
-    </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="uid != null">
-        #{uid,jdbcType=VARCHAR},
-      </if>
-      <if test="pwd != null">
-        #{pwd,jdbcType=VARCHAR},
-      </if>
-      <if test="identify != null">
-        #{identify,jdbcType=INTEGER},
-      </if>
-    </trim>
-  </insert>
-  <resultMap id="BaseResultMap" type="com.edx.pojo.LoginUsers">
-    <constructor>
-      <arg column="uid" javaType="java.lang.String" jdbcType="VARCHAR" />
-      <arg column="pwd" javaType="java.lang.String" jdbcType="VARCHAR" />
-      <arg column="identify" javaType="java.lang.Integer" jdbcType="INTEGER" />
-    </constructor>
-  </resultMap>
-  <insert id="insert" parameterType="com.edx.pojo.LoginUsers">
-    insert into login_users (uid, pwd, identify
-      )
-    values (#{uid,jdbcType=VARCHAR}, #{pwd,jdbcType=VARCHAR}, #{identify,jdbcType=INTEGER}
-      )
-  </insert>
-  <insert id="insertSelective" parameterType="com.edx.pojo.LoginUsers">
-    insert into login_users
-    <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="uid != null">
-        uid,
-      </if>
-      <if test="pwd != null">
-        pwd,
-      </if>
-      <if test="identify != null">
-        identify,
-      </if>
-    </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="uid != null">
-        #{uid,jdbcType=VARCHAR},
-      </if>
-      <if test="pwd != null">
-        #{pwd,jdbcType=VARCHAR},
-      </if>
-      <if test="identify != null">
+      <if test="identify != null" >
         #{identify,jdbcType=INTEGER},
       </if>
     </trim>
