@@ -1,15 +1,12 @@
 package com.edx.controller.portal;
 
-import com.edx.service.IUserService;
+import com.edx.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
-
-import javax.servlet.http.HttpSession;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Created by HP on 2018/5/15.
@@ -23,27 +20,24 @@ import java.util.Map;
 public class UserController {
 
     @Autowired
-    private IUserService iUserService;
+    private final static UserService userService = new UserService();
 
 
     /**
-     * 用户登录
+     * 用户登录接口
      * @param username
      * @param password
-     * @param session
      * @return
      */
-//    @RequestMapping(value = "login.do",method = RequestMethod.POST)
-//    @ResponseBody
-//    public ServerResponse<User> login(String username, String password , HttpSession session){
-//        //service-->mybatis__dao
-//        ServerResponse<User> response = iUserService.login(username,password);
-//        if(response.isSuccess()){
-//            session.setAttribute(Const.CURRENT_USER,response.getData());
-//        }
-//        return response;
-//    }
-
+     @RequestMapping(value = "login.do",method = RequestMethod.POST)
+     @ResponseBody
+     public Object login(String username,String password){
+         //TODO 这里后续增加一些登录判断，防止密码为空什么的
+         System.out.println("这里进入了user/login");
+         System.out.println("这里进入了user/login");
+         System.out.println("这里进入了user/login");
+        return userService.login(username,password);
+     }
 
 
 

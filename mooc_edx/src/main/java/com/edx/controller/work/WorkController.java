@@ -1,5 +1,8 @@
 package com.edx.controller.work;
 
+
+import com.edx.service.WorkService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -7,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpSession;
+import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
 /**
@@ -26,6 +30,11 @@ public class WorkController {
  * json已经给封装好了，那个注解@ResonseBody就是，只需要你们返回相应的数据就好了，类似于我
  * 给你们写好的这个map集合，然后后台会自动封装成json
  */
+
+@Autowired
+private final static WorkService workService = new WorkService();
+
+
 
     /**
      *王思卓代码模块
@@ -73,22 +82,15 @@ public class WorkController {
      */
     @RequestMapping(value = "liuqing.do",method = RequestMethod.POST)
     @ResponseBody
-    public Object liuqing(String userId,String courseId,HttpSession session){
-        Map<String,Double> map = new HashMap<String,Double>();
-        map.put("viewd",0.10);
-        map.put("explored",0.10);
-        map.put("nplay_video",0.10);
-        map.put("nchapters",0.10);
-        map.put("nevents",0.10);
-        map.put("nforum_posts",0.10);
-        map.put("ndays_act",0.10);
-        map.put("grade",0.10);
-        map.put("certified",0.20);
-        System.out.println("这里进入了Controller");
-        System.out.println("这里进入了Controller");
-        System.out.println("这里进入了Controller");
-        System.out.println("这里进入了Controller");
-        return map;
+    public Object liuqing(String userId,String courseId,HttpSession session) throws SQLException {
+        String edx_id = "547";
+
+        /**
+         *预先定义四个menu，之后动态获取判断
+         */
+
+          return workService.getMenuWeight(edx_id);
+
     }
 
 }
