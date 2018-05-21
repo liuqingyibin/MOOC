@@ -373,7 +373,9 @@ public class WorkService {
      * @return
      */
     public String getNplayVideo(String id){
+
         return "60";
+
     }
 
 
@@ -384,6 +386,7 @@ public class WorkService {
      * @return
      */
     public String getNevents(String id){
+
         return "70";
     }
 
@@ -394,6 +397,7 @@ public class WorkService {
      * @return
      */
     public String getNforumPost(String id){
+
         return "80";
     }
 
@@ -405,16 +409,19 @@ public class WorkService {
      * @return
      */
     public String getNdaysAct(String id){
+
         return "90";
     }
 
 
     /**
+     * 第十个方法
      * 这里是是否获得证书
      * @param id
      * @return
      */
     public String getCertified(String id) {
+
         return "100";
     }
 
