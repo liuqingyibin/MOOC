@@ -8,7 +8,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <!DOCTYPE html>
-<jsp:include page="../student/head.jsp"></jsp:include>
+<jsp:include page="head.jsp"></jsp:include>
 <html>
 <head>
     <meta charset="utf-8">

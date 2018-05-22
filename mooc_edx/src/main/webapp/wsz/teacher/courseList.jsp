@@ -1,4 +1,4 @@
-<jsp:include page="../student/head.jsp"></jsp:include>
+<jsp:include page="head.jsp"></jsp:include>
 <%--
   Created by IntelliJ IDEA.
   User: drpeng

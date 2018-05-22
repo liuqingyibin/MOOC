@@ -2,7 +2,6 @@ package com.edx.controller.work;
 
 
 import com.edx.service.WorkService;
-import com.wangsizhuo.pages.Teacher;
 import com.wangsizhuo.service.StudentService;
 import com.wangsizhuo.service.TeacherService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -88,38 +87,49 @@ private final static WorkService workService = new WorkService();
         return teacherService.getCourseList();
     }
 
-    //教师查询所有课程的课程总人数、考试人数、取得证书人数(页面4)
-    //图1
-    @RequestMapping(value = "getAllCourseChart.do/{uid}",method = RequestMethod.POST)
+    //教师查看某一门课程的交互情况(页面2)
+    // 图1（四合一图）
+    @RequestMapping(value = "getOneCourseChart.do/{uid}/{cid}",method = RequestMethod.POST)
     @ResponseBody
-    public Object getTeacherAllCourseChart(@PathVariable("uid") String uid, HttpSession session) throws SQLException {
+    public Object getOneCourseInteraction(@PathVariable("uid") String uid,
+                                          @PathVariable String cid, HttpSession session) throws SQLException {
         TeacherService teacherService = new TeacherService(uid);
-        return teacherService.getNumberOfStudents();
-
+        return teacherService.getInteractionAndGrade(cid);
     }
 
-    //教师查询所有课程交互情况的统计图(页面4)
-    //交互：总次数，观看视频数，学习章节数，论坛发帖数
-    //图2,3，4,5
-    @RequestMapping(value = "getAllCourseChart.do/{uid}",method = RequestMethod.POST)
+    //教师查看所有学生的地区分布(页面2)
+    //图2
+    @RequestMapping(value = "getAllCourseChart.do/{uid}/{cid}",method = RequestMethod.POST)
     @ResponseBody
-    public Object getTeacherAllInteractionChart(@PathVariable("uid") String uid, HttpSession session) throws SQLException {
+    public Object getLocation(@PathVariable("uid") String uid, @PathVariable String cid, HttpSession session) throws SQLException {
         TeacherService teacherService = new TeacherService(uid);
-        Map<String,Map<String,ArrayList<int[]>>> map = new HashMap<>();
-        map.put("nevents",teacherService.getInteractionWithNumber("nevents"));
-        map.put("nplay_videos",teacherService.getInteractionWithNumber("nplay_videos"));
-        map.put("nchapters",teacherService.getInteractionWithNumber("nchapters"));
-        map.put("nforum_posts",teacherService.getInteractionWithNumber("nforum_posts"));
+        return teacherService.getLocation(cid);
+    }
+
+    //教师查看某一课程各个属性人数和获得证书人数的关系(页面2)
+    // 属性：学历、年龄、性别
+    //图3,4,5
+    @RequestMapping(value = "getStudentList.do/{uid}/{cid}",method = RequestMethod.POST)
+    @ResponseBody
+    public Object getAttrAndCertified(@PathVariable("uid") String uid,
+                                      @PathVariable String cid, HttpSession session) throws SQLException {
+        TeacherService teacherService = new TeacherService(uid);
+        Map<String,Map<String,ArrayList<Object>>> map = new HashMap<>();
+        map.put("gender",teacherService.attributeWithCertified(cid,"gender"));
+        map.put("age",teacherService.attributeWithCertified(cid,"age"));
+        map.put("level",teacherService.attributeWithCertified(cid,"level"));
         return map;
     }
 
-    //教师查看所有学生的地区分布(页面4)
-    //图6
-    @RequestMapping(value = "getAllCourseChart.do/{tid}",method = RequestMethod.POST)
+    //教师查询某一课程交互情况的统计图(页面2)
+    //交互：总次数，观看视频数，学习章节数，论坛发帖数
+    //图6,7,8,9
+    @RequestMapping(value = "getAllCourseChart.do/{uid}/{cid}/{kind}",method = RequestMethod.POST)
     @ResponseBody
-    public Object getLocation(@PathVariable("uid") String uid, HttpSession session) throws SQLException {
+    public Object getTeacherAllInteractionChart(@PathVariable String uid,@PathVariable String cid, @PathVariable String kind,
+                                                HttpSession session) throws SQLException {
         TeacherService teacherService = new TeacherService(uid);
-        return teacherService.getLocation();
+        return teacherService.getInteractionWithNumber(kind,cid);
     }
 
     //获得某一门课程的选课学生列表(页面3)
@@ -131,32 +141,7 @@ private final static WorkService workService = new WorkService();
         return teacherService.getStudentList(cid, pageNo, pageSize);
     }
 
-    //教师查看某一门课程的交互情况(页面2)
-    // 图1（四合一图）
-    @RequestMapping(value = "getOneCourseChart.do/{uid}/{cid}",method = RequestMethod.POST)
-    @ResponseBody
-    public Object getOneCourseInteraction(@PathVariable("uid") String uid,
-                                 @PathVariable String cid, HttpSession session) throws SQLException {
-        TeacherService teacherService = new TeacherService(uid);
-        return teacherService.getInteractionAndGrade(cid);
-    }
-
-    //教师查看某一课程各个属性人数和获得证书人数的关系(页面2)
-    // 属性：学历、年龄、性别
-    //图2,3,4
-    @RequestMapping(value = "getStudentList.do/{uid}/{cid}",method = RequestMethod.POST)
-    @ResponseBody
-    public Object getAttrAndCertified(@PathVariable("uid") String uid,
-                                          @PathVariable String cid, HttpSession session) throws SQLException {
-        TeacherService teacherService = new TeacherService(uid);
-        Map<String,Map<String,ArrayList<Object>>> map = new HashMap<>();
-        map.put("gender",teacherService.attributeWithCertified(cid,"gender"));
-        map.put("age",teacherService.attributeWithCertified(cid,"age"));
-        map.put("level",teacherService.attributeWithCertified(cid,"level"));
-        return map;
-    }
-
-    //预测(页面6)
+    //预测(页面4)
     //教师学生通用
     @RequestMapping(value = "prediction.do/{uid}/{cid}/{path}",method = RequestMethod.POST)
     @ResponseBody
@@ -166,7 +151,7 @@ private final static WorkService workService = new WorkService();
         teacherService.importPredictionData(path,cid);
     }
 
-    //学生获得选课列表
+    //学生获得选课列表(页面5)
     @RequestMapping(value = "getMyCourseList.do/{uid}/{pageNo}/{pageSize}",method = RequestMethod.POST)
     @ResponseBody
     public Object getMyCourseList(@PathVariable String uid, @PathVariable int pageNo, @PathVariable int pageSize, HttpSession session) throws SQLException {
