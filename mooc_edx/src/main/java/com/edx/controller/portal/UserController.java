@@ -33,11 +33,19 @@ public class UserController {
      @ResponseBody
      public Object login(String username,String password){
          //TODO 这里后续增加一些登录判断，防止密码为空什么的
-         System.out.println("这里进入了user/login");
-         System.out.println("这里进入了user/login");
-         System.out.println("这里进入了user/login");
+
         return userService.login(username,password);
      }
+
+
+
+    @RequestMapping(value = "getCourseList.do",method = RequestMethod.POST)
+    @ResponseBody
+    public Object getCourseList(String username,String password){
+        //TODO 这里后续增加一些登录判断，防止密码为空什么的
+
+        return userService.login(username,password);
+    }
 
 
 

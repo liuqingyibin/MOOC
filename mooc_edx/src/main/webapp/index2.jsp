@@ -41,15 +41,16 @@
                     for(var i=0;i<data.value3.length;i++){
                         menuValue[i+data.value1.length+data.value2.length]=data.value3[i];
                     }
-                    alert(menuName);
-                    alert(menuValue);
+//                    alert(menuName);
+//                    alert(menuValue);
+                    alert(data.value1[3]);
 
                     var myChart = echarts.init(document.getElementById('main'));
 
-
-
-                    alert(menuName);
-                    alert(menuValue);
+//
+//
+//                    alert(menuName);
+//                    alert(menuValue);
                     option = {
                         title: {
                             x: 'center',
