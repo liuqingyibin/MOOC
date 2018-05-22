@@ -77,17 +77,23 @@ public class TeacherService {
             PreparedStatement pst = conn.prepareStatement(sql);
             ResultSet rs = pst.executeQuery();
             String[] keys = new String[]{"grade", "nevents", "nplay_videos", "nchapters", "nforum_posts"};
-            int index = 0;
+            ArrayList<Double> list1 = new ArrayList<>();
+            ArrayList<Double> list2 = new ArrayList<>();
+            ArrayList<Double> list3 = new ArrayList<>();
+            ArrayList<Double> list4 = new ArrayList<>();
+            ArrayList<Double> list5 = new ArrayList<>();
             while (rs.next()) {
-                ArrayList<Double> item = new ArrayList<>();
-                item.add(rs.getDouble(1));
-                item.add(rs.getDouble(2));
-                item.add(rs.getDouble(3));
-                item.add(rs.getDouble(4));
-                item.add(rs.getDouble(5));
-                attrs.put(keys[index], item);
-                index++;
+                list1.add(rs.getDouble(1));
+                list2.add(rs.getDouble(2));
+                list3.add(rs.getDouble(3));
+                list4.add(rs.getDouble(4));
+                list5.add(rs.getDouble(5));
             }
+            attrs.put(keys[0],list1);
+            attrs.put(keys[1],list2);
+            attrs.put(keys[2],list3);
+            attrs.put(keys[3],list4);
+            attrs.put(keys[4],list5);
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -145,7 +151,7 @@ public class TeacherService {
     }
 
     /**
-     * 查询某一门课程交互次数和人数的记录:页面2:，图6,7,8,9（折线图，横轴次数，纵轴人数）
+     * 查询某一门课程交互次数和人数的记录:页面2:，图6,7,8,9（折线图，横轴次数，纵轴人数）(改成一个方法)
      *
      * @param kind 查询类型：nevents,nplay_videos,nchapters,nforum_posts
      * @return 课程（次数：人数）
@@ -160,7 +166,7 @@ public class TeacherService {
                 ArrayList<Integer> list = new ArrayList<>();
                 list.add(rs.getInt(1));
                 list.add(rs.getInt(2));
-                course.put(cid,list);
+                course.put(cid, list);
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -264,9 +270,9 @@ public class TeacherService {
         }
     }
 
-
     public static void main(String[] args) {
         TeacherService t = new TeacherService("t2");
-        t.attributeWithCertified("HarvardX/PH278x/2013_Spring", "gender");
+//        System.out.println(t.getInteractionAndGrade("HarvardX/PH207x/2012_Fall"));
+        t.getInteractionWithNumber("nevents","HarvardX/PH207x/2012_Fall");
     }
 }
