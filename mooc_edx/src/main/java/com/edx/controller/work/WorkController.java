@@ -44,6 +44,7 @@ private final static WorkService workService = new WorkService();
     public Object wangsizhuo(String userId,String courseId,HttpSession session){
         Map<String,Double> map = new HashMap<String,Double>();
         map.put("viewd",0.10);
+        map.put("vie1",0.20);
         return map;
     }
 
@@ -92,5 +93,36 @@ private final static WorkService workService = new WorkService();
           return workService.getMenuWeight(edx_id);
 
     }
+
+    //getInteractionAndGrade
+    @RequestMapping(value = "getInteractionAndGrade.do",method = RequestMethod.POST)
+    @ResponseBody
+    public Object getInteractionAndGrade(String userId,String courseId,HttpSession session) throws SQLException {
+        String edx_id = "547";
+
+        /**
+         *预先定义四个menu，之后动态获取判断
+         */
+
+        return workService.getMenuWeight(edx_id);
+
+    }
+    //getStudentList
+    @RequestMapping(value = "getStudentList.do",method = RequestMethod.POST)
+    @ResponseBody
+    public Object getStudentList(String userId,String courseId,HttpSession session) throws SQLException {
+        String edx_id = "547";
+
+        /**
+         *预先定义四个menu，之后动态获取判断
+         */
+
+        return workService.getMenuWeight(edx_id);
+    }
+
+
+
+
+
 
 }

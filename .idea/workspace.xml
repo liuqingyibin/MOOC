@@ -2,9 +2,85 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ccd3032c-da4b-4860-a99a-f6542a2e081a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/jar/commons-beanutils-1.8.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/jar/commons-collections-3.2.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/jar/commons-fileupload-1.3.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/jar/commons-io-2.6.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/jar/commons-lang-2.5.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/jar/commons-logging-1.1.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/jar/ezmorph-1.0.6.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/jar/json-lib-2.4-jdk15.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/jar/mysql-connector-java-5.1.45-bin.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/jar/weka.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_8_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ezmorph_ezmorph_1_0_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_json_lib_json_lib_2_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/Servlet/LoginServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/algorithm/Node.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/algorithm/Prediction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/dataset/test/student/MHxPC130000008.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/dataset/test/student/MHxPC130000019.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/dataset/test/student/MHxPC130049215.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/dataset/test/teacher/HarvardX_CB22x_2013_Spring.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/dataset/test/teacher/HarvardX_PH207x_2012_Fall.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/dataset/test/teacher/MITx_6.00x_2012_Fall.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/dataset/test/teacher/MITx_6.00x_2013_Spring.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/dataset/train/HarvardX_CB22x_2013_Spring.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/dataset/train/HarvardX_PH207x_2012_Fall.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/dataset/train/MITx_6.00x_2012_Fall.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/dataset/train/MITx_6.00x_2013_Spring.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/model/ClassfierData.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/model/Course.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/model/Data.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/model/Strings.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/pages/Login.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/pages/Students.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/pages/Teacher.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/util/DB.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/util/GenerateTable.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/util/MyFile.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/webapp/courseChart.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/webapp/courseList.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/webapp/login.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/webapp/predictionList.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/ClassfierMapper.class" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/ClassfierMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/EdxMapper.class" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/EdxMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/GradeMapper.class" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/GradeMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/LoginUsersMapper.class" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/LoginUsersMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/OriginMapper.class" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/OriginMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/PreUsersMapper.class" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/PreUsersMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/PredictionMapper.class" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/PredictionMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/StudentMapper.class" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/StudentMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/TeacherMapper.class" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/TeacherMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/TestMapper.class" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/TestMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/XuankeOverNiceCsMapper.class" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/XuankeOverNiceCsMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/XuankeOverNiceMapper.class" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/XuankeOverNiceMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/XuankeOverNiceXlMapper.class" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/dao/XuankeOverNiceXlMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/Classfier.class" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/Classfier.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/ClassfierKey.class" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/ClassfierKey.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/Edx.class" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/Edx.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/Grade.class" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/Grade.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/LoginUsers.class" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/LoginUsers.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/Origin.class" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/Origin.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/OriginKey.class" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/OriginKey.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/PreUsers.class" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/PreUsers.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/PreUsersKey.class" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/PreUsersKey.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/Prediction.class" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/Prediction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/PredictionKey.class" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/PredictionKey.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/Student.class" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/Student.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/Teacher.class" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/Teacher.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/Test.class" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/Test.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/XuankeOverNice.class" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/XuankeOverNice.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/XuankeOverNiceCs.class" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/XuankeOverNiceCs.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/XuankeOverNiceXl.class" afterPath="$PROJECT_DIR$/mooc_edx/target/classes/com/edx/pojo/XuankeOverNiceXl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/mooc_edx_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/mooc_edx_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/service/WorkService.java" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/service/WorkService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mooc_edx/mooc_edx.iml" afterPath="$PROJECT_DIR$/mooc_edx/mooc_edx.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mooc_edx/pom.xml" afterPath="$PROJECT_DIR$/mooc_edx/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/controller/portal/UserController.java" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/controller/portal/UserController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/controller/work/WorkController.java" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/controller/work/WorkController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mooc_edx/src/main/webapp/index2.jsp" afterPath="$PROJECT_DIR$/mooc_edx/src/main/webapp/index2.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -33,72 +109,73 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/service/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/UserDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="WorkService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/service/WorkService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="374" column="43" selection-start-line="374" selection-start-column="43" selection-end-line="374" selection-end-column="43" />
+              <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RUNNING.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apache-tomcat-8.5.29/RUNNING.txt">
+      <file leaf-file-name="Login.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/pages/Login.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1526956547511" expanded="true" signature="560:610" placeholder="SELECT pwd,i... login_users" />
+                <marker date="1526956547511" expanded="true" signature="1230:1267" placeholder="INSERT INTO login_users... " />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NOTICE" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apache-tomcat-8.5.29/NOTICE">
+      <file leaf-file-name="Teacher.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/pages/Teacher.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LICENSE" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apache-tomcat-8.5.29/LICENSE">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4642857">
-              <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/webapp/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="118" column="51" selection-start-line="118" selection-start-column="51" selection-end-line="118" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index2.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/webapp/index2.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.8461537">
-              <caret line="140" column="22" selection-start-line="140" selection-start-column="22" selection-end-line="140" selection-end-column="22" />
-              <folding />
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="30" />
+              <folding>
+                <marker date="1526956630291" expanded="true" signature="1019:1315" placeholder="select cid c... missingValue" />
+                <marker date="1526956630291" expanded="true" signature="1064:1155" placeholder="SELECT count... missingValue" />
+                <marker date="1526956630291" expanded="true" signature="1251:1300" placeholder="select cid f... teacher" />
+                <marker date="1526956630291" expanded="true" signature="2539:2607" placeholder="select cid f... missingValue" />
+                <marker date="1526956630291" expanded="true" signature="3283:3368" placeholder="select count... missingValue" />
+                <marker date="1526956630291" expanded="true" signature="3283:3706" placeholder="select count... " />
+                <marker date="1526956630291" expanded="true" signature="3431:3535" placeholder="select count... missingValue" />
+                <marker date="1526956630291" expanded="true" signature="3598:3706" placeholder="select count... missingValue" />
+                <marker date="1526956630291" expanded="true" signature="5081:5189" placeholder="select missi... missingValue" />
+                <marker date="1526956630291" expanded="true" signature="7910:8043" placeholder="select grade... missingValue" />
+                <marker date="1526956630291" expanded="true" signature="8738:8981" placeholder="SELECT uid, missingValue" />
+                <marker date="1526956630291" expanded="true" signature="10999:11253" placeholder="SELECT uid,l... missingValue" />
+                <marker date="1526956630291" expanded="true" signature="12729:12838" placeholder="select missi... missingValue" />
+                <marker date="1526956630291" expanded="true" signature="13338:13499" placeholder="select grade... missingValue" />
+                <marker date="1526956630291" expanded="true" signature="17224:17350" placeholder="select grade... missingValue" />
+                <marker date="1526956630291" expanded="true" signature="18314:18458" placeholder="SELECT locat... missingValue" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -107,32 +184,50 @@
         <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/controller/portal/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="datasource.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/resources/datasource.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WorkController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index2.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/webapp/index2.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-15.384615">
+              <caret line="86" column="29" selection-start-line="86" selection-start-column="29" selection-end-line="86" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WorkController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/controller/work/WorkController.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.42741936">
+              <caret line="41" column="57" selection-start-line="41" selection-start-column="57" selection-end-line="41" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Students.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/pages/Students.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="91" column="36" selection-start-line="91" selection-start-column="36" selection-end-line="91" selection-end-column="36" />
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="false" />
+                <marker date="1526957265226" expanded="true" signature="1205:1292" placeholder="SELECT * fro... missingValue" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mooc_edx/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.75">
+              <caret line="76" column="16" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="16" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -161,7 +256,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mooc_edx/pom.xml" />
         <option value="$PROJECT_DIR$/mooc_edx/src/resources/datasource.properties" />
         <option value="$PROJECT_DIR$/mooc_edx/src/resources/generatorConfig.xml" />
         <option value="$PROJECT_DIR$/mooc_edx/src/main/resources/applicationContext.xml" />
@@ -176,17 +270,27 @@
         <option value="$PROJECT_DIR$/mooc_edx/src/main/resources/mappers/CfCsMapper.xml" />
         <option value="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/jdbc/Connection.java" />
         <option value="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/jdbc/ConnectionLiu.java" />
-        <option value="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/controller/portal/UserController.java" />
         <option value="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/service/UserService.java" />
-        <option value="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/controller/work/WorkController.java" />
         <option value="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/mooc_edx/src/main/test/MainTest.java" />
         <option value="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/WorkDao.java" />
         <option value="$PROJECT_DIR$/mooc_edx/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/mooc_edx/src/main/webapp/WEB-INF/index2.jsp" />
-        <option value="$PROJECT_DIR$/mooc_edx/src/main/webapp/index2.jsp" />
         <option value="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/service/WorkService.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/algorithm/Node.java" />
+        <option value="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/algorithm/Prediction.java" />
+        <option value="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/pages/Login.java" />
+        <option value="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/pages/Teacher.java" />
+        <option value="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/Servlet/LoginServlet.java" />
+        <option value="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/util/DB.java" />
+        <option value="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/util/GenerateTable.java" />
+        <option value="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/util/MyFile.java" />
+        <option value="$PROJECT_DIR$/mooc_edx/pom.xml" />
+        <option value="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/pages/Students.java" />
+        <option value="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/controller/portal/UserController.java" />
+        <option value="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/controller/work/WorkController.java" />
+        <option value="$PROJECT_DIR$/mooc_edx/src/main/webapp/index2.jsp" />
       </list>
     </option>
   </component>
@@ -302,6 +406,10 @@
               <option name="myItemId" value="MOOC" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -310,6 +418,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="MOOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MOOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MOOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mooc_edx" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -323,7 +445,287 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="apache-tomcat-8.5.29" />
+              <option name="myItemId" value="mooc_edx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MOOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MOOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mooc_edx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MOOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MOOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mooc_edx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MOOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MOOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mooc_edx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wangsizhuo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MOOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MOOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mooc_edx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wangsizhuo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MOOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MOOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mooc_edx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wangsizhuo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MOOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MOOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mooc_edx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="edx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MOOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MOOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mooc_edx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="edx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="work" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MOOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MOOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mooc_edx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="edx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="portal" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -429,24 +831,27 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mooc_edx/target/lib" />
     <property name="jdk.selected.JAVA_MODULE" value="1.7" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\IDEA\mooc_edx\MOOC\mooc_edx\src\main\webapp" />
-      <recent name="E:\IDEA\mooc_edx\MOOC\mooc_edx\src\main\java\com\edx\common" />
-      <recent name="E:\IDEA\mooc_edx\MOOC\mooc_edx\src\main\webapp\WEB-INF" />
-      <recent name="E:\IDEA\mooc_edx\MOOC\mooc_edx\src\main\resources" />
-      <recent name="E:\IDEA\mooc_edx\MOOC\mooc_edx\src\resources" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\IDEA\mooc_edx\MOOC\mooc_edx\src\main\webapp" />
       <recent name="E:\IDEA\mooc_edx\MOOC\mooc_edx\src\main" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IDEA\mooc_edx\MOOC\mooc_edx\target\lib" />
+      <recent name="E:\IDEA\mooc_edx\MOOC\mooc_edx\src\main\webapp" />
+      <recent name="E:\IDEA\mooc_edx\MOOC\mooc_edx\src\main\java\com\wangsizhuo" />
+      <recent name="E:\IDEA\mooc_edx\MOOC\mooc_edx\src\main\java\com\edx\common" />
+      <recent name="E:\IDEA\mooc_edx\MOOC\mooc_edx\src\main\webapp\WEB-INF" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.index2.jsp">
@@ -1084,7 +1489,7 @@
       <workItem from="1526395112625" duration="16599000" />
       <workItem from="1526555971601" duration="46095000" />
       <workItem from="1526871197434" duration="8942000" />
-      <workItem from="1526905820917" duration="2679000" />
+      <workItem from="1526905820917" duration="10611000" />
     </task>
     <task id="LOCAL-00001" summary="后端程序配置，及接口配置定义">
       <created>1526445963916</created>
@@ -1098,11 +1503,17 @@
       <option name="project" value="LOCAL" />
       <updated>1526871330817</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="新增github判断">
+      <created>1526916376685</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1526916376685</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81177000" />
+    <option name="totallyTimeSpent" value="89109000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1126,13 +1537,14 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905483" sideWeight="0.49785867" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21001391" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27071178" sideWeight="0.49304068" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.094515756" sideWeight="0.49304068" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3302217" sideWeight="0.49721837" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22912206" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40723455" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29638273" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2496523" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1149,7 +1561,6 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29638273" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1170,7 +1581,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="后端程序配置，及接口配置定义" />
     <MESSAGE value="学习效果评价模型实现，及其他接口预定义&#10;新增用户登录接口" />
-    <option name="LAST_COMMIT_MESSAGE" value="学习效果评价模型实现，及其他接口预定义&#10;新增用户登录接口" />
+    <MESSAGE value="新增github判断" />
+    <MESSAGE value="与王思桌合项目" />
+    <option name="LAST_COMMIT_MESSAGE" value="与王思桌合项目" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1186,146 +1599,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/pojo/Edx.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/resources/mappers/EdxMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-          <folding>
-            <marker date="1526403074522" expanded="true" signature="2371:2477" placeholder="select from edx" />
-            <marker date="1526403074522" expanded="true" signature="2564:2624" placeholder="delete from " />
-            <marker date="1526403074522" expanded="true" signature="2698:3691" placeholder="insert into edx... " />
-            <marker date="1526403074522" expanded="true" signature="7254:9312" placeholder="update edx H... " />
-            <marker date="1526403074522" expanded="true" signature="9398:10426" placeholder="update edx s... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/EdxMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/resources/generatorConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/resources/mmall.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/webapp/WEB-INF/dispatcher-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/resources/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/resources/applicationContext-datasource.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="58" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="58" />
-          <folding>
-            <element signature="e#1662#1678#0" expanded="false" />
-            <element signature="e#1721#1737#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mooc_edx/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="274" column="0" selection-start-line="274" selection-start-column="0" selection-end-line="274" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/resources/generatorConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/resources/datasource.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mooc_edx/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="274" column="0" selection-start-line="274" selection-start-column="0" selection-end-line="274" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/resources/mmall.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/resources/generatorConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.923077">
-          <caret line="86" column="72" selection-start-line="86" selection-start-column="72" selection-end-line="86" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/webapp/WEB-INF/dispatcher-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.416667">
-          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/resources/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.8333335">
@@ -1419,6 +1692,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1433,14 +1707,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.40336135">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1476,16 +1742,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="382" column="5" selection-start-line="382" selection-start-column="5" selection-end-line="382" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="66" selection-start-line="15" selection-start-column="66" selection-end-line="15" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1526,50 +1782,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/controller/work/WorkController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="91" column="36" selection-start-line="91" selection-start-column="36" selection-end-line="91" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/controller/portal/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="118" column="51" selection-start-line="118" selection-start-column="51" selection-end-line="118" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/webapp/index2.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.8461537">
-          <caret line="140" column="22" selection-start-line="140" selection-start-column="22" selection-end-line="140" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/service/WorkService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="374" column="43" selection-start-line="374" selection-start-column="43" selection-end-line="374" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apache-tomcat-8.5.29/RUNNING.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1596,11 +1808,333 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4642857">
-          <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+        <state vertical-scroll-proportion="-9.69697">
+          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-23.076923">
+          <caret line="129" column="7" selection-start-line="129" selection-start-column="7" selection-end-line="129" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apache-tomcat-8.5.29/webapps/sign/signon.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.589744">
+          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/algorithm/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/webapp/courseChart.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/webapp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.3846154">
+          <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/model/Data.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.347826">
+          <caret line="50" column="35" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/jre/lib/ext/access-bridge-64.jar!/com/sun/java/accessibility/AccessBridge.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.3636365">
+          <caret line="99" column="19" selection-start-line="99" selection-start-column="19" selection-end-line="99" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/function/Predicate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="50" column="7" selection-start-line="50" selection-start-column="7" selection-end-line="50" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/stream/Stream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="168" column="17" selection-start-line="168" selection-start-column="17" selection-end-line="168" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/algorithm/Prediction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="167" column="13" selection-start-line="167" selection-start-column="13" selection-end-line="167" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#12338#12339#0" expanded="true" />
+            <element signature="e#12388#12389#0" expanded="true" />
+            <marker date="1526956522325" expanded="true" signature="2172:2224" placeholder="SELECT missi... missingValue" />
+            <marker date="1526956522325" expanded="true" signature="2927:2941" placeholder="SELECT * FRO... missingValue" />
+            <marker date="1526956522325" expanded="true" signature="2991:3047" placeholder="SELECT * FRO... missingValue" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/Servlet/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <folding>
+            <marker date="1526956660609" expanded="true" signature="2018:2091" placeholder="SELECT psw,i... login_users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/util/DB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <marker date="1526956671252" expanded="true" signature="1802:2309" placeholder="create table... if" />
+            <marker date="1526956671252" expanded="true" signature="2776:2870" placeholder="INSERT INTO missingValue... " />
+            <marker date="1526956671252" expanded="true" signature="5758:6158" placeholder="create table... if" />
+            <marker date="1526956671252" expanded="true" signature="6775:6860" placeholder="INSERT INTO missingValue... " />
+            <marker date="1526956671252" expanded="true" signature="12007:12408" placeholder="create table... if" />
+            <marker date="1526956671252" expanded="true" signature="13013:13099" placeholder="INSERT INTO missingValue... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/util/GenerateTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/util/MyFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mooc_edx/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.75">
+          <caret line="76" column="16" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/pages/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1526956547511" expanded="true" signature="560:610" placeholder="SELECT pwd,i... login_users" />
+            <marker date="1526956547511" expanded="true" signature="1230:1267" placeholder="INSERT INTO login_users... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/pages/Teacher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="30" />
+          <folding>
+            <marker date="1526956630291" expanded="true" signature="1019:1315" placeholder="select cid c... missingValue" />
+            <marker date="1526956630291" expanded="true" signature="1064:1155" placeholder="SELECT count... missingValue" />
+            <marker date="1526956630291" expanded="true" signature="1251:1300" placeholder="select cid f... teacher" />
+            <marker date="1526956630291" expanded="true" signature="2539:2607" placeholder="select cid f... missingValue" />
+            <marker date="1526956630291" expanded="true" signature="3283:3368" placeholder="select count... missingValue" />
+            <marker date="1526956630291" expanded="true" signature="3283:3706" placeholder="select count... " />
+            <marker date="1526956630291" expanded="true" signature="3431:3535" placeholder="select count... missingValue" />
+            <marker date="1526956630291" expanded="true" signature="3598:3706" placeholder="select count... missingValue" />
+            <marker date="1526956630291" expanded="true" signature="5081:5189" placeholder="select missi... missingValue" />
+            <marker date="1526956630291" expanded="true" signature="7910:8043" placeholder="select grade... missingValue" />
+            <marker date="1526956630291" expanded="true" signature="8738:8981" placeholder="SELECT uid, missingValue" />
+            <marker date="1526956630291" expanded="true" signature="10999:11253" placeholder="SELECT uid,l... missingValue" />
+            <marker date="1526956630291" expanded="true" signature="12729:12838" placeholder="select missi... missingValue" />
+            <marker date="1526956630291" expanded="true" signature="13338:13499" placeholder="select grade... missingValue" />
+            <marker date="1526956630291" expanded="true" signature="17224:17350" placeholder="select grade... missingValue" />
+            <marker date="1526956630291" expanded="true" signature="18314:18458" placeholder="SELECT locat... missingValue" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/pages/Students.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <marker date="1526957265226" expanded="true" signature="1205:1292" placeholder="SELECT * fro... missingValue" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/controller/portal/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/service/WorkService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/webapp/index2.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.384615">
+          <caret line="86" column="29" selection-start-line="86" selection-start-column="29" selection-end-line="86" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/controller/work/WorkController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42741936">
+          <caret line="41" column="57" selection-start-line="41" selection-start-column="57" selection-end-line="41" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>mooc_edx:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>mooc_edx</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>bin</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
