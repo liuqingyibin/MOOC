@@ -151,7 +151,7 @@ public class TeacherService {
     }
 
     /**
-     * 查询某一门课程交互次数和人数的记录:页面2:，图6,7,8,9（折线图，横轴次数，纵轴人数）(改成一个方法)
+     * 查询某一门课程交互次数和人数的记录:页面2:，图6,7,8,9（折线图，横轴次数，纵轴人数）
      *
      * @param kind 查询类型：nevents,nplay_videos,nchapters,nforum_posts
      * @return 课程（次数：人数）
@@ -162,12 +162,14 @@ public class TeacherService {
         try {
             PreparedStatement pst = conn.prepareStatement(nevents);
             ResultSet rs = pst.executeQuery();
+            ArrayList<Integer> times = new ArrayList<>();
+            ArrayList<Integer> numbers = new ArrayList<>();
             while (rs.next()) {
-                ArrayList<Integer> list = new ArrayList<>();
-                list.add(rs.getInt(1));
-                list.add(rs.getInt(2));
-                course.put(cid, list);
+                times.add(rs.getInt(1));
+                numbers.add(rs.getInt(2));
             }
+            course.put("times",times);
+            course.put("numbers",numbers);
         } catch (SQLException e) {
             e.printStackTrace();
         }
