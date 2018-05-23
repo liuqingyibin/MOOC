@@ -5,9 +5,6 @@ import com.wangsizhuo.model.Data;
 import com.wangsizhuo.model.Strings;
 import com.wangsizhuo.util.DB;
 import com.wangsizhuo.util.MyFile;
-import net.sf.json.JSONArray;
-import net.sf.json.JSONObject;
-
 import java.io.*;
 import java.sql.*;
 import java.util.ArrayList;
@@ -137,8 +134,8 @@ public class TeacherService {
         Map<String, ArrayList<Object>> attrs = new HashMap<>();
         String attribute = "select " + kind + ", count(*) from " + tableNames.classfierTableName + " where cid='" + cid + "' group by " + kind;
         String certified = "select " + kind + ", count(*) from " + tableNames.classfierTableName + " where cid = '" + cid + "' and certified = 'yes' group by " + kind;
-        JSONObject attributeJson = getNumberOfAttributes(attribute);
-        JSONObject certifiedJson = getNumberOfAttributes(certified);
+        Map<String,Integer> attributeJson = getNumberOfAttributes(attribute);
+        Map<String,Integer> certifiedJson = getNumberOfAttributes(certified);
 
         for (Object obj : attributeJson.keySet()) {
             ArrayList<Object> attr = new ArrayList<>();
@@ -238,19 +235,19 @@ public class TeacherService {
      * @param sql 查询语句
      * @return 属性值：人数
      */
-    private JSONObject getNumberOfAttributes(String sql) {
-        JSONObject json = new JSONObject();
+    private Map<String,Integer> getNumberOfAttributes(String sql) {
+        Map<String,Integer> map = new HashMap<>();
         try {
             PreparedStatement pst = conn.prepareStatement(sql);
             ResultSet rs = pst.executeQuery();
             while (rs.next()) {
-                json.put(rs.getString(1), rs.getInt(2));
+                map.put(rs.getString(1), rs.getInt(2));
             }
         } catch (SQLException e) {
             e.printStackTrace();
 
         }
-        return json;
+        return map;
     }
 
     /**
@@ -275,6 +272,7 @@ public class TeacherService {
     public static void main(String[] args) {
         TeacherService t = new TeacherService("t2");
 //        System.out.println(t.getInteractionAndGrade("HarvardX/PH207x/2012_Fall"));
-        t.getInteractionWithNumber("nevents","HarvardX/PH207x/2012_Fall");
+//        t.getInteractionWithNumber("nevents","HarvardX/PH207x/2012_Fall");
+        t.attributeWithCertified("HarvardX/PH207x/2012_Fall","learner_level");
     }
 }
