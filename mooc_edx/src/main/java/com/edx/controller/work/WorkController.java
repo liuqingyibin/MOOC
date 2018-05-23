@@ -11,8 +11,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpSession;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import com.xuren.*;
 /**
  * 业务Controller层，四个模块在这里进行处理
  */
@@ -54,8 +56,16 @@ private final static WorkService workService = new WorkService();
     @RequestMapping(value = "xuren.do",method = RequestMethod.POST)
     @ResponseBody
     public Object xuren(String userId,String courseId,HttpSession session){
-        Map<String,Double> map = new HashMap<String,Double>();
-        map.put("explored",0.10);
+
+        HashMap<String, ArrayList<XYZ>> map = new HashMap<String,ArrayList<XYZ>>();
+
+        k_means_ablity_new k=new k_means_ablity_new(5);
+        k.kmeans();
+        System.out.println(k.getXyzCluster().size()+"------------------------");
+        for(int i=0;i<k.getXyzCluster().size();i++){
+            map.put("cluster"+i,k.getXyzCluster().get(i));
+        }
+//        map.put("1",k.getCluster().get(0));
         return map;
     }
 
