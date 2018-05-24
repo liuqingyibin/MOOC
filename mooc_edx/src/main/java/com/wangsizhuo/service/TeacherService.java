@@ -5,6 +5,8 @@ import com.wangsizhuo.model.Data;
 import com.wangsizhuo.model.Strings;
 import com.wangsizhuo.util.DB;
 import com.wangsizhuo.util.MyFile;
+import net.sf.json.JSONArray;
+
 import java.io.*;
 import java.sql.*;
 import java.util.ArrayList;
@@ -148,29 +150,38 @@ public class TeacherService {
     }
 
     /**
-     * 查询某一门课程交互次数和人数的记录:页面2:，图6,7,8,9（折线图，横轴次数，纵轴人数）
+     * 查询某一门课成绩和人数的记录:页面2:，图6（折线图，横轴次数，纵轴人数）
      *
-     * @param kind 查询类型：nevents,nplay_videos,nchapters,nforum_posts
-     * @return 课程（次数：人数）
+     * @return 次数，人数
      */
-    public Map<String, ArrayList<Integer>> getInteractionWithNumber(String kind, String cid) {
-        Map<String, ArrayList<Integer>> course = new HashMap<>();
-        String nevents = "select " + kind + ",count(*) from " + tableNames.originDataTableName + " where cid = '" + cid + "' GROUP BY " + kind;
+    public JSONArray getGrade(String cid){
+        JSONArray json = null;
+        String sql = "select grade,count(*) from " + tableNames.originDataTableName + " where cid = '" + cid
+                +"'and grade != 'null' group by grade";
         try {
-            PreparedStatement pst = conn.prepareStatement(nevents);
+            PreparedStatement pst = conn.prepareStatement(sql);
             ResultSet rs = pst.executeQuery();
-            ArrayList<Integer> times = new ArrayList<>();
-            ArrayList<Integer> numbers = new ArrayList<>();
-            while (rs.next()) {
-                times.add(rs.getInt(1));
-                numbers.add(rs.getInt(2));
+            ArrayList<double[]> grade = new ArrayList<>();
+            while (rs.next()){
+                double[] d = new double[2];
+                d[0] = rs.getDouble(1);
+                d[1] = rs.getInt(2);
+                grade.add(d);
             }
-            course.put("times",times);
-            course.put("numbers",numbers);
+            json = JSONArray.fromObject(grade);
+            String path = "web/json/teacher/" + cid.replace("/","-") + "_grade.json";
+            BufferedOutputStream out = new BufferedOutputStream(new FileOutputStream(path));
+            out.write(json.toString().getBytes());
+            out.flush();
+            out.close();
         } catch (SQLException e) {
             e.printStackTrace();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-        return course;
+        return json;
     }
 
 

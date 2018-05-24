@@ -124,12 +124,12 @@ private final static WorkService workService = new WorkService();
     //教师查询某一课程交互情况的统计图(页面2)
     //交互：总次数，观看视频数，学习章节数，论坛发帖数
     //图6,7,8,9
-    @RequestMapping(value = "getAllCourseChart.do/{uid}/{cid}/{kind}",method = RequestMethod.POST)
+    @RequestMapping(value = "getGrade.do/{uid}/{cid}/{kind}",method = RequestMethod.POST)
     @ResponseBody
-    public Object getTeacherAllInteractionChart(@PathVariable String uid,@PathVariable String cid, @PathVariable String kind,
+    public Object getTeacherAllInteractionChart(@PathVariable String uid,@PathVariable String cid,
                                                 HttpSession session) throws SQLException {
         TeacherService teacherService = new TeacherService(uid);
-        return teacherService.getInteractionWithNumber(kind,cid);
+        return teacherService.getGrade(cid);
     }
 
     //获得某一门课程的选课学生列表(页面3)
