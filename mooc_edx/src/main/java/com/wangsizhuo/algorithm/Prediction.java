@@ -117,7 +117,7 @@ public class Prediction {
 
 
     //将决策树的内容写进文件
-    public void C45Tree(){
+    public Map<String,ArrayList<String>> C45Tree(){
         node = new Node();
         node.setValue("root");
         try {
@@ -129,7 +129,8 @@ public class Prediction {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        prediction(getAttrNames(tableNames.predictionTableName),getData(tableNames.predictionTableName));
+        Map<String,ArrayList<String>> map = prediction(getAttrNames(tableNames.predictionTableName),getData(tableNames.predictionTableName));
+        return map;
     }
 
     //构建决策树
@@ -329,7 +330,7 @@ public class Prediction {
     }
 
     //实现预测
-    private void prediction(List<String> attrNames,List<ArrayList<String>> data){
+    private Map<String,ArrayList<String>> prediction(List<String> attrNames,List<ArrayList<String>> data){
         int TP=0,TN=0,FP=0,FN=0;
         int cannot = 0;
         String result;
@@ -389,5 +390,30 @@ public class Prediction {
         System.out.printf("\n分类准确率：%.2f",accuracy*100);
         System.out.printf("\n分类错误率：%.2f",errorRate*100);
         System.out.printf("\n精度：%.2f",precision*100);
+
+        Map<String,ArrayList<String>> map = showPredictionList();
+        return map;
+    }
+
+    /**
+     * 获取预测数据
+     * @return  [uid, cid,yse/no]
+     */
+    private Map<String,ArrayList<String>> showPredictionList() {
+        Map<String,ArrayList<String>> map = new HashMap<>();
+        String sql = "select uid,cid,certified from " + tableNames.predictionTableName;
+        try {
+            PreparedStatement pst = conn.prepareStatement(sql);
+            ResultSet rs = pst.executeQuery();
+            while (rs.next()) {
+                ArrayList<String> list = new ArrayList<>();
+                list.add(rs.getString(2));
+                list.add(rs.getString(3));
+                map.put(rs.getString(1),list);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return map;
     }
 }
