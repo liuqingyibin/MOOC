@@ -32,17 +32,30 @@ public class UserController {
      @RequestMapping(value = "login.do",method = RequestMethod.POST)
      @ResponseBody
      public Object login(String username,String password){
-         //TODO 这里后续增加一些登录判断，防止密码为空什么的
+
 
         return userService.login(username,password);
      }
 
+    /**
+     * 欢迎页面获取登录学生的个人信息数据
+     * @param userId
+     * @return
+     */
+    @RequestMapping(value = "getStudent.do",method = RequestMethod.POST)
+    @ResponseBody
+    public Object getStudent(String userId){
+
+        System.out.println("Controller这里进入了1");
+        userId = "547";
+        return userService.getStudent(userId);
+    }
 
 
     @RequestMapping(value = "getCourseList.do",method = RequestMethod.POST)
     @ResponseBody
     public Object getCourseList(String username,String password){
-        //TODO 这里后续增加一些登录判断，防止密码为空什么的
+
 
         return userService.login(username,password);
     }

@@ -43,7 +43,7 @@
                     }
 //                    alert(menuName);
 //                    alert(menuValue);
-                    alert(data.value1[3]);
+//                    alert(data.value1[3]);
 
                     var myChart = echarts.init(document.getElementById('main'));
 
