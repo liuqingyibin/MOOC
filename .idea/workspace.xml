@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ccd3032c-da4b-4860-a99a-f6542a2e081a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/controller/portal/UserController.java" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/controller/portal/UserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/UserDao.java" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/dao/UserDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/service/UserService.java" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/service/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mooc_edx/src/main/webapp/liuqingAllShow.jsp" afterPath="$PROJECT_DIR$/mooc_edx/src/main/webapp/liuqingAllShow.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/mooc_edx/target/" />
@@ -37,8 +33,8 @@
       <file leaf-file-name="UserController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/controller/portal/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44990176">
-              <caret line="48" column="47" selection-start-line="48" selection-start-column="47" selection-end-line="48" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.50884086">
+              <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -1332,7 +1328,7 @@
       <workItem from="1526555971601" duration="46095000" />
       <workItem from="1526871197434" duration="8942000" />
       <workItem from="1526905820917" duration="25553000" />
-      <workItem from="1527164630854" duration="7629000" />
+      <workItem from="1527164630854" duration="7710000" />
     </task>
     <task id="LOCAL-00001" summary="后端程序配置，及接口配置定义">
       <created>1526445963916</created>
@@ -1364,11 +1360,17 @@
       <option name="project" value="LOCAL" />
       <updated>1527037539079</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="新增登录页面查看学生各项信息数据">
+      <created>1527230327646</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1527230327646</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111680000" />
+    <option name="totallyTimeSpent" value="111761000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1439,7 +1441,8 @@
     <MESSAGE value="新增github判断" />
     <MESSAGE value="与王思桌合项目" />
     <MESSAGE value="与徐任后台和项目" />
-    <option name="LAST_COMMIT_MESSAGE" value="与徐任后台和项目" />
+    <MESSAGE value="新增登录页面查看学生各项信息数据" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增登录页面查看学生各项信息数据" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1862,8 +1865,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/controller/portal/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44990176">
-          <caret line="48" column="47" selection-start-line="48" selection-start-column="47" selection-end-line="48" selection-end-column="47" />
+        <state vertical-scroll-proportion="0.50884086">
+          <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
           <folding />
         </state>
       </provider>
