@@ -15,7 +15,6 @@ import java.sql.SQLException;
 import java.util.*;
 import java.util.stream.Collectors;
 
-
 public class Prediction {
     private Connection conn;                                    //数据库连接
     private ArrayList<String> attrNames;                        //原始标签集
@@ -382,12 +381,10 @@ public class Prediction {
         float accuracy = (float) (TP+TN)/(float) (TP+TN+FP+FN);
         //误分类率（错误率）
         float errorRate = (float)(FP+FN)/(float) (TP+TN+FP+FN);
-        //精度
-        float precision = (float)TP/(float)(TP+FP);
+
         System.out.println("总样本数："+total);
         System.out.printf("成功分类率：%.2f",classfyRate*100);
         System.out.printf("\n分类准确率：%.2f",accuracy*100);
         System.out.printf("\n分类错误率：%.2f",errorRate*100);
-        System.out.printf("\n精度：%.2f",precision*100);
     }
 }

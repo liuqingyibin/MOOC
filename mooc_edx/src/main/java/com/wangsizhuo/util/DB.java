@@ -17,12 +17,12 @@ public class DB {
     double min[] = {100000,100000,100000,100000,100000};
 
     public Connection initDB() {
-        String url = "jdbc:mysql://localhost/edx?characterEncoding=utf8&useSSL=true";
-        String user = "root";
-        String psw = "123456";
-//        String url ="jdbc:mysql://123.206.205.246:3306/student?characterEncoding=utf8";
-//        String user = "liuqing";
-//        String psw = "liuqing123456";
+//        String url = "jdbc:mysql://localhost/edx?characterEncoding=utf8&useSSL=true";
+//        String user = "root";
+//        String psw = "123456";
+        String url ="jdbc:mysql://123.206.205.246:3306/student?characterEncoding=utf8";
+        String user = "liuqing";
+        String psw = "liuqing123456";
         try {
             Class.forName("com.mysql.jdbc.Driver");
             System.out.println("Driver loaded");
