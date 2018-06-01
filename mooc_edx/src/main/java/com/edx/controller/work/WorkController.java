@@ -164,17 +164,6 @@ private final static WorkService workService = new WorkService();
     }
 
     /**
-     * 预测 页面4  学生用
-     * @return [学号：[课程号，能否通过],学号：[课程号，能否通过]``````]
-     */
-    @RequestMapping(value = "sp.do",method = RequestMethod.GET)
-    @ResponseBody
-    public Object studentPrediction( HttpServletResponse response, HttpServletRequest request){
-        StudentService studentService = new StudentService(uid);
-        return studentService.importPredictionData();
-    }
-
-    /**
      *学生获得选课列表(页面5)
      * @return              课程号:课程信息
      */

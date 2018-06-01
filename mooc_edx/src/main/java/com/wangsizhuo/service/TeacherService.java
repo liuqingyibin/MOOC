@@ -1,13 +1,10 @@
 package com.wangsizhuo.service;
 
-import com.wangsizhuo.algorithm.Prediction;
-import com.wangsizhuo.model.Data;
+import com.wangsizhuo.algorithm.Kfolder;
 import com.wangsizhuo.model.Strings;
 import com.wangsizhuo.util.DB;
-import com.wangsizhuo.util.MyFile;
 import net.sf.json.JSONArray;
 
-import java.io.*;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -23,7 +20,7 @@ public class TeacherService {
     private DB db;
 
     /***********************************************以下一行为修改内容************************************************/
-    String path = "mooc_edx/src/main/java/com/wangsizhuo/dataset/tp.csv";
+    String path = "mooc_edx/src/main/java/com/wangsizhuo/dataset/Kfolder.csv";
 
     /**
      * 教师
@@ -292,11 +289,8 @@ public class TeacherService {
      */
     public Map<Integer,ArrayList<String>> importPredictionData(String cid) {
         //以下为可运行代码
-        MyFile file = new MyFile(path);
-        ArrayList<Data> data = file.myFileReader();
-        db.createPredictionTable(data, 0);
-        Prediction p = new Prediction(conn, cid);
-        p.C45Tree();
+        Kfolder kfolder = new Kfolder(path);
+        kfolder.C45Tree();
         Map<Integer,ArrayList<String>> map = showPredictionList(cid);
         return map;
     }
@@ -348,25 +342,6 @@ public class TeacherService {
         return map;
     }
 
-    /**
-     * 输出文件
-     *
-     * @param path 路径+文件名
-     * @param file 待输出文件数据
-     */
-    private void fileOut(String path, Map<String, ArrayList<Object>> file) {
-        try {
-            BufferedOutputStream out = new BufferedOutputStream(new FileOutputStream(path));
-            out.write(file.toString().getBytes());
-            out.flush();
-            out.close();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
     public static void main(String[] args) {
         TeacherService t = new TeacherService("jiaoshi");
         String cid = "HarvardX/PH278x/2013_Spring";
@@ -375,12 +350,11 @@ public class TeacherService {
 //        System.out.println(t.attributeWithCertified(cid,"learner_level"));
 //        System.out.println(t.attributeWithCertified(cid,"age"));
 //        System.out.println(t.attributeWithCertified(cid,"gender"));
-//
-        System.out.println(t.getStudentList(cid,25));
+//        System.out.println(t.getStudentList(cid,25));
 //        System.out.println(t.getInteractionAndGrade(cid));
-//
 //        System.out.println(t.getGrade(cid));
-//        Map<Integer,ArrayList<String>> map = t.importPredictionData(cid);
+
+        Map<Integer,ArrayList<String>> map = t.importPredictionData(cid);
 //        System.out.println();
     }
 }

@@ -1,11 +1,8 @@
 package com.wangsizhuo.service;
 
-import com.wangsizhuo.algorithm.Prediction;
 import com.wangsizhuo.model.Course;
-import com.wangsizhuo.model.Data;
 import com.wangsizhuo.model.Strings;
 import com.wangsizhuo.util.DB;
-import com.wangsizhuo.util.MyFile;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
