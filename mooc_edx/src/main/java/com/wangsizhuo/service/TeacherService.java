@@ -1,10 +1,14 @@
 package com.wangsizhuo.service;
 
 import com.wangsizhuo.algorithm.Kfolder;
+import com.wangsizhuo.algorithm.Prediction;
+import com.wangsizhuo.model.Data;
 import com.wangsizhuo.model.Strings;
 import com.wangsizhuo.util.DB;
+import com.wangsizhuo.util.MyFile;
 import net.sf.json.JSONArray;
 
+import java.io.*;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -20,7 +24,8 @@ public class TeacherService {
     private DB db;
 
     /***********************************************以下一行为修改内容************************************************/
-    String path = "mooc_edx/src/main/java/com/wangsizhuo/dataset/Kfolder.csv";
+    String predictionPath = "mooc_edx/src/main/java/com/wangsizhuo/dataset/prediction.csv";
+
 
     /**
      * 教师
@@ -288,38 +293,22 @@ public class TeacherService {
      * @return [学号：[课程号，能否通过],学号：[课程号，能否通过]``````]
      */
     public Map<Integer,ArrayList<String>> importPredictionData(String cid) {
-        //以下为可运行代码
-        Kfolder kfolder = new Kfolder(path);
-        kfolder.C45Tree();
-        Map<Integer,ArrayList<String>> map = showPredictionList(cid);
+        //以下为调用数据库实现预测算法
+        /*
+        MyFile file = new MyFile(path);
+        ArrayList<Data> data = file.myFileReader();
+        db.createPredictionTable(data, 0);
+        Prediction p = new Prediction(conn, cid);
+        p.C45Tree();
+        */
+        //以下为十折交叉验证法调用数据库
+        Kfolder kfolder = new Kfolder();
+//        kfolder.C45Tree();
+
+        Map<Integer,ArrayList<String>> map = kfolder.prediction(predictionPath);
         return map;
     }
 
-    /**
-     * 获取预测数据
-     * @return  [uid, cid,yse/no]
-     */
-    private Map<Integer,ArrayList<String>> showPredictionList(String cid) {
-        Map<Integer,ArrayList<String>> map = new HashMap<>();
-        String sql = "select uid,cid,certified from " + tableNames.predictionTableName + " where cid = '"+cid+"'";
-        try {
-            PreparedStatement pst = conn.prepareStatement(sql);
-            ResultSet rs = pst.executeQuery();
-            int index=1;
-            while (rs.next()) {
-                ArrayList<String> list = new ArrayList<>();
-                list.add(rs.getString(1));
-                list.add(rs.getString(2));
-                list.add(rs.getString(3));
-                list.add("这回替换成一句话");
-                map.put(index,list);
-                index++;
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return map;
-    }
 
     /**
      * 查询某一个属性的人数

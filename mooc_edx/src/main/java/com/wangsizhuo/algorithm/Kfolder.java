@@ -1,8 +1,10 @@
 package com.wangsizhuo.algorithm;
+/**
+ * 十折交叉验证法
+ */
 
 import com.wangsizhuo.model.Data;
 import com.wangsizhuo.util.MyFile;
-
 import java.io.BufferedOutputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -12,7 +14,8 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class Kfolder {
-    ArrayList<Data> data;
+    String kfolderPath = "mooc_edx/src/main/java/com/wangsizhuo/dataset/Kfolder.csv";
+    final ArrayList<Data> data;
     //测试集
     ArrayList<Data> test = new ArrayList<>();
     //训练集
@@ -24,15 +27,20 @@ public class Kfolder {
     private String decisionName = "certified";                      //决策属性
     private BufferedOutputStream outputStream;
     private Node node;
-    private String cid;                                              //课程号
 
 
-    public Kfolder(String path, String cid) {
-        this.cid = cid;
-        MyFile myFile = new MyFile(path);
+    public Kfolder() {
+        MyFile myFile = new MyFile(kfolderPath);
         data = myFile.myFileReader();
+        //处理时间跨度
+        dealTimeSpan();
+        attrNames = getAttrNames();
+        attrValues = getAttrValues();
+
+        //生成随机数据
         Map<Integer, List<Data>> allData = randomData();
         int flag = 0;
+        //1份作为测试集，9份作为训练集
         for (int i = 0; i < allData.size(); i++) {
             if (i == flag) {
                 test.addAll(allData.get(i));
@@ -40,33 +48,11 @@ public class Kfolder {
                 train.addAll(allData.get(i));
             }
         }
-        //处理时间跨度
-        dealTimeSpan();
-        attrNames = getAttrNames();
-        attrValues = getAttrValues();
+
 
     }
 
-    public Kfolder(String path) {
-        MyFile myFile = new MyFile(path);
-        data = myFile.myFileReader();
-
-        //处理时间跨度
-        dealTimeSpan();
-        attrNames = getAttrNames();
-        attrValues = getAttrValues();
-
-        Map<Integer, List<Data>> allData = randomData();
-        int flag = 0;
-        for (int i = 0; i < allData.size(); i++) {
-            if (i == flag) {
-                test.addAll(allData.get(i));
-            } else {
-                train.addAll(allData.get(i));
-            }
-        }
-    }
-
+    //处理时间跨度
     private void dealTimeSpan() {
 
         for (int i = 0; i < train.size(); i++) {
@@ -207,6 +193,7 @@ public class Kfolder {
         return list;
     }
 
+    //离差标准化
     private ArrayList<String> lisanhua(Set set) {
         ArrayList<Double> temp = new ArrayList<>();
         ArrayList<String> list = new ArrayList<>();
@@ -226,6 +213,7 @@ public class Kfolder {
 
     }
 
+    //分享光滑--成绩
     private Set smooth(Set<String> gradeSet) {
         Set set = new TreeSet();
         Iterator iterator = gradeSet.iterator();
@@ -271,10 +259,17 @@ public class Kfolder {
         return String.valueOf(result);
     }
 
-    private ArrayList<ArrayList<String>> transfer(ArrayList<Data> temp) {
+    //数据类型转换
+    //0:含cid,uid
+    //1：不含cid,uid
+    private ArrayList<ArrayList<String>> transfer(ArrayList<Data> temp, int flag) {
         ArrayList<ArrayList<String>> list = new ArrayList<>();
         for (int i = 0; i < temp.size(); i++) {
             ArrayList<String> itemList = new ArrayList<>();
+            if (flag==0){
+                itemList.add(temp.get(i).getCid());
+                itemList.add(temp.get(i).getUid());
+            }
             itemList.add(temp.get(i).getIdentify());
             itemList.add(temp.get(i).getCertified());
             itemList.add(temp.get(i).getLocation());
@@ -296,36 +291,30 @@ public class Kfolder {
         return list;
     }
 
-    //将决策树的内容写进文件
+    //构建决策树入口
     public void C45Tree() {
         node = new Node();
         node.setValue("root");
         try {
             outputStream = new BufferedOutputStream(new FileOutputStream("out.txt"));
             //构建决策树
-            buildTree(transfer(train), attrNames, attrValues, node);
+            buildTree(transfer(train,1), attrNames, attrValues, node);
             outputStream.flush();
             outputStream.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
-        assess(attrNames, transfer(test));
+        assess(attrNames, transfer(test,1));
     }
 
-//    public Map<String,ArrayList<String>> prediction(String path) {
-//
-//    }
-
-
-    //构建决策树
+    //构建决策树（迭代）
     private void buildTree(List<ArrayList<String>> datalist, List<String> attrNames, List<ArrayList<String>> attrValues, Node fatherRoot) {
         //获取最大信息增益
         String attr = getMaxGainRatioAttr(datalist, attrNames, attrValues);
-        //
+        //获得attr属性的分枝及每个分枝的数据
         Map<String, List<ArrayList<String>>> cutData = getCutData(attr, datalist, attrNames, attrValues);
         //遍历cutData的每一个值
         for (Map.Entry<String, List<ArrayList<String>>> entry : cutData.entrySet()) {
-
             String space = "";
             Node childNode = new Node();
             fatherRoot.addChildNode(childNode);
@@ -586,4 +575,38 @@ public class Kfolder {
     }
 
 
+    public Map<Integer,ArrayList<String>> prediction(String predictionPath) {
+        Map<Integer,ArrayList<String>> map = new HashMap<>();
+        MyFile file = new MyFile(predictionPath);
+        ArrayList<Data> predictionData = file.myFileReader();
+        C45Tree();
+        prediction(transfer(predictionData,0));
+        return map;
+    }
+
+    private void prediction(ArrayList<ArrayList<String>> predictionData) {
+        for (ArrayList<String> dataItem : predictionData) {
+            Node searchNode = node;
+            while (searchNode.children.size() != 0) {
+                for (int i = 0; i < searchNode.children.size(); i++) {
+                    Node temp = searchNode.children.get(i);
+                    int index = attrNames.indexOf(temp.value);
+                    if (dataItem.get(index).toString().equals(temp.disvisionValue)) {
+                        searchNode = temp;
+                        break;
+                    }
+                }
+
+            }
+
+            String  result = searchNode.decision;
+            int index = attrNames.indexOf(decisionName);
+
+        }
+    }
+
+    public static void main(String [] args){
+            Kfolder kfolder = new Kfolder();
+            kfolder.C45Tree();;
+    }
 }
