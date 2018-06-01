@@ -20,8 +20,6 @@ public class StudentService {
     private String uid;
     Strings tableNames;
     DB db;
-    /****************以下一行为新增**********************************/
-    String path = "mooc_edx/src/main/java/com/wangsizhuo/dataset/sp.csv";
 
     /**
      * 学生
@@ -37,7 +35,6 @@ public class StudentService {
      * 获取该生所有学习课程的列表
      * @param pageNo 页码
      * @return      {课程名：{课程信息}}
-     * {"MITx/6.00x/2012_Fall":{"grade":"0.17","identify":"晒网达人","lastEventTime":"2013/2/28","nchapters":4,"ndays":14,"nevents":662,"nforumPosts":0,"nplayVideos":47,"startTime":"2012/9/23"}}
      */
     public Map<String,ArrayList<String>> getAllCourseInfo(int pageNo) {
         int pageSize = 15;
@@ -79,54 +76,9 @@ public class StudentService {
         return courses;
     }
 
-/*******************************以下一个方法被修改***********************************************************/
-    /**
-     * 导入待预测的数据
-     * @return [学号：[课程号，能否通过],学号：[课程号，能否通过]``````]
-     */
-    public Map<Integer, ArrayList<String>> importPredictionData(){
-        MyFile file = new MyFile(path);
-        ArrayList<Data> data = file.myFileReader();
-        db.createPredictionTable(data,0);
-        Prediction p = new Prediction(conn);
-        p.C45Tree();
-        Map<Integer, ArrayList<String>> map = showPredictionList(uid);
-        return  map;
-    }
-
-    /**
-     * 获取预测数据
-     * @return  [uid, cid,yse/no]
-     */
-    private Map<Integer,ArrayList<String>> showPredictionList(String uid) {
-        Map<Integer,ArrayList<String>> map = new HashMap<>();
-        String sql = "select uid,cid,certified from " + tableNames.predictionTableName + " where uid = '"+uid+"'";
-        try {
-            PreparedStatement pst = conn.prepareStatement(sql);
-            ResultSet rs = pst.executeQuery();
-            int index=1;
-            while (rs.next()) {
-                ArrayList<String> list = new ArrayList<>();
-                list.add(rs.getString(1));
-                list.add(rs.getString(2));
-                list.add(rs.getString(3));
-                list.add("这回替换成一句话");
-                map.put(index,list);
-                index++;
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return map;
-    }
-
-
-
     public static void main(String[] args) {
         StudentService s = new StudentService("MHxPC130569306");
-        String cid = "HarvardX/PH278x/2013_Spring";
         System.out.println(s.getAllCourseInfo(1));
-        Map<Integer,ArrayList<String>> map = s.importPredictionData();
         System.out.println();
     }
 }

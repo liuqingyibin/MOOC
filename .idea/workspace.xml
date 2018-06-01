@@ -7,17 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ccd3032c-da4b-4860-a99a-f6542a2e081a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/algorithm/Kfolder.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/mooc_edx/mooc_edx.iml" afterPath="$PROJECT_DIR$/mooc_edx/mooc_edx.iml" />
-      <change beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/model/ClassfierData.java" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/model/ClassfierData.java" />
-      <change beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/model/Data.java" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/model/Data.java" />
-      <change beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/service/TeacherService.java" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/service/TeacherService.java" />
-      <change beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/service/sp.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/service/tp.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/service/StudentService.java" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/service/StudentService.java" />
       <change beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/util/DB.java" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/util/DB.java" />
-      <change beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/util/GenerateTable.java" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/util/GenerateTable.java" />
-      <change beforePath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/util/MyFile.java" afterPath="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/util/MyFile.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/mooc_edx/target/" />
@@ -55,43 +47,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DB.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/util/DB.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="43" column="28" lean-forward="true" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
-              <folding>
-                <marker date="1527863035216" expanded="true" signature="1815:2283" ph="create table... if" />
-                <marker date="1527863035216" expanded="true" signature="2750:2840" ph="INSERT INTO missingValue... " />
-                <marker date="1527863035216" expanded="true" signature="5563:5963" ph="create table... if" />
-                <marker date="1527863035216" expanded="true" signature="6489:6574" ph="INSERT INTO missingValue... " />
-                <marker date="1527863035216" expanded="true" signature="11093:11494" ph="create table... if" />
-                <marker date="1527863035216" expanded="true" signature="12100:12186" ph="INSERT INTO missingValue... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClassfierData.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/model/ClassfierData.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="48" column="32" lean-forward="false" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
-              <folding>
-                <element signature="e#1003#1004#0" expanded="true" />
-                <element signature="e#1043#1044#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="GenerateTable.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/util/GenerateTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+            <state relative-caret-position="209">
+              <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StudentService.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/service/StudentService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="215">
+              <caret line="79" column="64" lean-forward="false" selection-start-line="79" selection-start-column="64" selection-end-line="79" selection-end-column="64" />
+              <folding>
+                <marker date="1527863302805" expanded="true" signature="1098:1185" ph="SELECT * fro... missingValue" />
               </folding>
             </state>
           </provider>
@@ -175,7 +149,6 @@
         <option value="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/algorithm/Prediction.java" />
         <option value="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/dataset/tp.csv" />
         <option value="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/dataset/sp.csv" />
-        <option value="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/service/StudentService.java" />
         <option value="$PROJECT_DIR$/mooc_edx/src/main/java/com/edx/controller/work/WorkController.java" />
         <option value="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/service/TeacherService.java" />
         <option value="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/algorithm/Kfolder.java" />
@@ -184,6 +157,7 @@
         <option value="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/util/GenerateTable.java" />
         <option value="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/model/ClassfierData.java" />
         <option value="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/util/DB.java" />
+        <option value="$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/service/StudentService.java" />
       </list>
     </option>
   </component>
@@ -1151,7 +1125,7 @@
       <workItem from="1527662426735" duration="13776000" />
       <workItem from="1527729548922" duration="602000" />
       <workItem from="1527749294142" duration="8399000" />
-      <workItem from="1527815899621" duration="3471000" />
+      <workItem from="1527815899621" duration="3727000" />
     </task>
     <task id="LOCAL-00001" summary="后端程序配置，及接口配置定义">
       <created>1526445963916</created>
@@ -1209,11 +1183,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527078233082</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="util包完成">
+      <created>1527863071207</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1527863071207</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145148000" />
+    <option name="totallyTimeSpent" value="145404000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1226,9 +1207,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44094488" sideWeight="0.51098096" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28150573" sideWeight="0.5128593" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.4948605" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21001391" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1245,10 +1227,10 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19836639" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28150573" sideWeight="0.4904552" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28150573" sideWeight="0.4871407" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3302217" sideWeight="0.49721837" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23071104" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23071104" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40723455" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1287,7 +1269,8 @@
     <MESSAGE value="将多门课的分析整理为一门课" />
     <MESSAGE value="getInteractionWithNumber方法有待改正" />
     <MESSAGE value="所有方法修改修改成为针对一门课程" />
-    <option name="LAST_COMMIT_MESSAGE" value="所有方法修改修改成为针对一门课程" />
+    <MESSAGE value="util包完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="util包完成" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1503,14 +1486,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/model/Strings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/dataset/sp.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -1522,17 +1497,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/service/StudentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1558">
-          <caret line="94" column="5" lean-forward="false" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
-          <folding>
-            <marker date="1527762975461" expanded="true" signature="1427:1514" ph="SELECT * fro... missingValue" />
-            <marker date="1527762975461" expanded="true" signature="3988:4078" ph="select uid,c... missingValue" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1570,16 +1534,6 @@
             <marker date="1527859388201" expanded="true" signature="7468:7608" ph="select grade... missingValue" />
             <marker date="1527859388201" expanded="true" signature="8555:8798" ph="SELECT uid, missingValue" />
             <marker date="1527859388201" expanded="true" signature="12295:12385" ph="select uid,c... missingValue" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/algorithm/Kfolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="278" column="29" lean-forward="false" selection-start-line="278" selection-start-column="29" selection-end-line="278" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1633,27 +1587,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/util/GenerateTable.java">
+    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/util/DB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        <state relative-caret-position="247">
+          <caret line="26" column="51" lean-forward="true" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
+          <folding>
+            <marker date="1527863172277" expanded="true" signature="1815:2283" ph="create table... if" />
+            <marker date="1527863172277" expanded="true" signature="2750:2840" ph="INSERT INTO missingValue... " />
+            <marker date="1527863172277" expanded="true" signature="5563:5963" ph="create table... if" />
+            <marker date="1527863172277" expanded="true" signature="6489:6574" ph="INSERT INTO missingValue... " />
+            <marker date="1527863172277" expanded="true" signature="11093:11494" ph="create table... if" />
+            <marker date="1527863172277" expanded="true" signature="12100:12186" ph="INSERT INTO missingValue... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/algorithm/Kfolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="278" column="29" lean-forward="false" selection-start-line="278" selection-start-column="29" selection-end-line="278" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/util/DB.java">
+    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/model/Strings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="43" column="28" lean-forward="true" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+        <state relative-caret-position="152">
+          <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/util/GenerateTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
           <folding>
-            <marker date="1527863035216" expanded="true" signature="1815:2283" ph="create table... if" />
-            <marker date="1527863035216" expanded="true" signature="2750:2840" ph="INSERT INTO missingValue... " />
-            <marker date="1527863035216" expanded="true" signature="5563:5963" ph="create table... if" />
-            <marker date="1527863035216" expanded="true" signature="6489:6574" ph="INSERT INTO missingValue... " />
-            <marker date="1527863035216" expanded="true" signature="11093:11494" ph="create table... if" />
-            <marker date="1527863035216" expanded="true" signature="12100:12186" ph="INSERT INTO missingValue... " />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mooc_edx/src/main/java/com/wangsizhuo/service/StudentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="79" column="64" lean-forward="false" selection-start-line="79" selection-start-column="64" selection-end-line="79" selection-end-column="64" />
+          <folding>
+            <marker date="1527863302805" expanded="true" signature="1098:1185" ph="SELECT * fro... missingValue" />
           </folding>
         </state>
       </provider>
