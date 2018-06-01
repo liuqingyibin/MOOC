@@ -7,9 +7,9 @@ public class Data {
 
     private String uid;
     private String cid;
-    private String registered;
-    private String viewed;
-    private String explored;
+    /**********************************增加identify，删除reistered,viewed,explored*********************************/
+    private String identify;
+
     private String certified;
     private String location;
     private String level;
@@ -40,39 +40,19 @@ public class Data {
         this.cid = cid;
     }
 
-    public String getRegistered() {
-        return registered;
+    /********************************以下两个方法被替换，registered,viewed,explored的get,set方法被删除**************/
+    public String getIdentify() {
+        return identify;
     }
 
-    public void setRegistered(String registered) {
-        if (registered.equals("1")) {
-            this.registered = "yes";
-        } else {
-            this.registered = "no";
-        }
-    }
-
-    public String getViewed() {
-        return viewed;
-    }
-
-    public void setViewed(String viewed) {
-        if (viewed.equals("1")) {
-            this.viewed = "yes";
-        } else {
-            this.viewed = "no";
-        }
-    }
-
-    public String getExplored() {
-        return explored;
-    }
-
-    public void setExplored(String explored) {
+    //处理学习者身份，即处理explored.viewed.registered，选取最高身份
+    public void setIdentify(String registered, String viewed, String explored) {
         if (explored.equals("1")) {
-            this.explored = "yes";
-        } else {
-            this.explored = "no";
+            this.identify="explored";
+        } else if (viewed.equals("1")) {
+            this.identify = "viewed";
+        } else if (registered.equals("1")) {
+            this.identify = "registered";
         }
     }
 

@@ -47,9 +47,7 @@ public class MyFile {
                 //将定长数组存入ArrayList
                 dataItem.setCid(TempTuple[0]);
                 dataItem.setUid(TempTuple[1]);
-                dataItem.setRegistered(TempTuple[2]);
-                dataItem.setViewed(TempTuple[3]);
-                dataItem.setExplored(TempTuple[4]);
+                dataItem.setIdentify(TempTuple[2],TempTuple[3],TempTuple[4]);
                 dataItem.setCertified(TempTuple[5]);
                 dataItem.setLocation(TempTuple[6]);
                 dataItem.setLevel(TempTuple[7]);

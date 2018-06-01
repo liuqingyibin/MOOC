@@ -218,9 +218,6 @@ public class TeacherService {
      * @param cid    课程Id
      * @param pageNo 页码
      * @return       学号:[地区 学历 性别 成绩 注册时间 最后登录时间 交互次数 交互天数 播放视频数 观看章节数 论坛发帖数 取得证书]
-     * {"MHxPC130000030":["Brazil","Secondary","28","male","0","2012/7/31","2012/10/10","2","2","0","0","0","no"],
-     * "MHxPC130000049":["United States","Master","45","male","0","2012/8/13","2012/8/13","1","1","0","0","0","no"],
-     * "MHxPC130000301":["Egypt","Bachelor","35","male","0.03","2012/10/5","2013/6/7","316","7","80","2","0","no"]}
      */
     public Map<String, ArrayList<String>> getStudentList(String cid, int pageNo) {
         Map<String, ArrayList<String>> students = new HashMap<>();
@@ -232,23 +229,53 @@ public class TeacherService {
             pst.setInt(1, (pageNo - 1) * pageSize);//距离这一页的第一行数据，其前面有多少行数据
             pst.setInt(2, pageSize);//每页有多少行
             ResultSet rs = pst.executeQuery();
+            ArrayList<String> uidList = new ArrayList<>();
+            ArrayList<String> location = new ArrayList<>();
+            ArrayList<String> learner_level = new ArrayList<>();
+            ArrayList<String> age = new ArrayList<>();
+            ArrayList<String> gender = new ArrayList<>();
+            ArrayList<String> grade = new ArrayList<>();
+            ArrayList<String> start_time = new ArrayList<>();
+            ArrayList<String> last_time = new ArrayList<>();
+            ArrayList<String> nevents = new ArrayList<>();
+            ArrayList<String> ndays = new ArrayList<>();
+            ArrayList<String> nplay_videos = new ArrayList<>();
+            ArrayList<String> nchapters = new ArrayList<>();
+            ArrayList<String> nforum_posts = new ArrayList<>();
+            ArrayList<String> certified = new ArrayList<>();
+
             while (rs.next()) {
-                ArrayList<String> dataItem = new ArrayList<>();
-                dataItem.add(rs.getString(2));
-                dataItem.add(rs.getString(3));
-                dataItem.add(rs.getString(4));
-                dataItem.add(rs.getString(5));
-                dataItem.add(rs.getString(6));
-                dataItem.add(rs.getString(7).replace("/","_"));
-                dataItem.add(rs.getString(8).replace("/","_"));
-                dataItem.add(rs.getString(9));
-                dataItem.add(rs.getString(10));
-                dataItem.add(rs.getString(11));
-                dataItem.add(rs.getString(12));
-                dataItem.add(rs.getString(13));
-                dataItem.add(rs.getString(14));
-                students.put(rs.getString(1), dataItem);
+                uidList.add(rs.getString(1));
+                location.add(rs.getString(2).replace(" ","_"));
+                learner_level.add(rs.getString(3));
+                age.add(rs.getString(4));
+                gender.add(rs.getString(5));
+                grade.add(rs.getString(6));
+                start_time.add(rs.getString(7).replace("/","_"));
+                last_time.add(rs.getString(8).replace("/","_"));
+                nevents.add(rs.getString(9));
+                ndays.add(rs.getString(10));
+                nplay_videos.add(rs.getString(11));
+                nchapters.add(rs.getString(12));
+                nforum_posts.add(rs.getString(13));
+                certified.add(rs.getString(14));
+
             }
+            students.put("uidList",uidList);
+            students.put("location",location);
+            students.put("learner_level",learner_level);
+            students.put("age",age);
+            students.put("gender",gender);
+            students.put("grade",grade);
+            students.put("start_time",start_time);
+            students.put("last_time",last_time);
+            students.put("nevents",nevents);
+            students.put("ndays",ndays);
+            students.put("nplay_videos",nplay_videos);
+            students.put("nchapters",nchapters);
+            students.put("nforum_posts",nforum_posts);
+            students.put("certified",certified);
+
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -256,7 +283,7 @@ public class TeacherService {
     }
 
 
-    /******************************************以下一个方法被修改***********************************************/
+    /******************************************以下为修改被修改***********************************************/
     /**
      * 预测：页面4
      *
@@ -264,11 +291,12 @@ public class TeacherService {
      * @return [学号：[课程号，能否通过],学号：[课程号，能否通过]``````]
      */
     public Map<Integer,ArrayList<String>> importPredictionData(String cid) {
-//        MyFile file = new MyFile(path);
-//        ArrayList<Data> data = file.myFileReader();
-//        db.createPredictionTable(data, 0);
-//        Prediction p = new Prediction(conn, cid);
-//        p.C45Tree();
+        //以下为可运行代码
+        MyFile file = new MyFile(path);
+        ArrayList<Data> data = file.myFileReader();
+        db.createPredictionTable(data, 0);
+        Prediction p = new Prediction(conn, cid);
+        p.C45Tree();
         Map<Integer,ArrayList<String>> map = showPredictionList(cid);
         return map;
     }
@@ -348,11 +376,11 @@ public class TeacherService {
 //        System.out.println(t.attributeWithCertified(cid,"age"));
 //        System.out.println(t.attributeWithCertified(cid,"gender"));
 //
-//        System.out.println(t.getStudentList(cid,1));
+        System.out.println(t.getStudentList(cid,25));
 //        System.out.println(t.getInteractionAndGrade(cid));
 //
 //        System.out.println(t.getGrade(cid));
-        Map<Integer,ArrayList<String>> map = t.importPredictionData(cid);
-        System.out.println();
+//        Map<Integer,ArrayList<String>> map = t.importPredictionData(cid);
+//        System.out.println();
     }
 }

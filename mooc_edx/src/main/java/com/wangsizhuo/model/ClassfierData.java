@@ -45,14 +45,8 @@ public class ClassfierData {
     }
 
     //处理学习者身份，即处理explored.viewed.registered，选取最高身份
-    public void setIdentify(String registered, String viewed, String explored) {
-        if (explored.equals("yes")) {
-            this.identify="explored";
-        } else if (viewed.equals("yes")) {
-            this.identify = "viewed";
-        } else if (registered.equals("yes")) {
-            this.identify = "registered";
-        }
+    public void setIdentify(String identify) {
+        this.identify = identify;
     }
 
     public String getCertified() {
