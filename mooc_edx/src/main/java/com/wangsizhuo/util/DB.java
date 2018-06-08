@@ -12,22 +12,22 @@ import java.util.ArrayList;
 public class DB {
     private Connection conn;
     Strings tablenames = new Strings();
-    double TP,FP,TA,FA;
-    double max[] = {0,0,0,0,0};
-    double min[] = {100000,100000,100000,100000,100000};
+    double TP, FP, TA, FA;
+    double max[] = {0, 0, 0, 0, 0};
+    double min[] = {100000, 100000, 100000, 100000, 100000};
 
     public Connection initDB() {
-        String url = "jdbc:mysql://localhost/edx?characterEncoding=utf8&useSSL=true";
-        String user = "root";
-        String psw = "123456";
-//        String url ="jdbc:mysql://123.206.205.246:3306/student?characterEncoding=utf8";
-//        String user = "liuqing";
-//        String psw = "liuqing123456";
+//        String url = "jdbc:mysql://localhost/edx?characterEncoding=utf8&useSSL=true";
+//        String user = "root";
+//        String psw = "123456";
+        String url ="jdbc:mysql://123.206.205.246:3306/student?characterEncoding=utf8";
+        String user = "liuqing";
+        String psw = "liuqing123456";
         try {
             Class.forName("com.mysql.jdbc.Driver");
             System.out.println("Driver loaded");
             try {
-                this.conn = DriverManager.getConnection(url,user,psw);
+                this.conn = DriverManager.getConnection(url, user, psw);
             } catch (SQLException e) {
                 e.printStackTrace();
             }
@@ -45,8 +45,8 @@ public class DB {
      */
     public void createTable(ArrayList<Data> data) {
         System.out.println("正在创建数据表……");
-        ArrayList<Data> originData = data;
-        createOriginTable(originData);
+//        ArrayList<Data> originData = data;
+//        createOriginTable(originData);
 
         ArrayList<ClassfierData> classfierData = classfyData(data);
         createClassfierTable(classfierData);
@@ -58,8 +58,8 @@ public class DB {
      * @param originData 从csv读取的数据
      */
     private void createOriginTable(ArrayList<Data> originData) {
-        String originSql = "create table if not EXISTS " + tablenames.originDataTableName + "(cid varchar(30), uid varchar(30), PRIMARY KEY (uid,cid), registered varchar(5)," +
-                " viewed varchar(5),explored varchar(5), certified varchar(5), location varchar(40), learner_level varchar(30), age varchar(10)," +
+        String originSql = "create table if not EXISTS " + tablenames.originDataTableName + "(cid varchar(30), uid varchar(30), PRIMARY KEY (uid,cid), identify varchar(20)," +
+                " certified varchar(20), location varchar(40), learner_level varchar(30), age varchar(10)," +
                 "gender varchar(10), grade varchar(10), start_time VARCHAR(20), last_time varchar(20)," +
                 "nevents double, ndays double, nplay_videos double,nchapters double,nforum_posts double)";
         try {
@@ -79,28 +79,26 @@ public class DB {
      */
     private void insertOriginData(ArrayList<Data> data) {
         System.out.println("正在插入数据……");
-        String sql = "INSERT INTO " + tablenames.originDataTableName + " VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+        String sql = "INSERT INTO " + tablenames.originDataTableName + " VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
         try {
             PreparedStatement pst = conn.prepareStatement(sql);
             for (Data dataItem : data) {
                 pst.setString(1, dataItem.getCid());
                 pst.setString(2, dataItem.getUid());
-                pst.setString(3, dataItem.getRegistered());
-                pst.setString(4, dataItem.getViewed());
-                pst.setString(5, dataItem.getExplored());
-                pst.setString(6, dataItem.getCertified());
-                pst.setString(7, dataItem.getLocation());
-                pst.setString(8, dataItem.getLevel());
-                pst.setString(9, dataItem.getAge());
-                pst.setString(10, dataItem.getGender());
-                pst.setString(11, dataItem.getGrade());
-                pst.setString(12, dataItem.getStartTime());
-                pst.setString(13, dataItem.getLastEventTime());
-                pst.setDouble(14, dataItem.getNevents());
-                pst.setDouble(15, dataItem.getNdays());
-                pst.setDouble(16, dataItem.getNplayVideos());
-                pst.setDouble(17, dataItem.getNchapters());
-                pst.setDouble(18, dataItem.getNforumPosts());
+                pst.setString(3, dataItem.getIdentify());
+                pst.setString(4, dataItem.getCertified());
+                pst.setString(5, dataItem.getLocation());
+                pst.setString(6, dataItem.getLevel());
+                pst.setString(7, dataItem.getAge());
+                pst.setString(8, dataItem.getGender());
+                pst.setString(9, dataItem.getGrade());
+                pst.setString(10, dataItem.getStartTime());
+                pst.setString(11, dataItem.getLastEventTime());
+                pst.setDouble(12, dataItem.getNevents());
+                pst.setDouble(13, dataItem.getNdays());
+                pst.setDouble(14, dataItem.getNplayVideos());
+                pst.setDouble(15, dataItem.getNchapters());
+                pst.setDouble(16, dataItem.getNforumPosts());
                 pst.executeUpdate();
             }
         } catch (SQLException e) {
@@ -123,14 +121,14 @@ public class DB {
             ClassfierData cData = new ClassfierData();
             cData.setCid(dataItem.getCid());
             cData.setUid(dataItem.getUid());
-            cData.setIdentify(dataItem.getRegistered(), dataItem.getViewed(), dataItem.getExplored());
+            cData.setIdentify(dataItem.getIdentify());
             cData.setCertified(dataItem.getCertified());
             cData.setLocation(dataItem.getLocation());
             cData.setLevel(dataItem.getLevel());
             cData.setAge(dataItem.getAge());
             cData.setGender(dataItem.getGender());
             cData.setGrade(dataItem.getGrade());
-            cData.setTimeSpan(dataItem.getStartTime(),dataItem.getLastEventTime());
+            cData.setTimeSpan(dataItem.getStartTime(), dataItem.getLastEventTime());
             cData.setNdays(dataItem.getNdays());
             cData.setNevents(dataItem.getNevents());
             cData.setNplayVideos(dataItem.getNplayVideos());
@@ -158,9 +156,7 @@ public class DB {
             pst2.execute();
             System.out.println("分类数据表创建完毕");
             //使用交互数据的原始数据进行分类
-            insertClassfierData(classfierData,0);
-            //使用交互数据的频率进行分类
-//            insertClassfierData(classfierData,1);
+            insertClassfierData(classfierData);
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -171,7 +167,7 @@ public class DB {
      *
      * @param cDatas 分类数据
      */
-    private void insertClassfierData(ArrayList<ClassfierData> cDatas,int kind) {
+    private void insertClassfierData(ArrayList<ClassfierData> cDatas) {
         System.out.println("正在插入数据……");
         String sql = "INSERT INTO " + tablenames.classfierTableName + " VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
         try {
@@ -186,100 +182,86 @@ public class DB {
                 pst.setString(7, cData.getAge());
                 pst.setString(8, cData.getGender());
                 pst.setString(9, cData.getGrade());
-                switch (kind) {
-                    case 0 :
-                        pst.setDouble(10,cData.getNevents());
-                        pst.setDouble(11,cData.getNdays());
-                        pst.setDouble(12,cData.getNplayVideos());
-                        pst.setDouble(13,cData.getNchapters());
-                        pst.setDouble(14,cData.getNforumPosts());
-                        break;
-                    case 1 :
-                        pst.setDouble(10,cData.getAvgNevents());
-                        pst.setDouble(11,cData.getAvgNdays());
-                        pst.setDouble(12,cData.getAvgNplayVideo());
-                        pst.setDouble(13,cData.getAvgNchapters());
-                        pst.setDouble(14,cData.getAvgNforumPosts());
-                }
+                pst.setDouble(10, cData.getNevents());
+                pst.setDouble(11, cData.getNdays());
+                pst.setDouble(12, cData.getNplayVideos());
+                pst.setDouble(13, cData.getNchapters());
+                pst.setDouble(14, cData.getNforumPosts());
+
                 pst.executeUpdate();
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
         //计算离差
-//        normalize("nevents");
-//        normalize("ndays");
-//        normalize("nplay_videos");
-//        normalize("nchapters");
-//        normalize("nforum_posts");
         System.out.println("分类数据表数据插入完毕");
     }
 
 
-    private void normalize(ArrayList<ClassfierData> tuples ){
+    private void normalize(ArrayList<ClassfierData> tuples) {
         //获取最大最小值
-        for (ClassfierData item : tuples){
+        for (ClassfierData item : tuples) {
             double nenevtsTemp = item.getNevents();
-            setMaxMin(nenevtsTemp,0);
+            setMaxMin(nenevtsTemp, 0);
             double ndaysTemp = item.getNdays();
-            setMaxMin(ndaysTemp,1);
+            setMaxMin(ndaysTemp, 1);
             double nplay_videosTemp = item.getNplayVideos();
-            setMaxMin(nplay_videosTemp,2);
+            setMaxMin(nplay_videosTemp, 2);
             double nchaptersTemp = item.getNchapters();
-            setMaxMin(nchaptersTemp,3);
+            setMaxMin(nchaptersTemp, 3);
             double nforumPostsTemp = item.getNforumPosts();
-            setMaxMin(nforumPostsTemp,4);
+            setMaxMin(nforumPostsTemp, 4);
         }
         //计算离差并更新数据
-        for (ClassfierData item : tuples){
+        for (ClassfierData item : tuples) {
             //nevents
-            if (max[0] == min[0]){
+            if (max[0] == min[0]) {
                 item.setNevents(0);
             } else {
                 double present = item.getNevents();
-                double result = (present-min[0])/(max[0]-min[0]);
+                double result = (present - min[0]) / (max[0] - min[0]);
                 item.setNevents(smooth(result));
             }
             //ndays
-            if (max[1] == min[1]){
+            if (max[1] == min[1]) {
                 item.setNdays(0);
             } else {
                 double present = item.getNdays();
-                double result = (present-min[1])/(max[1]-min[1]);
+                double result = (present - min[1]) / (max[1] - min[1]);
                 item.setNdays(smooth(result));
             }
             //nplay_videos
-            if (max[2] == min[2]){
+            if (max[2] == min[2]) {
                 item.setNplayVideos(0);
             } else {
                 double present = item.getNplayVideos();
-                double result = (present-min[2])/(max[2]-min[2]);
+                double result = (present - min[2]) / (max[2] - min[2]);
                 item.setNplayVideos(smooth(result));
             }
             //nchapters
-            if (max[3] == min[3]){
+            if (max[3] == min[3]) {
                 item.setNchapters(0);
             } else {
                 double present = item.getNchapters();
-                double result = (present-min[3])/(max[3]-min[3]);
+                double result = (present - min[3]) / (max[3] - min[3]);
                 item.setNchapters(smooth(result));
             }
             //ndforumposts
-            if (max[4] == min[4]){
+            if (max[4] == min[4]) {
                 item.setNforumPosts(0);
             } else {
                 double present = item.getNforumPosts();
-                double result = (present-min[4])/(max[4]-min[4]);
+                double result = (present - min[4]) / (max[4] - min[4]);
                 item.setNforumPosts(smooth(result));
             }
         }
     }
 
     private void setMaxMin(double temp, int i) {
-        if (temp>max[i]) {
+        if (temp > max[i]) {
             max[i] = temp;
         }
-        if (temp<min[i]){
+        if (temp < min[i]) {
             min[i] = temp;
         }
     }
@@ -333,7 +315,7 @@ public class DB {
             //将原始数据转化为分类数据
             cData = classfyData(data);
             //插入数据
-            insertPredictionData(cData,kind);
+            insertPredictionData(cData, kind);
 
         } catch (SQLException e) {
             e.printStackTrace();
@@ -361,19 +343,19 @@ public class DB {
                 pst.setString(8, dataItem.getGender());
                 pst.setString(9, dataItem.getGrade());
                 switch (kind) {
-                    case 0 :
-                        pst.setDouble(10,dataItem.getNevents());
-                        pst.setDouble(11,dataItem.getNdays());
-                        pst.setDouble(12,dataItem.getNplayVideos());
-                        pst.setDouble(13,dataItem.getNchapters());
-                        pst.setDouble(14,dataItem.getNforumPosts());
+                    case 0:
+                        pst.setDouble(10, dataItem.getNevents());
+                        pst.setDouble(11, dataItem.getNdays());
+                        pst.setDouble(12, dataItem.getNplayVideos());
+                        pst.setDouble(13, dataItem.getNchapters());
+                        pst.setDouble(14, dataItem.getNforumPosts());
                         break;
-                    case 1 :
-                        pst.setDouble(10,dataItem.getAvgNevents());
-                        pst.setDouble(11,dataItem.getAvgNdays());
-                        pst.setDouble(12,dataItem.getAvgNplayVideo());
-                        pst.setDouble(13,dataItem.getAvgNchapters());
-                        pst.setDouble(14,dataItem.getAvgNforumPosts());
+                    case 1:
+                        pst.setDouble(10, dataItem.getAvgNevents());
+                        pst.setDouble(11, dataItem.getAvgNdays());
+                        pst.setDouble(12, dataItem.getAvgNplayVideo());
+                        pst.setDouble(13, dataItem.getAvgNchapters());
+                        pst.setDouble(14, dataItem.getAvgNforumPosts());
                 }
                 pst.executeUpdate();
             }

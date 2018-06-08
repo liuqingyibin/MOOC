@@ -7,6 +7,6 @@ package com.wangsizhuo.model;
 public class Strings {
     public String originDataTableName = "origin";
     public String predictionTableName = "prediction";
-    public String classfierTableName = "classfier";
+    public String classfierTableName = "classify";
     public String teacher = "teacher";
 }

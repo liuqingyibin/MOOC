@@ -19,6 +19,7 @@ public class ConnectionLiu {
 
     public static Connection getConn() {
         String driver = "com.mysql.jdbc.Driver";
+//        String url = "jdbc:mysql://localhost:3306/student";
         String url = "jdbc:mysql://123.206.205.246:3306/student";
         String username = "liuqing";
         String password = "liuqing123456";

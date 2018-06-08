@@ -10,9 +10,17 @@ import java.util.ArrayList;
 
 public class MyFile {
     private String path;
+    ;
+    public MyFile() {
+//        this.path="mooc_edx/src/main/java/com/wangsizhuo/dataset/Kfolder.csv";
+        this.path=this.getClass().getResource("").getPath().toString()+"Kfolder.csv";
 
-    public MyFile(String filePath) {
-        path = filePath;
+//        this.path="src/dataset/Kfolder.csv";
+    }
+
+
+    public MyFile(String path) {
+        this.path = path;
     }
 
     /**
@@ -47,9 +55,7 @@ public class MyFile {
                 //将定长数组存入ArrayList
                 dataItem.setCid(TempTuple[0]);
                 dataItem.setUid(TempTuple[1]);
-                dataItem.setRegistered(TempTuple[2]);
-                dataItem.setViewed(TempTuple[3]);
-                dataItem.setExplored(TempTuple[4]);
+                dataItem.setIdentify(TempTuple[2],TempTuple[3],TempTuple[4]);
                 dataItem.setCertified(TempTuple[5]);
                 dataItem.setLocation(TempTuple[6]);
                 dataItem.setLevel(TempTuple[7]);

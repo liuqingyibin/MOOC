@@ -41,7 +41,8 @@ public class k_means_ablity_new {
 		this.k = k;
 	}
 	private void initData(){
-		DBUtils db = new DBUtils("123.206.205.246", "student", "liuqing", "liuqing123456");
+		DBUtils db = new DBUtils("localhost", "student", "liuqing", "liuqing123456");
+//		DBUtils db = new DBUtils("123.206.205.246", "student", "liuqing", "liuqing123456");
 		String sql = "select edx_id,Hcourse_id,userid_DI,registered,viewed,explored,certified,final_cc_cname_DI,LoE_DI,YoB,gender,grade,start_time_DI,last_event_DI,nevents,ndays_act,nplay_video,nchapters,nforum_posts from edx where hcourse_id='HarvardX/PH278x/2013_Spring' and incomplete_flag!='1' and grade!='0'";
 		dataSet=new ArrayList<Data>();
 		try {
@@ -309,20 +310,20 @@ public class k_means_ablity_new {
 			cluster.clear();
 			cluster = initCluster();
 		}
-		for (int i=0;i<cluster.size();i++){
-			Data data=null;
-			ArrayList<XYZ> ll=new ArrayList<XYZ>();
-			for (int j=0;j<cluster.get(i).size();j++){
-				data=cluster.get(i).get(j);
-				XYZ xyz=new XYZ();
-				xyz.setX(data.getX());
-				xyz.setY(data.getY());
-				xyz.setZ(data.getZ());
-				xyz.setEdxid(data.getEdx_id());
-				ll.add(xyz);
-			}
-			xyzCluster.add(ll);
-		}
+//		for (int i=0;i<cluster.size();i++){
+//			Data data=null;
+//			ArrayList<XYZ> ll=new ArrayList<XYZ>();
+//			for (int j=0;j<cluster.get(i).size();j++){
+//				data=cluster.get(i).get(j);
+//				XYZ xyz=new XYZ();
+//				xyz.setX(data.getX());
+//				xyz.setY(data.getY());
+//				xyz.setZ(data.getZ());
+//				xyz.setEdxid(data.getEdx_id());
+//				ll.add(xyz);
+//			}
+//			xyzCluster.add(ll);
+//		}
 
 	}
 	public ArrayList<ArrayList<XYZ>> getXyzCluster(){

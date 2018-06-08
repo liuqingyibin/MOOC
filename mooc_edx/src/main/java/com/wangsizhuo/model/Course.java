@@ -31,13 +31,13 @@ public class Course {
 
     public void setIdentify(String registered,String viewed, String explored, String certified) {
         if (certified.equals("yes")) {
-            this.identify = "证书达人";
+            this.identify = "Certified";
         } else if (explored.equals("yes")) {
-            this.identify = "知识猎人";
+            this.identify = "Explored";
         } else if (viewed.equals("yes")) {
-            this.identify = "晒网达人";
+            this.identify = "Viewed";
         } else if (registered.equals("yes")){
-            this.identify = "路人甲";
+            this.identify = "Just Registered";
         }
 
     }

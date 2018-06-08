@@ -27,8 +27,6 @@ public class WorkDao {
 
         try {
 
-
-
             StringBuffer sql = new StringBuffer();
             sql.append("select menu1,menu2,menu3 from liuqing_menu");
 
@@ -288,9 +286,6 @@ public class WorkDao {
      * @return
      */
     public String getMenuValue(String string,String id) throws SQLException {
-
-
-//        Statement stsm=null ;
         ResultSet rs = null;
         PreparedStatement pstsm = null;
         try {
@@ -300,22 +295,10 @@ public class WorkDao {
             sql.append(string);
             sql.append("  FROM edx WHERE edx_id = ?");
             pstsm = connection.prepareStatement(sql.toString());
-//            pstsm.setString(1,string);
-//            pstsm.setString(2,id);
-
             pstsm.setString(1,id);
 
             rs = pstsm.executeQuery();
 
-//            while (rs.next()){
-//                System.out.println("here!!!0+"+rs.getString("explored"));
-//                System.out.println("here!!!0+"+rs.getString("explored"));
-//                System.out.println("here!!!0+"+rs.getString("explored"));
-//            }
-//            ResultSetMetaData data = rs.getMetaData();
-//
-//            System.out.println("这里是查询返回结果！"+data.getColumnCount());
-//            String str1 = rs.getString(data.getColumnName(0));
             String str1= "";
             while (rs.next()){
                 str1 = rs.getString(string);
@@ -324,16 +307,97 @@ public class WorkDao {
             rs.close();
             return str1;
         }
-
         catch (Exception e){
             e.printStackTrace();
         }
         pstsm.close();
         rs.close();
-//        stsm.close();
-         
         return "0";
     }
+
+//    ///////////////////////////////////////////////////////////////////////////////////////////////////////
+//    /**
+//     * 这里是查询对应属性edx中的值的排名
+//     * @param string
+//     * @return
+//     */
+//    public String getValueRank(String string,String id) throws SQLException {
+//        ResultSet rs = null;
+//        PreparedStatement pstsm = null;
+//        try {
+//            //首先查出当前用户的当前这门课程的成绩
+//            StringBuffer sql = new StringBuffer();
+//            sql.append("SELECT ");
+//            sql.append(string);
+//            sql.append("  FROM edx WHERE edx_id = ?");
+//            pstsm = connection.prepareStatement(sql.toString());
+//            pstsm.setString(1,id);
+//            rs = pstsm.executeQuery();
+//            String str1 = "" ;
+//            while (rs.next()){
+//                str1 = rs.getString(string);
+//            }
+//            //之后通过成绩除以百分比
+//
+//
+////            String sqll = "select count(*) as res from edx where  hcourse_id = 'HarvardX/PH278x/2013_Spring' and '"+string+"' <= "+str1+"";
+//            StringBuffer sqll = new StringBuffer();
+//            sqll.append("select count(*) res from edx where  hcourse_id = 'HarvardX/PH278x/2013_Spring' and ? <= ?");
+//            pstsm = connection.prepareStatement(sqll.toString());
+//            pstsm.setString(1,string);
+//            pstsm.setInt(2,Integer.valueOf(str1));
+//            rs = pstsm.executeQuery();
+//            double resDou = 0;
+//            while (rs.next()){
+////                System.out.println("这里是getString"+rs.getInt(0));
+//                System.out.println("这里是getString3"+rs.getInt(1));
+//                resDou = Double.valueOf(rs.getString(1));
+//
+//            }
+//            pstsm.close();
+//            rs.close();
+////            System.out.println("这里式resDouble"+resDou);
+////            System.out.println("这里式resDouble/39602"+resDou/39602);
+//            return String.valueOf(resDou/39602);
+//        }
+//        catch (Exception e){
+//            e.printStackTrace();
+//        }
+//        pstsm.close();
+//        rs.close();
+//        return "0";
+//    }
+//
+
+
+    public String getValueRank(String string,String id) throws SQLException {
+        ResultSet rs = null;
+        PreparedStatement pstsm = null;
+        try {
+            //首先查出当前用户的当前这门课程的成绩
+            StringBuffer sql = new StringBuffer();
+            sql.append("SELECT ");
+            sql.append(string);
+            sql.append("  FROM edx_rank");
+            pstsm = connection.prepareStatement(sql.toString());
+            rs = pstsm.executeQuery();
+            String str1 = "" ;
+            while (rs.next()){
+                str1 = rs.getString(string);
+            }
+            pstsm.close();
+            rs.close();
+            System.out.println("str1"+str1);
+            return str1;
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+        pstsm.close();
+        rs.close();
+        return "0";
+    }
+
 
 
     /**
@@ -492,9 +556,6 @@ public class WorkDao {
 
             pstsm.close();
             rs.close();
-//            System.out.println("这里是返回的num"+resStr);
-//            System.out.println("这里是返回的num"+resStr);
-//            System.out.println("这里是返回的num"+resStr);
             return resStr;
         }
         catch (Exception e){
@@ -502,5 +563,239 @@ public class WorkDao {
         }
         return "0";
     }
+
+    /**
+     * ndays_act 模型算法
+     * 获得当前课程最大的交互次数
+     * @param id
+     * @return
+     */
+    public String getAllNdaysAct(String id ){
+        ResultSet rs = null;
+        PreparedStatement pstsm = null;
+        try {
+            StringBuffer sql = new StringBuffer();
+            sql.append("select distinct ndays_act from edx where hcourse_id in (select hcourse_id from edx where edx_id =?)order by ndays_act desc limit 1");
+            pstsm = connection.prepareStatement(sql.toString());
+            pstsm.setString(1,id);
+            rs = pstsm.executeQuery();
+            String resStr = null;
+            while (rs.next()){
+                resStr = rs.getString("ndays_act");
+            }
+
+            pstsm.close();
+            rs.close();
+            return resStr;
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+        return "0";
+    }
+
+    /** ndays_act
+     * 获得当前学生的课程互动天数
+     * @param id
+     * @return
+     */
+    public String getStudentNdays(String id ){
+        ResultSet rs = null;
+        PreparedStatement pstsm = null;
+        try {
+            StringBuffer sql = new StringBuffer();
+            sql.append("select distinct ndays_act from edx  where edx_id = ?");
+            pstsm = connection.prepareStatement(sql.toString());
+            pstsm.setString(1,id);
+            rs = pstsm.executeQuery();
+            String resStr = null;
+            while (rs.next()){
+                resStr = rs.getString("ndays_act");
+            }
+            pstsm.close();
+            rs.close();
+            return resStr;
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+        return "0";
+    }
+
+
+    /** nplay_video
+     * 获得当前学生的课程中播放视频事件的数量
+     * @param id
+     * @return
+     */
+    public String getNplayVideo(String id ){
+        ResultSet rs = null;
+        PreparedStatement pstsm = null;
+        try {
+            StringBuffer sql = new StringBuffer();
+            sql.append("select distinct nplay_video from edx  where edx_id =?");
+            pstsm = connection.prepareStatement(sql.toString());
+            pstsm.setString(1,id);
+            rs = pstsm.executeQuery();
+            String resStr = null;
+            while (rs.next()){
+                resStr = rs.getString("nplay_video");
+            }
+            pstsm.close();
+            rs.close();
+            return resStr;
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+        return "0";
+    }
+
+    /**
+     * nplay_video 模型算法
+     * 获得当前课程中最大的学生视频播放数量
+     * @param id
+     * @return
+     */
+    public String getAllNplayVideo(String id ){
+        ResultSet rs = null;
+        PreparedStatement pstsm = null;
+        try {
+            StringBuffer sql = new StringBuffer();
+            sql.append("select distinct nplay_video from edx where hcourse_id in (select hcourse_id from edx where edx_id = ?)order by ndays_act desc limit 1");
+            pstsm = connection.prepareStatement(sql.toString());
+            pstsm.setString(1,id);
+            rs = pstsm.executeQuery();
+            String resStr = null;
+            while (rs.next()){
+                resStr = rs.getString("nplay_video");
+            }
+
+            pstsm.close();
+            rs.close();
+            return resStr;
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+        return "0";
+    }
+
+    /** nevents
+     * 获得当前学生与课程交互的次数
+     * @param id
+     * @return
+     */
+    public String getUserNevent(String id ){
+        ResultSet rs = null;
+        PreparedStatement pstsm = null;
+        try {
+            StringBuffer sql = new StringBuffer();
+            sql.append("select distinct nevents from edx  where edx_id =?");
+            pstsm = connection.prepareStatement(sql.toString());
+            pstsm.setString(1,id);
+            rs = pstsm.executeQuery();
+            String resStr = null;
+            while (rs.next()){
+                resStr = rs.getString("nevents");
+            }
+            pstsm.close();
+            rs.close();
+            return resStr;
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+        return "0";
+    }
+
+    /**
+     * nevents 模型算法
+     * 获得当前课程中学生与课程交互次数的最大值
+     * @param id
+     * @return
+     */
+    public String getMaxNevents(String id ){
+        ResultSet rs = null;
+        PreparedStatement pstsm = null;
+        try {
+            StringBuffer sql = new StringBuffer();
+            sql.append("select distinct nevents from edx where hcourse_id in (select hcourse_id from edx where edx_id = ?)order by ndays_act desc limit 1");
+            pstsm = connection.prepareStatement(sql.toString());
+            pstsm.setString(1,id);
+            rs = pstsm.executeQuery();
+            String resStr = null;
+            while (rs.next()){
+                resStr = rs.getString("nevents");
+            }
+
+            pstsm.close();
+            rs.close();
+            return resStr;
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+        return "0";
+    }
+
+    /** nforum_posts
+     * 获得当前学生与论坛讨论帖子的数量
+     * @param id
+     * @return
+     */
+    public String getUserNforumPosts(String id ){
+        ResultSet rs = null;
+        PreparedStatement pstsm = null;
+        try {
+            StringBuffer sql = new StringBuffer();
+            sql.append("select distinct nforum_posts from edx  where edx_id =?");
+            pstsm = connection.prepareStatement(sql.toString());
+            pstsm.setString(1,id);
+            rs = pstsm.executeQuery();
+            String resStr = null;
+            while (rs.next()){
+                resStr = rs.getString("nforum_posts");
+            }
+            pstsm.close();
+            rs.close();
+            return resStr;
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+        return "0";
+    }
+
+    /**
+     * nforum_posts 模型算法
+     * 获得当前课程中学生最大与论坛讨论的帖子数量
+     * @param id
+     * @return
+     */
+    public String getMaxNforumPosts(String id ){
+        ResultSet rs = null;
+        PreparedStatement pstsm = null;
+        try {
+            StringBuffer sql = new StringBuffer();
+            sql.append("select distinct nforum_posts from edx where hcourse_id in (select hcourse_id from edx where edx_id = ?)order by ndays_act desc limit 1");
+            pstsm = connection.prepareStatement(sql.toString());
+            pstsm.setString(1,id);
+            rs = pstsm.executeQuery();
+            String resStr = null;
+            while (rs.next()){
+                resStr = rs.getString("nforum_posts");
+            }
+
+            pstsm.close();
+            rs.close();
+            return resStr;
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+        return "0";
+    }
+
 
 }

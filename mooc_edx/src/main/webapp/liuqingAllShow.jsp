@@ -18,11 +18,14 @@
         $(function() {
             $.ajax({
 
-                url: "http://localhost:8080/work/liuqing.do",
-                contentType: 'application/json',
-                dataType: "json",
-                type: "post",
+                type: "GET",//请求方式为get（有post和get）
+                async: false,//不管
+                url: "http://localhost:8080/work/liuqing.do",//请求接口地址
+                dataType: "jsonp",//我们用的式jsonp的一种方式，为了解决ajax跨域访问
+                jsonp:"callback",//固定请求写法
+                jsonpCallback : "jsonpCallback",//固定后端返回参数写法
                 success: function(data) {
+//                    alert("1");
                     for(var i=0;i<data.menu1.length;i++){
                         menuName[i]=data.menu1[i];
                     }
@@ -157,12 +160,7 @@
 </head>
 <body>
 <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
-<div id="main" style="width: 100%;height: 700px;;"></div>
-<script type="text/javascript">
-    // 基于准备好的dom，初始化echarts实例
+<div id="main" style="width: 100%;height: 700px;"></div>
 
-
-
-</script>
 </body>
 </html>

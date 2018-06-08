@@ -15,7 +15,6 @@ import java.sql.SQLException;
 import java.util.*;
 import java.util.stream.Collectors;
 
-
 public class Prediction {
     private Connection conn;                                    //数据库连接
     private ArrayList<String> attrNames;                        //原始标签集
@@ -117,7 +116,7 @@ public class Prediction {
 
 
     //将决策树的内容写进文件
-    public Map<String,ArrayList<String>> C45Tree(){
+    public void C45Tree(){
         node = new Node();
         node.setValue("root");
         try {
@@ -129,8 +128,7 @@ public class Prediction {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        Map<String,ArrayList<String>> map = prediction(getAttrNames(tableNames.predictionTableName),getData(tableNames.predictionTableName));
-        return map;
+        prediction(getAttrNames(tableNames.predictionTableName),getData(tableNames.predictionTableName));
     }
 
     //构建决策树
@@ -330,7 +328,7 @@ public class Prediction {
     }
 
     //实现预测
-    private Map<String,ArrayList<String>> prediction(List<String> attrNames,List<ArrayList<String>> data){
+    private void prediction(List<String> attrNames,List<ArrayList<String>> data){
         int TP=0,TN=0,FP=0,FN=0;
         int cannot = 0;
         String result;
@@ -391,15 +389,13 @@ public class Prediction {
         System.out.printf("\n分类错误率：%.2f",errorRate*100);
         System.out.printf("\n精度：%.2f",precision*100);
 
-        Map<String,ArrayList<String>> map = showPredictionList();
-        return map;
     }
 
     /**
      * 获取预测数据
      * @return  [uid, cid,yse/no]
      */
-    private Map<String,ArrayList<String>> showPredictionList() {
+    public Map<String,ArrayList<String>> showPredictionList() {
         Map<String,ArrayList<String>> map = new HashMap<>();
         String sql = "select uid,cid,certified from " + tableNames.predictionTableName;
         try {

@@ -4,6 +4,10 @@ package com.wangsizhuo.algorithm;
  */
 
 import java.util.ArrayList;
+/**
+ * 决策树节点
+ */
+
 
 public  class Node{
     String value;                                               //节点值
